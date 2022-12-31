@@ -14,33 +14,41 @@ The framework provides the flow of a software application and tells the develope
 A: A content delivery network (CDN) refers to a geographically distributed group of servers that work together to provide fast delivery of Internet content.
 The main use of a CDN is to deliver content through a network of servers in a secure and efficient way.
 
+
 ## Q: Why is React known as React?
-A: React is a JavaScript-based UI development library. Facebook and an open-source developer community run it.
-React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.
+A: React is named React because of its ability to react to changes in data.
+React is called React because it was designed to be a declarative, efficient, and flexible JavaScript library for building user interfaces.
+The name "React" was chosen because the library was designed to allow developers to "react" to changes in state and data within an application, and to update the user interface in a declarative and efficient manner.
+React is a JavaScript-based UI development library. Facebook and an open-source developer community run it.
+
 
 ## Q: What is crossorigin in script tag?
 A: The crossorigin attribute sets the mode of the request to an HTTP CORS Request. 
 The purpose of crossorigin attribute is used to share the resources from one domain to another domain. Basically, it is used to handle the CORS request. It is used to handle the CORS request that checks whether it is safe to allow for sharing the resources from other domains.
-# _Syntax_
+### _Syntax_
 ```sh
 <script crossorigin="anonymous|use-credentials">
 ```
 
 ## Q: What is difference between React and ReactDOM?
-A: React is a JavaScript library for building User Interfaces and ReactDOM is the JavaScript library that allows React to interact with the DOM.
+A: React is a JavaScript library for building User Interfaces whereas ReactDOM is also JavaScript library that allows React to interact with the DOM.
 The react package contains React.createElement(), React.Component, React.Children, and other helpers related to elements and component classes. You can think of these as the isomorphic or universal helpers that you need to build components. The react-dom package contains ReactDOM.render(), and in react-dom/server we have server-side rendering support with ReactDOMServer.renderToString() and ReactDOMServer.renderToStaticMarkup().
 
+
 ## Q: What is difference between react.development.js and react.production.js files via CDN?
-A: The development build is used - as the name suggests - for development reasons. You have Source Maps, debugging and often times hot reloading ability in those builds. The production build, on the other hand, runs in production mode which means this is the code running on your client's machine.
+A: Development is the stage of an application before it's made public while production is the term used for the same application when it's made public.
+Development build is several times (maybe 3-5x) slower than the production build.
 
 
 ## Q: What is async and defer?
-A: Async - means execute code when it is downloaded and do not block DOM construction during downloading process. 
-async scripts load in the background and run when ready. The DOM and other scripts don’t wait for them, and they don’t wait for anything.
+A: Async - The async attribute is a boolean attribute. The script is downloaded in parallel(in the background) to parsing the page, and executed as soon as it is available (do not block HTML DOM construction during downloading process ) and don’t wait for anything.
+### _Syntax_
+```sh
+<script src="demo_async.js" async></script>
+```
 
-Defer - means execute code after it's downloaded and browser finished DOM construction and rendering process.
-The defer attribute tells the browser not to wait for the script. Instead, the browser will continue to process the HTML, build DOM. The script loads “in the background”, and then runs when the DOM is fully built.
-
-
-
-
+Defer - The defer attribute is a boolean attribute. The script is downloaded in parallel(in the background) to parsing the page, and executed after the page has finished parsing(when browser finished DOM construction). The defer attribute tells the browser not to wait for the script. Instead, the browser will continue to process the HTML, build DOM.
+### _Syntax_
+```sh
+<script src="demo_defer.js" defer></script>
+```
