@@ -1,0 +1,29 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is a live Course",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chetannada/Namaste-React.git"
+  },
+  "author": "Chetan Nada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chetannada/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/chetannada/Namaste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 10 versions"
+  ]
+}
