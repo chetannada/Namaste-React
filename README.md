@@ -11,6 +11,11 @@
 - [_Coding Assignment_](./Coding/)
 - [_Assignment_](./Chapter%2002%20-%20Igniting%20our%20App/Assignment.md)
 
+## ● [_Chapter 03 - Laying the Foundation_](./Chapter%2003%20-%20Laying%20the%20Foundation/) (Date: 01-01-2023)
+- [_Theory Assignment Solution_](./Chapter%2003%20-%20Laying%20the%20Foundation/Theory/Session%203%20Theory.md)
+- [_Coding Assignment_](./Coding/)
+- [_Assignment_](./Chapter%2003%20-%20Laying%20the%20Foundation/Assignment.md)
+
 
 ## 🔥 Clone this repository
 You need to write the following commands on the terminal screen(in vscode) so that you can run this project locally.
