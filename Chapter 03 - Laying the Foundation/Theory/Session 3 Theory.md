@@ -35,15 +35,15 @@ function greeting(user) {
 ## Q: Role of `type` attribute in script tag? What options can I use there?
 A: The `type` attribute specifies the type of the script. The type attribute identifies the content between the `<script>` and `</script>` tags. It has a Default value which is “text/javascript”.
 ### `type` attribute can be of the following types:
-    - `text/javascript` : It is the basic standard of writing javascript code inside the `<script>` tag.
+- `text/javascript` : It is the basic standard of writing javascript code inside the `<script>` tag.
     ### Syntax
     ```
     <script type="text/javascript"></script>
     ```
-    - `text/ecmascript` : this value indicates that the script is following the `EcmaScript` standards.
-    - `module`: This value tells the browser that the script is a module that can import or export other files or modules inside it.
-    - `text/babel` : This value indicates that the script is a babel type and required bable to transpile it.
-    - `text/typescript`: As the name suggest the script is written in `TypeScript`.
+- `text/ecmascript` : this value indicates that the script is following the `EcmaScript` standards.
+- `module`: This value tells the browser that the script is a module that can import or export other files or modules inside it.
+- `text/babel` : This value indicates that the script is a babel type and required bable to transpile it.
+- `text/typescript`: As the name suggest the script is written in `TypeScript`.
 
 ## Q: `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in `JSX`.
 A: The Difference is stated below:
