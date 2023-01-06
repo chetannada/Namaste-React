@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is a live Course",
   "scripts": {
+    "start": "parcel Coding/index.html",
     "test": "jest"
   },
   "repository": {
