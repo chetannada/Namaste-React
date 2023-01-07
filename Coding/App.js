@@ -49,7 +49,7 @@ const heading = React.createElement(
     key: "header",
   },
   [React.createElement(
-    "div",
+    "h1",
     {
       key: "Title",
     },
