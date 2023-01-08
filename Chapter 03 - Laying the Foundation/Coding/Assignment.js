@@ -68,21 +68,50 @@ import ReactDOM from "react-dom/client";
 // };
 
 // Composition of Component (Add a component inside another)
-const AnotherComponent = function(){
-    return <h2> This is Another Component</h2>
-}
+// const AnotherComponent = function(){
+//     return <h2> This is Another Component</h2>
+// }
+
+// const Header = () => {
+//   return (
+//     <div className="Title" key="title">
+//       <h1 style={{color:"blue"}} key="h1">This is h1 tag</h1>
+//       <h2 style={{color:"palevioletred"}} key="h2">This is h2 tag</h2>
+//       <AnotherComponent/>
+//       <h3 style={{color:"green"}} key="h3">This is h3 tag</h3>
+//     </div>
+//   );
+// };
+
+// `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in JSX.
+
+const element = <h1>This is React Element</h1>; // This is React element or {TitleComponent}
+
+const TitleElement = () => {
+  return <h2 style={{ color: "red" }}>This Title Element</h2>;
+}; // This is Title Component
 
 const Header = () => {
   return (
     <div className="Title" key="title">
-      <h1 style={{color:"blue"}} key="h1">This is h1 tag</h1>
-      <h2 style={{color:"palevioletred"}} key="h2">This is h2 tag</h2>
-      <AnotherComponent/>
-      <h3 style={{color:"green"}} key="h3">This is h3 tag</h3>
+      {/* This is {TitleComponent} */}
+      {element}
+      <h1 style={{ color: "blue" }} key="h1">
+        This is h1 tag
+      </h1>
+      {/* This is {<TitleComponent/>} */}
+      <TitleElement/>
+      <h2 style={{ color: "palevioletred" }} key="h2">
+        This is h2 tag
+      </h2>
+      {/* This is {<TitleComponent></TitleComponent>}*/}
+      <TitleElement></TitleElement>
+      <h3 style={{ color: "green" }} key="h3">
+        This is h3 tag
+      </h3>
     </div>
   );
 };
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<Header />); // we can also write like this for functional component root.render(Header())
