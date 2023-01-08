@@ -37,13 +37,24 @@ import ReactDOM from "react-dom/client";
 // );
 
 // Q: Create the same element using JSX
-const header = (
-  <div className="Title" key="title">
-    <h1 key="h1">This is h1 tag</h1>
-    <h2 key="h2">This is h2 tag</h2>
-    <h3 key="h3">This is h3 tag</h3>
-  </div>
-);
+// const header = (
+//   <div className="Title" key="title">
+//     <h1 key="h1">This is h1 tag</h1>
+//     <h2 key="h2">This is h2 tag</h2>
+//     <h3 key="h3">This is h3 tag</h3>
+//   </div>
+// );
+
+// Q: Create a functional component of the same with JSX
+const Header = () => {
+  return (
+    <div className="Title" key="title">
+      <h1 key="h1">This is h1 tag</h1>
+      <h2 key="h2">This is h2 tag</h2>
+      <h3 key="h3">This is h3 tag</h3>
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(header);
+root.render(<Header />); // we can also write like this for functional component root.render(Header())
