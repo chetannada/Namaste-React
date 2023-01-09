@@ -76,7 +76,7 @@ const Header = () => {
 ```
 
 
-## Composition of Component (Add a component inside another)
+## Q: Composition of Component (Add a component inside another)
 ```
 const AnotherComponent = function(){
     return <h2> This is Another Component</h2>
@@ -95,7 +95,7 @@ const Header = () => {
 ```
 
 
-## `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in JSX.
+## Q: `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in JSX.
 ```
 const element = <h1>This is React Element</h1>; // This is React element or {TitleComponent}
 
@@ -153,4 +153,4 @@ const Header = () => {
     )
 }
 ```
-## [Create a Header Component from scratch using Functional Component with JSX Live Project App Link](https://sunny-smakager-03eaff.netlify.app/)
+## [Create a Header Component from scratch using Functional Component with JSX 🚀 Live Project App Link 😍](https://sunny-smakager-03eaff.netlify.app/)
