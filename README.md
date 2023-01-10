@@ -2,7 +2,7 @@
 ### _Namaste React Course from Zero to Hero by Akshay Saini(Founder of NamasteDev). This repository for Assignment & Class Notes taken during this First Live course._
 
 ## ● [_Chapter 01 - Inception_](./Chapter%2001%20-%20Inception/) (Date: 24-12-2022)
-- [_Theory Assignment Solution_](./Chapter%2001%20-%20Inception/Theory/)
+- [_Theory Assignment Solution_](./Chapter%2001%20-%20Inception/Theory/Session1-Theory.md)
 - [_Coding Assignment_](./Chapter%2001%20-%20Inception/Coding/)
 - [_Assignment_](./Chapter%2001%20-%20Inception/Assignment.md)
 
@@ -16,6 +16,11 @@
 - [_Coding Assignment_](./Chapter%2003%20-%20Laying%20the%20Foundation/Coding/)
 - [_Assignment_](./Chapter%2003%20-%20Laying%20the%20Foundation/Assignment.md)
 - [🚀 Live Project App Link 😍](https://sunny-smakager-03eaff.netlify.app/)
+
+## ● [_Chapter 04 - Talk is Cheap, show me the code_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/) (Date: 07-01-2023)
+- [_Theory Assignment Solution_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Theory/Session%204%20Theory.md)
+- [_Coding Assignment_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Coding/)
+- [_Assignment_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Assignment.md)
 
 
 ## 🔥 Clone this repository
