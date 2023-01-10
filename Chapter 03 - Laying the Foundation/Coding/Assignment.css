@@ -1,55 +1,83 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: aqua;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+  width: auto;
 }
-.left{
-    margin-left: 40px;
+.left {
+  margin-left: 40px;
 }
 
-.left img{
-    width: 50px;
-    margin: 10px 40px 0 10px;
-    cursor: pointer;
+.left img {
+  width: 50px;
+  margin: 10px 40px 0 10px;
+  cursor: pointer;
 }
-img:hover{
-    transform: scale(1.1);
+img:hover {
+  transform: scale(1.1);
 }
-.center .input{
-    width: 300px;
-    border-radius: 10px;
-    padding: 10px;
+.center .input {
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px;
 }
 .input:focus {
-    width: 400px;
-    border: 3px solid crimson;
+  border: 3px solid crimson;
+}
+
+.center button {
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: green;
+  color: white;
+}
+.right {
+  margin-right: 40px;
+}
+.right img {
+  width: 50px;
+  margin: 10px 20px 0 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+  .center .input {
+    width: 200px;
+    transition: all 500ms ease;
+  }
+}
+@media screen and (max-width: 500px) {
+  .left {
+    margin-left: 5px;
   }
 
-.center .input:hover{
-    
+  .left img {
+    margin: 10px 10px 0 10px;
+  }
+
+  .right {
+    margin-right: 5px;
+  }
+
+  .center .input {
+    width: 100px;
+    transition: all 500ms ease;
+  }
 }
-.center button{
-    border-radius: 10px;
-    margin-left: 5px;
-    padding: 10px;
-    cursor: pointer;
-}
-button:hover{
-    background-color: green;
-    color: white;
-}
-.right{
-    margin-right: 40px;
-}
-.right img{
-    width: 50px;
-    margin:10px 20px 0 0;
-    cursor: pointer;
+
+@media screen and (max-width: 340px) {
+  .center .input {
+    width: 70px;
+    transition: all 500ms ease;
+  }
 }
