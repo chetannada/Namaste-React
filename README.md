@@ -23,6 +23,7 @@
 - [_Theory Assignment Solution_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Theory/Session%204%20Theory.md)
 - [_Coding Assignment_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Coding/)
 - [_Assignment_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Assignment.md)
+- [_Hand Written Notes of Live Class_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Theory/Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code%20HandWritten%20Notes.pdf) `Credit -` [_Ashraya KK_](https://www.linkedin.com/in/ashrayakk/)
 
 
 ## 🔥 Clone this repository
