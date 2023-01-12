@@ -10,6 +10,7 @@
 - [_Theory Assignment Solution_](./Chapter%2002%20-%20Igniting%20our%20App/Theory/Session%202%20Theory.md)
 - [_Coding Assignment_](./Chapter%2002%20-%20Igniting%20our%20App/Coding/)
 - [_Assignment_](./Chapter%2002%20-%20Igniting%20our%20App/Assignment.md)
+- [_Hand Written Notes of Live Class_](./Chapter%2002%20-%20Igniting%20our%20App/Theory/Chapter%2002%20-%20Igniting%20our%20App%20HandWritten%20Notes.pdf) `Credit -` [_Ashraya KK_](https://www.linkedin.com/in/ashrayakk/)
 
 ## ● [_Chapter 03 - Laying the Foundation_](./Chapter%2003%20-%20Laying%20the%20Foundation/) (Date: 01-01-2023)
 - [_Theory Assignment Solution_](./Chapter%2003%20-%20Laying%20the%20Foundation/Theory/Session%203%20Theory.md)
