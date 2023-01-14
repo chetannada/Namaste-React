@@ -24,7 +24,7 @@
 - [_Coding Assignment_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Coding/)
 - [_Assignment_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Assignment.md)
 - [_Hand Written Notes of Live Class_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Theory/Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code%20HandWritten%20Notes.pdf) `Credit - Ashraya KK`
-
+- [🚀 Live Project App Link 😍](https://foodfire-chapter04.netlify.app/)
 
 ## 🔥 Clone this repository
 You need to write the following commands on the terminal screen(in vscode) so that you can run this project locally.
