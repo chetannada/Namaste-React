@@ -16,7 +16,7 @@ ES6 stands for ECMAScript 6. ECMAScript was created to standardize JavaScript, a
 
 ## Q: `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in `JSX`.
 A: The Difference is stated below:
-- `{TitleComponent}`: This value describes the `TitleComponent` as a javascript expression or a variable or React lement. 
+- `{TitleComponent}`: This value describes the `TitleComponent` as a javascript expression or a variable or React element. 
 The `{}` can embed a javascript expression or a variable or React element inside it.
 - `<TitleComponent/>` : This value represents a Component that is basically returning Some JSX value. In simple terms `TitleComponent` a function that is returning a JSX value. If component is written inside the `{<  />}` expression.
 - `<TitleComponent></TitleComponent>` :  `<TitleComponent />` and `<TitleComponent></TitleComponent>` are equivalent only when `< TitleComponent />` has no child components. The opening and closing tags are created to include the child components.
@@ -136,4 +136,4 @@ A: DOM stands for `Document Object Model`, which represents your application UI 
 | It can directly update HTML | It can’t update HTML directly  |
 |  Creates a new DOM if the element updates. | Update the JSX if the element update |
 | It allows us to directly target any specific node (HTML element) | It can produce about 200,000 Virtual DOM Nodes / Second. |
-| It represents the Ul of your application | It is only a virtual representation of the DOM |
+| It represents the UI of your application | It is only a virtual representation of the DOM |
