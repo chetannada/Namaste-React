@@ -9,7 +9,7 @@ In `Named export`, the component is exported from MyComponent.js file like:
 export const MyComponent = () => {}
 export const MyComponent2 = () => {}
 ``` 
-and the component is imported from MyComponent.js file like:
+and the component is imported from MyComponent.js file like: here we must use `{}` in MyComponent.
 ```
 // ex. importing a single named export
 import { MyComponent } from "./MyComponent";
@@ -27,7 +27,7 @@ In `Default export`, the component is exported from MyComponent.js file like:
 const MyComponent = () => {}
 export default MyComponent;
 ```
-and the component is imported from MyComponent.js file like: here we can omit `{}` in MyComponent.
+and the component is imported from MyComponent.js file like: here we must omit `{}` in MyComponent.
 ```
 import MyComponent from "./MyComponent";
 ```
@@ -49,6 +49,17 @@ Now we can use them in JSX as:
 <MainComponents.MyComponent2 />
 <MainComponents.MyComponent3 />
 ```
+We can use `Named export` and `Default export` together. So you should export like:
+```
+export const MyComponent2 = () => {}
+const MyComponent = () => {}
+export default MyComponent;
+```
+and import like:
+```
+import MyComponent, {MyComponent2} from "./MyComponent";
+```
+
 
 ## Q: What is the importance of `config.js` file?
 A: `config.js` files are essentially editable text files that contain information required for the successful operation of a program. The files are structured in a particular way, formatted to be user configurable.
