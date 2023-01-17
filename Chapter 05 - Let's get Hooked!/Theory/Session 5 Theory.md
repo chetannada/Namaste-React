@@ -27,7 +27,7 @@ In `Default export`, the component is exported from MyComponent.js file like:
 const MyComponent = () => {}
 export default MyComponent;
 ```
-and the component is imported from MyComponent.js file like:
+and the component is imported from MyComponent.js file like: here we can omit `{}` in MyComponent.
 ```
 import MyComponent from "./MyComponent";
 ```
@@ -73,7 +73,7 @@ Hooks allow you to reuse stateful logic without changing your component hierarch
 - useReducer: A useState alternative to help with complex state management.
 - useCallback: It returns a memorized version of a callback to help a child component not re-render unnecessarily.
 - useMemo: It returns a memoized value that helps in performance optimizations.
-- useRef: It returns a ref object with a .current property. The ref object is mutable. It is mainly used to access a child component imperatively.
+- useRef: It returns a ref object with a current property. The ref object is mutable. It is mainly used to access a child component imperatively.
 - useLayoutEffect: It fires at the end of all DOM mutations. It's best to use useEffect as much as possible over this one as the useLayoutEffect fires synchronously.
 - useDebugValue: Helps to display a label in React DevTools for custom hooks.
 
