@@ -18,7 +18,7 @@
 - 👨‍💻 [_Coding Assignment_](./Chapter%2003%20-%20Laying%20the%20Foundation/Coding/)
 - 📘 [_Assignment_](./Chapter%2003%20-%20Laying%20the%20Foundation/Assignment.md)
 - 📝 [_Hand Written Notes of Live Class_](./Chapter%2003%20-%20Laying%20the%20Foundation/Theory/Chapter%2003%20-%20Laying%20the%20Foundation%20HandWritten%20Notes.pdf) `Credit - Ashraya KK`
-- [🚀 Live Project App Link 😍](https://sunny-smakager-03eaff.netlify.app/)
+- [🚀 Live Project App Link 😍](https://foodfire-chapter03.netlify.app/)
 
 ## 📚 [_Chapter 04 - Talk is Cheap, show me the code_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/) (Date: 07-01-2023)
 - 📖 [_Theory Assignment Solution_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Theory/Session%204%20Theory.md)
