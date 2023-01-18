@@ -5,6 +5,7 @@
 - 📖 [_Theory Assignment Solution_](./Chapter%2001%20-%20Inception/Theory/Session1-Theory.md)
 - 👨‍💻 [_Coding Assignment_](./Chapter%2001%20-%20Inception/Coding/)
 - 📘 [_Assignment_](./Chapter%2001%20-%20Inception/Assignment.md)
+- 📝 [_Hand Written Notes of Live Class_](./Chapter%2001%20-%20Inception/Theory/Chapter%2001%20-%20Inception%20HandWritten%20Notes.pdf) `Credit - Ashraya KK`
 
 ## 📚 [_Chapter 02 - Igniting our App_](./Chapter%2002%20-%20Igniting%20our%20App/) (Date: 31-12-2022)
 - 📖 [_Theory Assignment Solution_](./Chapter%2002%20-%20Igniting%20our%20App/Theory/Session%202%20Theory.md)
@@ -25,6 +26,13 @@
 - 📘 [_Assignment_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Assignment.md)
 - 📝 [_Hand Written Notes of Live Class_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Theory/Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code%20HandWritten%20Notes.pdf) `Credit - Ashraya KK`
 - [🚀 Live Project App Link 😍](https://foodfire-chapter04.netlify.app/)
+
+## 📚 [_Chapter 05 - Let's get Hooked!_](./Chapter%2005%20-%20Let's%20get%20Hooked!/) (Date: 08-01-2023)
+- 📖 [_Theory Assignment Solution_](./Chapter%2005%20-%20Let's%20get%20Hooked!/Theory/Session%205%20Theory.md)
+- 👨‍💻 [_Coding Assignment_](./Chapter%2005%20-%20Let's%20get%20Hooked!/Coding/)
+- 📘 [_Assignment_](./Chapter%2005%20-%20Let's%20get%20Hooked!/Assignment.md)
+- 📝 [_Hand Written Notes of Live Class_](./Chapter%2005%20-%20Let's%20get%20Hooked!/Theory/Chapter%2005%20-%20Let's%20get%20Hooked!%20HandWritten%20Notes.pdf) `Credit - Ashraya KK`
+- [🚀 Live Project App Link 😍](https://foodfire-chapter05.netlify.app/)
 
 ## 🔥 Clone this Repository
 You need to write the following commands on the terminal screen(in vscode) so that you can run this project locally.
