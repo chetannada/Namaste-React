@@ -18,27 +18,27 @@
 - 👨‍💻 [_Coding Assignment_](./Chapter%2003%20-%20Laying%20the%20Foundation/Coding/)
 - 📘 [_Assignment_](./Chapter%2003%20-%20Laying%20the%20Foundation/Assignment.md)
 - 📝 [_Hand Written Notes of Live Class_](./Chapter%2003%20-%20Laying%20the%20Foundation/Theory/Chapter%2003%20-%20Laying%20the%20Foundation%20HandWritten%20Notes.pdf) `Credit - Ashraya KK`
-- [🚀 Live Project App Link 😍](https://foodfire-chapter03.netlify.app/)
+- [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter03.netlify.app/)
 
 ## 📚 [_Chapter 04 - Talk is Cheap, show me the code_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/) (Date: 07-01-2023)
 - 📖 [_Theory Assignment Solution_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Theory/Session%204%20Theory.md)
 - 👨‍💻 [_Coding Assignment_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Coding/)
 - 📘 [_Assignment_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Assignment.md)
 - 📝 [_Hand Written Notes of Live Class_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Theory/Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code%20HandWritten%20Notes.pdf) `Credit - Ashraya KK`
-- [🚀 Live Project App Link 😍](https://foodfire-chapter04.netlify.app/)
+- [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter04.netlify.app/)
 
 ## 📚 [_Chapter 05 - Let's get Hooked!_](./Chapter%2005%20-%20Let's%20get%20Hooked!/) (Date: 08-01-2023)
 - 📖 [_Theory Assignment Solution_](./Chapter%2005%20-%20Let's%20get%20Hooked!/Theory/Session%205%20Theory.md)
 - 👨‍💻 [_Coding Assignment_](./Chapter%2005%20-%20Let's%20get%20Hooked!/Coding/)
 - 📘 [_Assignment_](./Chapter%2005%20-%20Let's%20get%20Hooked!/Assignment.md)
 - 📝 [_Hand Written Notes of Live Class_](./Chapter%2005%20-%20Let's%20get%20Hooked!/Theory/Chapter%2005%20-%20Let's%20get%20Hooked!%20HandWritten%20Notes.pdf) `Credit - Ashraya KK`
-- [🚀 Live Project App Link 😍](https://foodfire-chapter05.netlify.app/)
+- [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter05.netlify.app/)
 
 ## 📚 [_Chapter 06 - Exploring the world_](./Chapter%2006%20-%20Exploring%20the%20world/)
 - 📖 [_Theory Assignment Solution_](./Chapter%2006%20-%20Exploring%20the%20world/Theory/Session%206%20Theory.md)
 - 👨‍💻 [_Coding Assignment_](./Chapter%2006%20-%20Exploring%20the%20world/Coding/)
 - 📘 [_Assignment_](./Chapter%2006%20-%20Exploring%20the%20world/Assignment.md)
-- [🚀 Live Project App Link 😍](https://foodfire-chapter06.netlify.app/)
+- [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter06.netlify.app/)
 > **Note: _Please enable `CORS` on your `browser` before accessing the `FoodFire application`. Download the [Allow CORS](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) chrome extension._**
 
 
