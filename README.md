@@ -34,13 +34,19 @@
 - 📝 [_Hand Written Notes of Live Class_](./Chapter%2005%20-%20Let's%20get%20Hooked!/Theory/Chapter%2005%20-%20Let's%20get%20Hooked!%20HandWritten%20Notes.pdf) `Credit - Ashraya KK`
 - [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter05.netlify.app/)
 
-## 📚 [_Chapter 06 - Exploring the world_](./Chapter%2006%20-%20Exploring%20the%20world/)
+## 📚 [_Chapter 06 - Exploring the world_](./Chapter%2006%20-%20Exploring%20the%20world/) (Date: 14-01-2023)
 - 📖 [_Theory Assignment Solution_](./Chapter%2006%20-%20Exploring%20the%20world/Theory/Session%206%20Theory.md)
 - 👨‍💻 [_Coding Assignment_](./Chapter%2006%20-%20Exploring%20the%20world/Coding/)
 - 📘 [_Assignment_](./Chapter%2006%20-%20Exploring%20the%20world/Assignment.md)
 - [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter06.netlify.app/)
 > **Note: _Please enable `CORS` on your `browser` before accessing the `FoodFire application`. Download the [Allow CORS](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) chrome extension._**
 
+## 📚 [_Chapter 07 - Finding the Path_](./Chapter%2007%20-%20Finding%20the%20Path/) (Date: 15-01-2023)
+- 📖 [_Theory Assignment Solution_]()
+- 👨‍💻 [_Coding Assignment_]()
+- 📘 [_Assignment_](./Chapter%2007%20-%20Finding%20the%20Path/Assignment.md)
+- [🚀 FoodFire Live Project App Link 😍]()
+> **Note: _Please enable `CORS` on your `browser` before accessing the `FoodFire application`. Download the [Allow CORS](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) chrome extension._**
 
 ## 🔥 Clone this Repository
 You need to write the following commands on the terminal screen(in vscode) so that you can run this project locally.
