@@ -3,45 +3,87 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* create global variable with :root selector */
+:root {
+  --header-bg-color: rgb(1, 163, 144);
+  --footer-bg-color: rgb(1, 163, 144);
+  --text-color: #000;
+  --light-green: #00ad1d;
+  --dark-green: #016034;
+  --orange: #d97919;
+  --light-red: rgb(236, 56, 56);
 }
 
 /* Header CSS */
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
-  width: auto;
-  background-color: rgb(1, 163, 144);
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  background-color: var(--header-bg-color);
   border-radius: 5px;
   box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
-  color: black;
+  color: var(--text-color);
   font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  overflow-y: hidden;
 }
 
-.logo {
-  padding-left: 10px;
+.header .logo {
+  padding: 10px 0 10px 15px;
   width: 100px;
 }
 
-.nav-items {
-  padding: 0 10px 0;
-  width: auto;
-}
-
+/* nav items CSS */
 .nav-items > ul {
   list-style-type: none;
   display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
 }
 
 .nav-items > ul > li {
-  padding: 40px 10px 0 0;
+  padding: 10px;
   font-size: large;
   cursor: pointer;
 }
 
+.nav-items > ul > li .logout-btn,
+.nav-items > ul > li .login-btn {
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  margin-right: 15px;
+}
+
+.nav-items > ul > li .logout-btn {
+  background-color: var(--orange);
+}
+
+.nav-items > ul > li .login-btn {
+  background-color: var(--light-red);
+}
+
+.nav-items > ul > li .logout-btn:hover,
+.nav-items > ul > li .login-btn:hover {
+  background-color: var(--dark-green);
+}
+
 /* Body CSS */
+
+/* search container CSS */
 .search-container {
-  margin: 20px auto;
+  margin: 100px auto 20px;
   text-align: center;
   max-width: 100%;
   position: relative;
@@ -77,6 +119,14 @@
   background-color: #016034;
 }
 
+/* error message css */
+.error-container {
+  text-align: center;
+  font-size: large;
+  margin: 20px 0;
+}
+
+/* Restaurant cards CSS */
 .restaurant-list {
   width: auto;
   display: flex;
@@ -102,30 +152,88 @@
   border-radius: 10px;
 }
 
+.card > h5 {
+  font-weight: lighter;
+}
+
 .card > span {
   display: flex;
-  justify-content:space-evenly;
-  margin-top: 10px;
+  justify-content: space-between;
+  margin-top: 8px;
   text-align: center;
 }
 
 .card > span > h4 {
-  font-size: medium;
-  margin: 5px;
+  font-weight: bolder;
+  font-size: 12px;
+  padding: 0 2px 0;
+  margin-top: 10px;
 }
 
 .card > span > h4:first-child {
   display: flex;
   align-items: center;
-  background-color: rgb(19, 176, 1);
+  background-color: var(--light-green);
   border-radius: 5px;
-  padding: 0 5px 0;
   color: white;
+  padding: 5px;
+  margin-top: 5px;
 }
 
 .card > span > h4:first-child .fa-star {
-  font-size: small;
-  padding: 0 10px 3px 0;
+  font-size: 10px;
+  padding: 0 5px 3px 0;
+}
+
+/*Shimmer CSS */
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.shimmer-card {
+  flex-basis: 250px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-color: #d3d5df;
+  box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+.shimmer-title {
+  width: 60%;
+  margin-top: 10px;
+}
+.shimmer-tags {
+  width: 80%;
+  margin-top: 4px;
+}
+.shimmer-details {
+  width: 100%;
+  margin-top: 18px;
+}
+.shimmer-container .shimmer-img {
+  height: 144px;
+  width: 230px;
+}
+
+/*Animation to Shimmer Component Cards */
+.stroke {
+  height: 15px;
+  background: #777;
+}
+.animate {
+  animation: shimmer 3s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+  background-size: 1000px 100%;
+}
+@keyframes shimmer {
+  from {
+    background-position: -1000px 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
 }
 
 /* footer CSS */
@@ -133,7 +241,7 @@
   margin: 10px;
   width: auto;
   text-align: center;
-  background-color: rgb(1, 163, 144);
+  background-color: var(--footer-bg-color);
   padding: 20px 10px 20px;
   border-radius: 5px;
   box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
@@ -154,4 +262,42 @@
 
 .footer > strong > span {
   color: rgb(203, 54, 0);
+}
+
+/* CSS for mobile devices */
+@media only screen and (max-width: 470px) {
+  .header {
+    height: 60px;
+  }
+  .header .logo {
+    width: 80px;
+  }
+  .nav-items > ul > li {
+    font-size: small;
+  }
+  .nav-items > ul > li .logout-btn,
+  .nav-items > ul > li .login-btn {
+    font-size: xx-small;
+  }
+  .search-container {
+    margin: 80px auto 0px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .header {
+    height: 50px;
+  }
+  .header .logo {
+    width: 70px;
+  }
+  .nav-items > ul > li {
+    font-size: x-small;
+  }
+  .nav-items > ul > li .logout-btn,
+  .nav-items > ul > li .login-btn {
+    padding: 5px;
+  }
+  .search-container {
+    margin: 70px auto 0px;
+  }
 }
