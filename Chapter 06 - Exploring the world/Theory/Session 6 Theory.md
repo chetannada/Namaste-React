@@ -37,7 +37,7 @@ useEffect(() => {
     setCurrentState("true");
 }, [currentState])
 ```
-If we do not pass empty dependency array then the useEffect hook only runs when the UI is rendered for the first time.
+If we do not pass empty dependency array then the useEffect runs everytime when the UI is rendered.
 
 ```
 useEffect(() => {})
@@ -57,7 +57,7 @@ Shimmer UI is a great way for loading the applications. Instead of showing a loa
 ## Q: What is the difference between `JS expression and JS statement`?
 A: A `JS expression` returns a value that we use in the application. for example: 
 ```
-1 + 2 // expresses 3
+1 + 2 // expresses 
 "foo".toUpperCase() // expresses 'FOO'
 console.log(2) // logs '2'
 isTrue ? true : false // returns us a true or false value based on isTrue value
