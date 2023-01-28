@@ -1,5 +1,6 @@
 # ❤️ Namaste React 🙏
 ### _[Namaste React Live Course](https://learn.namastedev.com/courses/namaste-react-live) from Zero to Hero 🚀 by [Akshay Saini](https://www.linkedin.com/in/akshaymarch7/)(Founder of NamasteDev). This repository for Assignment & Class Notes taken during this First Live course._
+- I made [🚀 FoodFire App 😍](https://foodfire-app.netlify.app/) which is the part of this course.
 
 ## 📚 [_Chapter 01 - Inception_](./Chapter%2001%20-%20Inception/) (Date: 24-12-2022)
 - 📖 [_Theory Assignment Solution_](./Chapter%2001%20-%20Inception/Theory/Session1-Theory.md)
@@ -42,10 +43,10 @@
 > **Note: _Please enable `CORS` on your `browser` before accessing the `FoodFire application`. Download the [Allow CORS](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) chrome extension._**
 
 ## 📚 [_Chapter 07 - Finding the Path_](./Chapter%2007%20-%20Finding%20the%20Path/) (Date: 15-01-2023)
-- 📖 [_Theory Assignment Solution_]()
-- 👨‍💻 [_Coding Assignment_]()
+- 📖 [_Theory Assignment Solution_](./Chapter%2007%20-%20Finding%20the%20Path/Theory/Session%207%20Theory.md)
+- 👨‍💻 [_Coding Assignment_](./Chapter%2007%20-%20Finding%20the%20Path/Coding/)
 - 📘 [_Assignment_](./Chapter%2007%20-%20Finding%20the%20Path/Assignment.md)
-- [🚀 FoodFire Live Project App Link 😍]()
+- [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter07.netlify.app/)
 > **Note: _Please enable `CORS` on your `browser` before accessing the `FoodFire application`. Download the [Allow CORS](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) chrome extension._**
 
 ## 🔥 Clone this Repository
