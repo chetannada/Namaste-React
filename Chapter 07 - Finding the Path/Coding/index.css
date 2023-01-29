@@ -538,9 +538,8 @@ a {
 .contact-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 100px auto 0px;
+  margin: 100px auto 30px;
   justify-content: space-evenly;
-  height: 72vh;
   overflow-y: hidden;
 }
 
@@ -567,7 +566,7 @@ a {
   box-sizing: border-box;
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
   border: 2px solid #aabcca;
-  width: 100vh;
+  width: 50vh;
 }
 
 .contact-container .contact-right form textarea {
@@ -577,7 +576,7 @@ a {
   box-sizing: border-box;
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
   border: 2px solid #aabcca;
-  width: 100vh;
+  width: 50vh;
 }
 
 .contact-container .contact-right form button {
@@ -659,10 +658,9 @@ a {
   }
   .about-container .about-right img {
     padding-top: 30px;
-    width: 300px;
+    width: 350px;
   }
   .contact-container {
-    height: 130vh;
     overflow-y: hidden;
   }
   .error-page img {
@@ -672,24 +670,10 @@ a {
 }
 
 @media only screen and (max-width: 650px) {
-  .about-container .about-left h1 {
-    font-size: 35px;
-  }
-  .about-container .about-left h4 {
-    font-size: 12px;
-  }
   .about-container .about-right img {
-    padding-top: 30px;
-    width: 250px;
+    width: 300px;
   }
 
-  .contact-container .contact-right form input {
-    width: 70vh;
-  }
-
-  .contact-container .contact-right form textarea {
-    width: 70vh;
-  }
 }
 
 @media only screen and (max-width: 470px) {
@@ -718,25 +702,7 @@ a {
   .about-container {
     height: auto;
   }
-  .contact-container {
-    margin-top: 50px;
-    height: 110vh;
-  }
-  .contact-container .contact-right h1{
-    margin-top: -10px;
-  }
-  .contact-container .contact-left img {
-    width: 80%;
-    padding-left: 20px;
-  }
 
-  .contact-container .contact-right form input {
-    width: 50vh;
-  }
-
-  .contact-container .contact-right form textarea {
-    width: 50vh;
-  }
 }
 @media only screen and (max-width: 350px) {
   .header {
