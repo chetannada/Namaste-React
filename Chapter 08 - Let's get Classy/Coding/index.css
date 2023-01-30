@@ -1,0 +1,806 @@
+/* Font family */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+/* Select all CSS Start*/
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "PT Sans", "Lato", Calibri, sans-serif;
+}
+
+/* all link CSS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Select all CSS End*/
+
+/* create global variable with :root selector Start*/
+:root {
+  --header-bg-color: rgb(1, 163, 144);
+  --footer-bg-color: rgb(1, 163, 144);
+  --body-bg-color: #e3e3e3;
+  --input-bg: #f2f2f2;
+  --input-bg-focus: #dbdbdb;
+  --text-color: #000;
+  --light-green: #00ad1d;
+  --dark-green: #016034;
+  --orange: #d97919;
+  --light-orange: #ffaf60;
+  --dark-orange: #c26100;
+  --x-dark-orange: rgb(157, 42, 1);
+  --light-red: rgb(236, 56, 56);
+  --white: #fff;
+  --light-black: rgb(23, 23, 23);
+  --light-blue: #0463ac;
+  --dark-blue: #070062;
+}
+/* create global variable with :root selector End*/
+
+/* Header CSS Start*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  background-color: var(--header-bg-color);
+  border-radius: 5px;
+  box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+  color: var(--text-color);
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  overflow-y: hidden;
+}
+
+.logo {
+  padding: 10px 0 10px 15px;
+  width: 100px;
+}
+
+/* nav items CSS start*/
+.nav-items > ul {
+  list-style-type: none;
+  display: flex;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+}
+
+.nav-items > ul > li:hover {
+  background-color: var(--orange);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-items > ul > li .logout-btn,
+.nav-items > ul > li .login-btn {
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  background-color: Transparent;
+  font-size: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* nav items CSS End*/
+
+/* Header CSS End*/
+
+/* Body CSS Start*/
+
+/* search container CSS Start*/
+.search-container {
+  margin: 100px auto 20px;
+  text-align: center;
+  max-width: 100%;
+  position: relative;
+}
+
+.search-container .search-input {
+  width: 40%;
+  box-sizing: border-box;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 14px 15px 14px 20px;
+  border: 1px solid #aabcca;
+  border-right: 0;
+  color: var(--text-color);
+  outline: none;
+}
+
+.search-container .search-btn {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: var(--dark-orange);
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  color: #ffffff;
+  padding: 15px 22px;
+  margin-left: -4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.search-container .search-btn:hover {
+  background-color: var(--dark-green);
+}
+
+/* Search error message css Start*/
+.error-container {
+  text-align: center;
+  font-size: large;
+  margin: 20px 0;
+}
+/* Search error message css End*/
+
+/* search container CSS End*/
+
+/* Restaurant cards CSS Start*/
+.restaurant-list {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.card {
+  width: 240px;
+  border-radius: 5px;
+  box-shadow: -1px 5px 10px 5px rgba(42, 42, 42, 0.2);
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card > h5 {
+  font-weight: lighter;
+}
+
+.card > span {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.card > span > h4 {
+  font-weight: bolder;
+  font-size: 12px;
+  padding: 0 2px 0;
+  margin-top: 10px;
+}
+
+.card > span > h4:first-child {
+  display: flex;
+  align-items: center;
+  background-color: var(--light-green);
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.card > span > h4:first-child .fa-star {
+  font-size: 10px;
+  padding: 2px 5px 3px 0;
+}
+
+/* Restaurant cards CSS End*/
+
+/* Restaurant Menu CSS Start */
+.restaurant-menu {
+  margin-top: 80px;
+  min-height: 80vh;
+  width: auto;
+}
+.restaurant-summary {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-black);
+  color: var(--white);
+}
+.restaurant-img {
+  width: 250px;
+  height: 170px;
+  border-radius: 5px;
+}
+.restaurant-summary-details {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 520px;
+  margin: 20px;
+}
+.restaurant-title {
+  font-size: 40px;
+  max-width: 540px;
+  font-weight: 300;
+}
+.restaurant-tags {
+  white-space: nowrap;
+  color: inherit;
+  opacity: 0.7;
+  font-size: 15px;
+  max-width: 540px;
+}
+.restaurant-details {
+  display: flex;
+  margin-top: 18px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  max-width: 340px;
+}
+.restaurant-rating {
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  gap: 5px;
+  background-color: var(--dark-green);
+  border-radius: 5px;
+}
+
+.restaurant-menu-content {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-items-container {
+  margin-top: 30px;
+  width: 850px;
+}
+.menu-title-wrap {
+  padding: 20px;
+}
+.menu-count {
+  margin-top: 14px;
+  line-height: 1.3;
+  color: rgba(40, 44, 63, 0.45);
+  letter-spacing: -0.3px;
+  font-size: 1rem;
+}
+
+.menu-items-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  max-height: 250px;
+  padding: 20px;
+  border-bottom: rgba(40, 44, 63, 0.45) 0.5px solid;
+}
+.menu-item-details {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  overflow: hidden;
+}
+
+.item-title {
+  width: 60%;
+}
+.item-desc {
+  margin-top: 14px;
+  line-height: 1.3;
+  color: rgba(40, 44, 63, 0.45);
+  width: 60%;
+  letter-spacing: -0.3px;
+  font-size: 1rem;
+}
+.item-cost {
+  margin-top: 4px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #3e4152;
+  width: 40%;
+}
+
+.menu-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 200px;
+  overflow: hidden;
+}
+.menu-item-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+}
+.add-btn {
+  background-color: var(--orange);
+  color: var(--text-color);
+  padding: 8px 25px;
+  cursor: pointer;
+  outline: none;
+  border-color: var(--dark-orange);
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Restaurant Menu End Start */
+
+/*Shimmer Card CSS Start*/
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.shimmer-card {
+  flex-basis: 250px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-color: #d3d5df;
+  box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+.shimmer-title {
+  width: 60%;
+  margin-top: 10px;
+}
+.shimmer-tags {
+  width: 80%;
+  margin-top: 4px;
+}
+.shimmer-details {
+  width: 100%;
+  margin-top: 18px;
+}
+.shimmer-container .shimmer-img {
+  height: 144px;
+  width: 230px;
+}
+/*Shimmer Card CSS End*/
+
+/* Shimmer Menu Card CSS Start */
+
+.restaurant-summary .shimmer-img {
+  height: 144px;
+  width: 230px;
+}
+
+.shimmer-menu-card {
+  display: flex;
+  justify-content: space-evenly;
+  width: 848px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-color: #d3d5df;
+  box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+.shimmer-item-details {
+  width: 438px;
+}
+
+.shimmer-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 118px;
+  height: 150px;
+}
+.shimmer-img-wrapper .shimmer-img {
+  width: 118px;
+  height: 96px;
+}
+
+.shimmer-img-wrapper .shimmer-btn {
+  width: 94px;
+  height: 34px;
+  margin-top: 10px;
+}
+
+.shimmer-w60 {
+  width: 60%;
+  margin-top: 10px;
+}
+
+.shimmer-w40 {
+  width: 40%;
+  margin-top: 10px;
+}
+
+.shimmer-w20 {
+  width: 20%;
+  margin-top: 4px;
+}
+/* Shimmer Menu Card CSS End */
+
+/*Animation to Shimmer Component Card and Menu card Start*/
+.stroke {
+  height: 15px;
+  background: #777;
+}
+.stroke-color {
+  background: #777;
+}
+.animate {
+  animation: shimmer 3s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+  background-size: 1000px 100%;
+}
+@keyframes shimmer {
+  from {
+    background-position: -1000px 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
+/*Animation to Shimmer Component Card and Menu card End*/
+
+/* Body CSS End*/
+
+/* Error page CSS Start */
+.error-page {
+  text-align: center;
+  background-color: var(--body-bg-color);
+  height: 100vh;
+  width: auto;
+}
+.error-page .error-data {
+  padding: 10px 0px;
+}
+
+.error-page .error-back-home {
+  padding: 20px;
+}
+.error-page .error-back-home a {
+  text-decoration: none;
+  background-color: var(--orange);
+  color: var(--light-black);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.error-page .error-back-home a:hover {
+  background-color: var(--dark-green);
+}
+
+/* Error page CSS End */
+
+/* About us page CSS Start */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 100px auto 0px;
+  justify-content: center;
+  align-items: center;
+  height: 72vh;
+}
+.about-container .about-left {
+  padding-left: 10px;
+}
+.about-container .about-left h1 {
+  font-size: 70px;
+}
+.about-container .about-left h1 span {
+  background-color: var(--orange);
+  padding: 0 10px;
+  border-radius: 15px;
+  color: var(--white);
+}
+.about-container .about-left h4 {
+  font-size: 25px;
+  padding-top: 10px;
+  font-style: italic;
+}
+.about-container .about-left h4 span {
+  color: var(--dark-orange);
+}
+.about-container .about-right {
+  padding-left: 20px;
+}
+.about-container .about-right img {
+  width: 500px;
+  padding-right: 70px;
+}
+
+/* About us page CSS End */
+
+/* Contact us page CSS Start */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto 30px;
+  justify-content: space-evenly;
+  overflow-y: hidden;
+}
+
+.contact-container .contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+}
+
+.contact-container .contact-right form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.contact-container .contact-right form input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  border: 2px solid #aabcca;
+  width: 50vh;
+}
+
+.contact-container .contact-right form textarea {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  border: 2px solid #aabcca;
+  width: 50vh;
+}
+
+.contact-container .contact-right form button {
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: var(--light-blue);
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-container .contact-right form button:hover {
+  background-color: var(--dark-green);
+}
+
+/* Contact us page CSS End */
+
+/* Login page CSS Start */
+.login-container {
+  width: 380px;
+  margin: 40px auto 0;
+}
+
+.login-form {
+  position: relative;
+  z-index: 1;
+  background: var(--light-orange);
+  border-radius: 10px;
+  max-width: 380px;
+  padding: 25px 40px;
+  text-align: center;
+}
+
+.login-form input {
+  outline: 0;
+  background: var(--input-bg);
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.login-form input:focus {
+  background: var(--input-bg-focus);
+}
+
+.login-form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #4b6cb7;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.login-form button:active {
+  background: #395591;
+}
+
+.login-form span {
+  font-size: 40px;
+  color: #4b6cb7;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.login-form p.error {
+  margin: 0 0 10px 10px;
+  text-align: left;
+  font-size: 13px;
+  color: red;
+}
+/* Login page CSS End */
+
+/* footer CSS Start*/
+.footer {
+  margin: 10px;
+  width: auto;
+  text-align: center;
+  background-color: var(--footer-bg-color);
+  padding: 20px 10px 20px;
+  border-radius: 5px;
+  box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+}
+
+.footer > i {
+  padding: 0 5px 0;
+  font-size: smaller;
+}
+
+.footer > a {
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+
+.footer > a:hover {
+  color: var(--x-dark-orange);
+}
+
+.fa-heart {
+  color: darkred;
+}
+
+.footer > strong {
+  padding-left: 5px;
+}
+
+.footer > strong > span {
+  color: var(--x-dark-orange);
+}
+
+/* footer CSS End*/
+
+/* CSS for mobile devices */
+
+@media only screen and (max-width: 1100px) {
+  .about-container .about-left h1 {
+    font-size: 50px;
+  }
+  .about-container .about-left h4 {
+    font-size: 20px;
+  }
+  .about-container .about-right img {
+    padding-top: 30px;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .about-container .about-left h1 {
+    font-size: 40px;
+  }
+  .about-container .about-left h4 {
+    font-size: 15px;
+  }
+  .about-container .about-right img {
+    padding-top: 30px;
+    width: 350px;
+  }
+  .contact-container {
+    overflow-y: hidden;
+  }
+  .error-page img {
+    height: auto;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .about-container .about-right img {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .header {
+    height: 60px;
+  }
+  .header .logo {
+    width: 80px;
+  }
+  .nav-items > ul > li {
+    font-size: small;
+  }
+  .nav-items > ul > li .logout-btn,
+  .nav-items > ul > li .login-btn {
+    font-size: xx-small;
+  }
+  .search-container {
+    margin: 80px auto 0px;
+  }
+  .restaurant-menu {
+    margin-top: 60px;
+  }
+  .restaurant-summary {
+    height: 230px;
+  }
+  .about-container {
+    height: auto;
+  }
+  .login-container {
+    width: 310px;
+  }
+  .login-form {
+    max-width: 310px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .header {
+    height: 50px;
+  }
+  .header .logo {
+    width: 70px;
+  }
+  .nav-items > ul > li {
+    font-size: x-small;
+  }
+  .nav-items > ul > li .logout-btn,
+  .nav-items > ul > li .login-btn {
+    padding: 5px;
+  }
+  .search-container {
+    margin: 70px auto 0px;
+  }
+  .restaurant-menu {
+    margin-top: 50px;
+  }
+  .login-container {
+    width: 280px;
+  }
+  .login-form {
+    max-width: 280px;
+  }
+}
