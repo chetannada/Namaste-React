@@ -23,9 +23,11 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.7.0"
+    "react-router-dom": "^6.7.0",
+    "yup": "^0.32.11"
   },
   "browserslist": [
     "last 10 versions"

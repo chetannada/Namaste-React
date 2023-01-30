@@ -23,10 +23,13 @@ a {
   --header-bg-color: rgb(1, 163, 144);
   --footer-bg-color: rgb(1, 163, 144);
   --body-bg-color: #e3e3e3;
+  --input-bg: #f2f2f2;
+  --input-bg-focus: #dbdbdb;
   --text-color: #000;
   --light-green: #00ad1d;
   --dark-green: #016034;
   --orange: #d97919;
+  --light-orange: #ffaf60;
   --dark-orange: #c26100;
   --x-dark-orange: rgb(157, 42, 1);
   --light-red: rgb(236, 56, 56);
@@ -596,6 +599,72 @@ a {
 
 /* Contact us page CSS End */
 
+/* Login page CSS Start */
+.login-container {
+  width: 380px;
+  margin: 40px auto 0;
+}
+
+.login-form {
+  position: relative;
+  z-index: 1;
+  background: var(--light-orange);
+  border-radius: 10px;
+  max-width: 380px;
+  padding: 25px 40px;
+  text-align: center;
+}
+
+.login-form input {
+  outline: 0;
+  background: var(--input-bg);
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.login-form input:focus {
+  background: var(--input-bg-focus);
+}
+
+.login-form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #4b6cb7;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.login-form button:active {
+  background: #395591;
+}
+
+.login-form span {
+  font-size: 40px;
+  color: #4b6cb7;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.login-form p.error {
+  margin: 0 0 10px 10px;
+  text-align: left;
+  font-size: 13px;
+  color: red;
+}
+/* Login page CSS End */
+
 /* footer CSS Start*/
 .footer {
   margin: 10px;
@@ -673,7 +742,6 @@ a {
   .about-container .about-right img {
     width: 300px;
   }
-
 }
 
 @media only screen and (max-width: 470px) {
@@ -702,7 +770,12 @@ a {
   .about-container {
     height: auto;
   }
-
+  .login-container {
+    width: 310px;
+  }
+  .login-form {
+    max-width: 310px;
+  }
 }
 @media only screen and (max-width: 350px) {
   .header {
@@ -723,5 +796,11 @@ a {
   }
   .restaurant-menu {
     margin-top: 50px;
+  }
+  .login-container {
+    width: 280px;
+  }
+  .login-form {
+    max-width: 280px;
   }
 }
