@@ -29,11 +29,11 @@ const Body = () => {
   async function getRestaurants() {
     // handle the error using try... catch
     try {
-      const data = await fetch(swiggy_api_URL);
-      const json = await data.json();
-      // updated state variable restaurants with Swiggy API data
-      setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-      setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+        const response = await fetch(swiggy_api_URL);
+        const json = await response.json();
+        // updated state variable restaurants with Swiggy API data
+        setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+        setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
     } catch (error) {
       console.log(error);
     }

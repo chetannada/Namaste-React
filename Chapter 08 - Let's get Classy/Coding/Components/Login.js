@@ -21,7 +21,7 @@ const Login = () => {
     alert(values);
     // setTimeout for navigate from login page to home page
     setTimeout(() => {
-      navigate("/");
+      navigate(-1);
     }, 0);
   }
   return (
