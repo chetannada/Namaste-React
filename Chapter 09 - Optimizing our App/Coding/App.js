@@ -1,5 +1,5 @@
 // ## Namaste React Course by Akshay Saini
-// Chapter 08 - Let's get Classy
+// Chapter 09 - Optimizing our App
 
 import React from "react";
 import ReactDOM from "react-dom/client";

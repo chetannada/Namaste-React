@@ -284,10 +284,9 @@ a {
   padding: 20px;
 }
 .menu-count {
-  margin-top: 14px;
+  margin-top: 10px;
   line-height: 1.3;
   color: rgba(40, 44, 63, 0.45);
-  letter-spacing: -0.3px;
   font-size: 1rem;
 }
 
@@ -300,7 +299,7 @@ a {
 .menu-item {
   display: flex;
   justify-content: space-between;
-  max-height: 250px;
+  /* max-height: 250px; */
   padding: 20px;
   border-bottom: rgba(40, 44, 63, 0.45) 0.5px solid;
 }
@@ -309,16 +308,17 @@ a {
   flex-direction: column;
   align-self: flex-start;
   overflow: hidden;
+  height: auto;
 }
 
 .item-title {
-  width: 60%;
+  width: auto;
 }
 .item-desc {
   margin-top: 14px;
   line-height: 1.3;
   color: rgba(40, 44, 63, 0.45);
-  width: 60%;
+  width: inherit;
   letter-spacing: -0.3px;
   font-size: 1rem;
 }
@@ -327,7 +327,7 @@ a {
   font-size: 1rem;
   font-weight: 400;
   color: #3e4152;
-  width: 40%;
+  width: inherit;
 }
 
 .menu-img-wrapper {
@@ -335,8 +335,9 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  width: 200px;
+  width: 300px;
   overflow: hidden;
+  height: auto;
 }
 .menu-item-img {
   height: 100px;
@@ -940,6 +941,9 @@ a {
   .repo-container {
     width: 80%;
   }
+  .restaurant-summary{
+    padding-left: 20px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -960,7 +964,7 @@ a {
   }
   .nav-items > ul > li .logout-btn,
   .nav-items > ul > li .login-btn {
-    font-size: xx-small;
+    font-size: small;
   }
   .search-container {
     margin: 80px auto 0px;
@@ -970,6 +974,23 @@ a {
   }
   .restaurant-summary {
     height: 230px;
+    overflow-y: hidden;
+  }
+  .restaurant-details{
+    flex-wrap: wrap;
+    justify-content:flex-start;
+  }
+
+  .restaurant-rating-slash{
+    padding: 0px 20px;
+  }
+  .menu-item{
+    flex-wrap: wrap;
+  }
+  .menu-img-wrapper{
+    padding-top: 20px;
+    align-items: flex-start;
+    justify-content: center;
   }
   .about-container {
     height: auto;
@@ -993,7 +1014,8 @@ a {
   }
   .nav-items > ul > li .logout-btn,
   .nav-items > ul > li .login-btn {
-    padding: 5px;
+    /* padding: 5px; */
+    font-size: x-small;
   }
   .search-container {
     margin: 70px auto 0px;

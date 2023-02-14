@@ -91,7 +91,7 @@ const Body = () => {
               <Link
                 to={"/restaurant/" + restaurant.data.id}
                 key={restaurant.data.id}
-              >
+              > {/* if we click on any restaurant card it will redirect to that restaurant menu page */}
                 <RestaurantCard {...restaurant.data} />
               </Link>
             );

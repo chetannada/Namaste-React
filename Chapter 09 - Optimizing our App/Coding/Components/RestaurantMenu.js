@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"; // import useParams for read id
+import { useParams } from "react-router-dom"; // import useParams for read `resId`
 import {
   swiggy_menu_api_URL,
   IMG_CDN_URL,
@@ -36,7 +36,7 @@ const RestaurantMenu = () => {
         />
         <div className="restaurant-summary-details">
           <h2 className="restaurant-title">{restaurant?.name}</h2>
-          <p className="restaurant-tags">{restaurant?.cuisines.join(", ")}</p>
+          <p className="restaurant-tags">{restaurant?.cuisines?.join(", ")}</p>
           <div className="restaurant-details">
             <div className="restaurant-rating" style={
             (restaurant?.avgRating) < 4
@@ -48,9 +48,9 @@ const RestaurantMenu = () => {
             <i className="fa-solid fa-star"></i>
               <span>{restaurant?.avgRating}</span>
             </div>
-            <div>|</div>
-            <div>{restaurant?.sla.slaString}</div>
-            <div>|</div>
+            <div className="restaurant-rating-slash">|</div>
+            <div>{restaurant?.sla?.slaString}</div>
+            <div className="restaurant-rating-slash">|</div>
             <div>{restaurant?.costForTwoMsg}</div>
           </div>
         </div>
