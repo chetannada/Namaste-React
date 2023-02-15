@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", "Lato", Calibri, sans-serif;
+  font-family: "PT Sans", Calibri, sans-serif;
   overflow-x: hidden;
 }
 
@@ -20,12 +20,14 @@ a {
 
 /* create global variable with :root selector Start*/
 :root {
-  --header-bg-color: rgb(1, 163, 144);
-  --footer-bg-color: rgb(1, 163, 144);
+  --header-bg-color: rgb(255, 255, 255);
+  --footer-bg-color: rgb(255, 255, 255);
   --body-bg-color: #e3e3e3;
   --input-bg: #f2f2f2;
   --input-bg-focus: #dbdbdb;
   --text-color: #000;
+  --light-text-color: #545454;
+  --light-text-title: #353535;
   --light-green: #00ad1d;
   --dark-green: #016034;
   --orange: #d97919;
@@ -34,6 +36,7 @@ a {
   --x-dark-orange: rgb(157, 42, 1);
   --light-red: rgb(236, 56, 56);
   --white: #fff;
+  --light-white-text: #eaeaea;
   --light-black: rgb(23, 23, 23);
   --light-blue: #0463ac;
   --dark-blue: #070062;
@@ -50,8 +53,8 @@ a {
   height: 80px;
   background-color: var(--header-bg-color);
   border-radius: 5px;
-  box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
-  color: var(--text-color);
+  box-shadow: -2px 7px 5px -6px rgba(0,0,0,0.61);
+  color: var(--light-text-color);
   font-weight: bold;
   position: fixed;
   top: 0;
@@ -82,17 +85,23 @@ a {
   background-color: var(--orange);
   border-radius: 5px;
   cursor: pointer;
+  color: var(--white);
 }
 
 .nav-items > ul > li .logout-btn,
 .nav-items > ul > li .login-btn {
-  color: var(--text-color);
+  color: var(--light-text-color);
   border: none;
   border-radius: 5px;
   background-color: Transparent;
   font-size: inherit;
   font-weight: 700;
   cursor: pointer;
+}
+
+.nav-items > ul > li .logout-btn:hover,
+.nav-items > ul > li .login-btn:hover{
+  color: var(--white);
 }
 
 /* nav items CSS End*/
@@ -162,7 +171,7 @@ a {
 .card {
   width: 240px;
   border-radius: 5px;
-  box-shadow: -1px 5px 10px 5px rgba(42, 42, 42, 0.2);
+  box-shadow: -1px 5px 10px 5px rgba(112, 112, 112, 0.2);
   padding: 10px;
   margin: 20px;
   cursor: pointer;
@@ -172,6 +181,9 @@ a {
   transform: scale(1.03);
 }
 
+.card h3{
+  color: var(--light-text-title)
+}
 .card > img {
   width: 100%;
   border-radius: 10px;
@@ -190,9 +202,10 @@ a {
 
 .card > span > h4 {
   font-weight: bolder;
-  font-size: 12px;
+  font-size: 14px;
   padding: 0 2px 0;
   margin-top: 10px;
+  color: var(--light-text-title)
 }
 
 .card > span > h4:first-child {
@@ -224,7 +237,8 @@ a {
   justify-content: center;
   align-items: center;
   background-color: var(--light-black);
-  color: var(--white);
+  color: var(--light-white-text);
+  overflow-y: hidden;
 }
 .restaurant-img {
   width: 250px;
@@ -283,6 +297,9 @@ a {
 .menu-title-wrap {
   padding: 20px;
 }
+.menu-title-wrap .menu-title{
+  color: var(--light-text-color);
+}
 .menu-count {
   margin-top: 10px;
   line-height: 1.3;
@@ -299,7 +316,6 @@ a {
 .menu-item {
   display: flex;
   justify-content: space-between;
-  /* max-height: 250px; */
   padding: 20px;
   border-bottom: rgba(40, 44, 63, 0.45) 0.5px solid;
 }
@@ -313,6 +329,7 @@ a {
 
 .item-title {
   width: auto;
+  color: var(--light-text-color);
 }
 .item-desc {
   margin-top: 14px;
@@ -506,7 +523,7 @@ a {
 
 .about-profile-button {
   background-color: var(--orange);
-  color: var(--light-black);
+  color: var(--light-white-text);
   padding: 10px 15px;
   border-radius: 5px;
   border: none;
@@ -534,17 +551,19 @@ a {
 }
 .about-container .about-left h1 {
   font-size: 70px;
+  color: var(--light-text-color);
 }
 .about-container .about-left h1 span {
   background-color: var(--orange);
   padding: 0 10px;
   border-radius: 15px;
-  color: var(--white);
+  color: var(--light-white-text);
 }
 .about-container .about-left h4 {
   font-size: 25px;
   padding-top: 10px;
   font-style: italic;
+  color: var(--light-text-color);
 }
 .about-container .about-left h4 span {
   color: var(--dark-orange);
@@ -748,6 +767,9 @@ a {
   font-size: x-large;
 }
 
+.contact-container .contact-right h1{
+  color: var(--light-text-title);
+}
 .contact-container .contact-right form {
   display: flex;
   flex-direction: column;
@@ -867,7 +889,7 @@ a {
   background-color: var(--footer-bg-color);
   padding: 20px 10px 20px;
   border-radius: 5px;
-  box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.71);
 }
 
 .footer > i {

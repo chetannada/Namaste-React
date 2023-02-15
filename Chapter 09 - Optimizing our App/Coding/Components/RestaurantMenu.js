@@ -5,13 +5,24 @@ import {
   IMG_CDN_URL,
   ITEM_IMG_CDN_URL,
 } from "../constants";
+import { restaurantMenuCardsData } from "../constantsData";
 import {MenuShimmer} from "./Shimmer";
 
 const RestaurantMenu = () => {
   const { resId } = useParams(); // call useParams and get value of restaurant id using object destructuring
   const [restaurant, setRestaurant] = useState(null); // call useState to store the api data in res
   useEffect(() => {
-    getRestaurantInfo(); // call getRestaurantInfo function so it fetch api data and set data in res state variable
+    // if CORS is enable in browser then setTimeout will run and fetch the json data from API and render the UI
+    setTimeout(() => {
+      getRestaurantInfo(); // call getRestaurantInfo function so it fetch api data and set data in res state variable
+    },0);
+
+    // if CORS is not enable in browser then show the local data only and show the CORS error in console
+    let index = restaurantMenuCardsData.findIndex(data => data?.id === String(resId)); // used array.findIndex and filter the data according to resId and return index of that data
+    setRestaurant(restaurantMenuCardsData[index]);
+
+    // Scroll to the top of the page automatically
+    window.scrollTo(0, 0);
   }, []);
 
   async function getRestaurantInfo() {
