@@ -23,16 +23,7 @@ const Body = () => {
 
   // use useEffect for one time call getRestaurants using empty dependency array
   useEffect(() => {
-    // if CORS is enable in browser then setTimeout will run and fetch the json data from API and render the UI
-    setTimeout(() => {
-      getRestaurants();
-    }, 210);
-
-    setTimeout(() => {
-      // if CORS is not enable in browser then show the local data only and show the CORS error in console
-    setAllRestaurants(restaurantListCardsData);
-    setFilteredRestaurants(restaurantListCardsData);
-    }, 200);
+    getRestaurants();
   }, []);
 
   // async function getRestaurant to fetch Swiggy API data
