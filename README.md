@@ -41,7 +41,6 @@
 - 📘 [_Assignment_](./Chapter%2006%20-%20Exploring%20the%20world/Assignment.md)
 - 📝 [_Hand Written Notes of Live Class_](https://bit.ly/Namaste-React-Chapter06) `Credit - Ashraya KK`
 - [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter06.netlify.app/)
-> **Note: _Please enable `CORS` on your `browser` before accessing the `FoodFire application`. Download the [Allow CORS](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) chrome extension._**
 
 ## 📚 [_Chapter 07 - Finding the Path_](./Chapter%2007%20-%20Finding%20the%20Path/) (Date: 15-01-2023)
 - 📖 [_Theory Assignment Solution_](./Chapter%2007%20-%20Finding%20the%20Path/Theory/Session%207%20Theory.md)
@@ -49,14 +48,12 @@
 - 📘 [_Assignment_](./Chapter%2007%20-%20Finding%20the%20Path/Assignment.md)
 - 📝 [_Hand Written Notes of Live Class_](https://bit.ly/Namaste-React-Chapter07) `Credit - Ashraya KK`
 - [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter07.netlify.app/)
-> **Note: _Please enable `CORS` on your `browser` before accessing the `FoodFire application`. Download the [Allow CORS](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) chrome extension._**
 
 ## 📚 [_Chapter 08 - Let's get Classy_](./Chapter%2008%20-%20Let's%20get%20Classy/Coding/) (Date: 21-01-2023)
 - 📖 [_Theory Assignment Solution_](./Chapter%2008%20-%20Let's%20get%20Classy/Theory/Session%208%20Theory.md)
 - 👨‍💻 [_Coding Assignment Solution_](./Chapter%2008%20-%20Let's%20get%20Classy/Coding/)
 - 📘 [_Assignment_](./Chapter%2008%20-%20Let's%20get%20Classy/Assignment.md)
 - [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter08.netlify.app/)
-> **Note: _Please enable `CORS` on your `browser` before accessing the `FoodFire application`. Download the [Allow CORS](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) chrome extension._**
 
 ## 🔥 Clone this Repository
 You need to write the following commands on the terminal screen(in vscode) so that you can run this project locally.
