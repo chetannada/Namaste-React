@@ -5,11 +5,11 @@
 ## Theory Assignment:
 - What is `Microservice`?
 - What is `Monolith architecture`?
-- What is the difference between `Monolith and Microservice?
+- What is the `difference` between `Monolith and Microservice?
 - Why do we need a `useEffect Hook`?
 - What is `Optional Chaining`?
 - What is `Shimmer UI`?
-- What is the difference between `JS expression and JS statement`?
+- What is the `difference` between `JS expression and JS statement`?
 - What is `Conditional Rendering`? explain with a code example.
 - What is `CORS`?
 - What is `async and await`?
@@ -21,10 +21,10 @@
 - Play with the `developer console` by putting a `debugger` in render and `useEffect`.
 - Call an `actual API call`.
 - `Handle Error` in your `API call`.
-- Build `Shimmer UI` when data is not loaded.
-- `Render your UI` with actual API data.
+- Build `Shimmer UI` when `data is not loaded`.
+- `Render your UI` with `actual API data`.
 - Make `Search functionality` work.
-- Make a `Login Logout` button that toggles with a state.
+- Make a `Login Logout` button that `toggles with a state`.
 
 
 ## References:

@@ -3,8 +3,8 @@
 
 
 ## Theory Assignment:
-- What is the difference between `Named export`, `Default export`, and `* as export`?
-- What is the importance of `config.js` file?
+- What is the `difference` between `Named export`, `Default export`, and `* as export`?
+- What is the `importance` of `config.js` file?
 - What are `React Hooks`?
 - Why do we need `useState Hook`?
 
@@ -18,6 +18,7 @@
 - Create a `Search Box` in your App.
 - Use `useState` to create a variable and `bind` it to the input box.
 - Try to make your `search bar work`.
+
 
 ## References:
 - [Akshay Saini Code Link](https://bitbucket.org/namastedev/namaste-react-live/src/master/)
