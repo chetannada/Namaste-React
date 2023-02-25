@@ -8,7 +8,7 @@
 - 📖 [_Theory Assignment Solution_](./Chapter%2001%20-%20Inception/Theory/Session1-Theory.md)
 - 👨‍💻 [_Coding Assignment Solution_](./Chapter%2001%20-%20Inception/Coding/)
 - 📟📝 _Digital and Handwritten Notes_
-    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter01) `Credit - Arpan Kesh`
+    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter01) `Credit` - [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/)
     * 📝[_Hand Written Notes of Live Class_](https://bit.ly/Namaste-React-Chapter01) `Credit - Ashraya KK`
 
 
@@ -17,7 +17,7 @@
 - 📖 [_Theory Assignment Solution_](./Chapter%2002%20-%20Igniting%20our%20App/Theory/Session%202%20Theory.md)
 - 👨‍💻 [_Coding Assignment Solution_](./Chapter%2002%20-%20Igniting%20our%20App/Coding/)
 - 📟📝 _Digital and Handwritten Notes_
-    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter02) `Credit - Arpan Kesh`
+    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter02) `Credit` - [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/)
     * 📝 [_Hand Written Notes of Live Class_](https://bit.ly/Namaste-React-Chapter02) `Credit - Ashraya KK`
 
 
@@ -26,7 +26,7 @@
 - 📖 [_Theory Assignment Solution_](./Chapter%2003%20-%20Laying%20the%20Foundation/Theory/Session%203%20Theory.md)
 - 👨‍💻 [_Coding Assignment Solution_](./Chapter%2003%20-%20Laying%20the%20Foundation/Coding/)
 - 📟📝 _Digital and Handwritten Notes_
-    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter03) `Credit - Arpan Kesh`
+    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter03) `Credit` - [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/)
     * 📝 [_Hand Written Notes of Live Class_](https://bit.ly/Namaste-React-Chapter03) `Credit - Ashraya KK`
 - [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter03.netlify.app/)
 
@@ -36,7 +36,7 @@
 - 📖 [_Theory Assignment Solution_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Theory/Session%204%20Theory.md)
 - 👨‍💻 [_Coding Assignment Solution_](./Chapter%2004%20-%20Talk%20is%20Cheap%2C%20show%20me%20the%20code/Coding/)
 - 📟📝 _Digital and Handwritten Notes_
-    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter04) `Credit - Arpan Kesh`
+    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter04) `Credit` - [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/)
     * 📝 [_Hand Written Notes of Live Class_](https://bit.ly/Namaste-React-Chapter04) `Credit - Ashraya KK`
 - [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter04.netlify.app/)
 
@@ -46,7 +46,7 @@
 - 📖 [_Theory Assignment Solution_](./Chapter%2005%20-%20Let's%20get%20Hooked!/Theory/Session%205%20Theory.md)
 - 👨‍💻 [_Coding Assignment Solution_](./Chapter%2005%20-%20Let's%20get%20Hooked!/Coding/)
 - 📟📝 _Digital and Handwritten Notes_
-    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter05) `Credit - Arpan Kesh`
+    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter05) `Credit` - [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/)
     * 📝 [_Hand Written Notes of Live Class_](https://bit.ly/Namaste-React-Chapter05) `Credit - Ashraya KK`
 - [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter05.netlify.app/)
 
@@ -56,7 +56,7 @@
 - 📖 [_Theory Assignment Solution_](./Chapter%2006%20-%20Exploring%20the%20world/Theory/Session%206%20Theory.md)
 - 👨‍💻 [_Coding Assignment Solution_](./Chapter%2006%20-%20Exploring%20the%20world/Coding/)
 - 📟📝 _Digital and Handwritten Notes_
-    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter06) `Credit - Arpan Kesh`
+    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter06) `Credit` - [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/)
     * 📝 [_Hand Written Notes of Live Class_](https://bit.ly/Namaste-React-Chapter06) `Credit - Ashraya KK`
 - [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter06.netlify.app/)
 
@@ -66,7 +66,7 @@
 - 📖 [_Theory Assignment Solution_](./Chapter%2007%20-%20Finding%20the%20Path/Theory/Session%207%20Theory.md)
 - 👨‍💻 [_Coding Assignment Solution_](./Chapter%2007%20-%20Finding%20the%20Path/Coding/)
 - 📟📝 _Digital and Handwritten Notes_
-    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter07) `Credit - Arpan Kesh`
+    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter07) `Credit` - [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/)
     * 📝 [_Hand Written Notes of Live Class_](https://bit.ly/Namaste-React-Chapter07) `Credit - Ashraya KK`
 - [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter07.netlify.app/)
 
@@ -76,7 +76,7 @@
 - 📖 [_Theory Assignment Solution_](./Chapter%2008%20-%20Let's%20get%20Classy/Theory/Session%208%20Theory.md)
 - 👨‍💻 [_Coding Assignment Solution_](./Chapter%2008%20-%20Let's%20get%20Classy/Coding/)
 - 📟📝 _Digital and Handwritten Notes_
-    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter08) `Credit - Arpan Kesh`
+    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter08) `Credit` - [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/)
     * 📝 [_Hand Written Notes of Live Class_](https://bit.ly/Namaste-React-Chapter08) `Credit - Ashraya KK`
 - [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter08.netlify.app/)
 
@@ -86,7 +86,7 @@
 - 📖 _Theory Assignment Solution_
 - 👨‍💻 [_Coding Assignment Solution_](./Chapter%2009%20-%20Optimizing%20our%20App/Coding/)
 - 📟📝 _Digital and Handwritten Notes_
-    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter09) `Credit - Arpan Kesh`
+    * 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter09) `Credit` - [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/)
     * 📝 [_Hand Written Notes of Live Class_](https://bit.ly/Namaste-React-Chapter09) `Credit - Ashraya KK`
 - [🚀 FoodFire Live Project App Link 😍](https://foodfire-chapter09.netlify.app/)
 
