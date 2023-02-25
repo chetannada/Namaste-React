@@ -1,6 +1,7 @@
 ## Namaste React Course by Akshay Saini
 # Chapter 06 - Exploring the world
 
+
 ## Coding Assignment:
 - Play with the `useEffect Hook` to see when it is called? (before or after render)
 - Play with the `dependency array` in useEffect Hook.
@@ -12,6 +13,5 @@
 - Make `Search functionality` work.
 - Make a `Login Logout` button that toggles with a state.
 
-> **Note: _Please enable `CORS` on your `browser` before accessing the `FoodFire application`. Download the [Allow CORS](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) chrome extension._**
 
 ## [Created a FoodFire App from scratch using React.js and Parcel.js 🚀 Live Project App Link 😍](https://foodfire-chapter06.netlify.app/)

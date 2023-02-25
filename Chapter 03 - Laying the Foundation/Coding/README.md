@@ -1,7 +1,8 @@
 ## Namaste React Course by Akshay Saini
 # Chapter 03 - Laying the Foundation Coding Assignment
 
-## Q: Create a Nested header Element using React.createElement(h1,h2,h3 inside a div with class "title")
+
+## Q: Create a `Nested header Element` using `React.createElement`(h1,h2,h3 inside a div with class "title")
 ```
 const header = React.createElement(
   "div",
@@ -36,7 +37,7 @@ const header = React.createElement(
 ```
 
 
-## Q: Create the same element using JSX
+## Q: Create the `same element using JSX`
 ```
 const header = (
   <div className="Title" key="title">
@@ -48,7 +49,7 @@ const header = (
 ```
 
 
-## Q: Create a functional component of the same with JSX
+## Q: Create a `functional component of the same with JSX`
 ```
 const Header = () => {
   return (
@@ -62,7 +63,7 @@ const Header = () => {
 ```
 
 
-## Q: Pass attribute into the tag in JSX
+## Q: Pass `attribute into the tag in JSX`
 ```
 const Header = () => {
   return (
@@ -76,7 +77,7 @@ const Header = () => {
 ```
 
 
-## Q: Composition of Component (Add a component inside another)
+## Q: `Composition of Component` (Add a component inside another)
 ```
 const AnotherComponent = function(){
     return <h2> This is Another Component</h2>
@@ -127,7 +128,7 @@ const Header = () => {
 ```
 
 
-## Q: Create a Header Component from scratch using Functional Component with JSX
+## Q: Create a `Header Component from scratch` using `Functional Component with JSX`
 - Add a Logo on Left
 - Add a search bar in middle
 - Add User icon on right
@@ -153,4 +154,5 @@ const Header = () => {
     )
 }
 ```
+
 ## [Create a Header Component from scratch using Functional Component with JSX 🚀 Live Project App Link 😍](https://foodfire-chapter03.netlify.app/)
