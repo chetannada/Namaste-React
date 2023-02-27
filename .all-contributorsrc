@@ -1,6 +1,6 @@
 {
   "projectName": "Namaste-React",
-  "projectOwner": "Chetan Nada",
+  "projectOwner": "chetannada",
   "files": [
     "README.md"
   ],
@@ -57,7 +57,8 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/81150631?v=4",
       "profile": "https://github.com/danishagarwal",
       "contributions": [
-        "doc"
+        "doc",
+        "code"
       ]
     }
   ],
