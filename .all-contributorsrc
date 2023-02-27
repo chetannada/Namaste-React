@@ -1,0 +1,69 @@
+{
+  "projectName": "Namaste-React",
+  "projectOwner": "Chetan Nada",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "contributors": [
+    {
+      "login": "chetannada",
+      "name": "Chetan Nada",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83969719?v=4",
+      "profile": "https://github.com/chetannada",
+      "contributions": [
+        "code",
+        "data",
+        "design",
+        "research",
+        "doc",
+        "review"
+      ]
+    },
+    {
+      "login": "akshaynarisetti",
+      "name": "Akshay Narisetti",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58532023?v=4",
+      "profile": "https://github.com/akshaynarisetti",
+      "contributions": [
+        "code",
+        "review",
+        "tool"
+      ]
+    },
+    {
+      "login": "chinmay021",
+      "name": "Chinmay Kumar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37647219?v=4",
+      "profile": "https://github.com/chinmay021",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "arpankesh",
+      "name": "Arpan Kesh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62733152?v=4",
+      "profile": "https://github.com/arpankesh",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "danishagarwal",
+      "name": "Danish Agarwal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81150631?v=4",
+      "profile": "https://github.com/danishagarwal",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "repoType": "github",
+  "contributorsPerLine": 7,
+  "repoHost": "https://github.com",
+  "commitConvention": "angular",
+  "skipCi": true
+}
