@@ -17,7 +17,7 @@ class Profile extends Component {
   }
   
   async componentDidMount() {
-    const response = await fetch(Github_API_User + Github_UserName, options); // access the props `name` from parent class `ProfileClass`
+    const response = await fetch(Github_API_User + Github_UserName, options); // Fetch the data from github User API
     const json = await response.json();
     this.setState({
       userInfo: json,
