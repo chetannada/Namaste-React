@@ -4,12 +4,15 @@ import {
   swiggy_menu_api_URL,
   IMG_CDN_URL,
   ITEM_IMG_CDN_URL,
+  MENU_ITEM_TYPE_KEY,
+  RESTAURANT_TYPE_KEY,
 } from "../constants";
 import {MenuShimmer} from "./Shimmer";
 
 const RestaurantMenu = () => {
   const { resId } = useParams(); // call useParams and get value of restaurant id using object destructuring
   const [restaurant, setRestaurant] = useState(null); // call useState to store the api data in res
+  const [menuItems, setMenuItems] = useState([]);
   useEffect(() => {
     getRestaurantInfo(); // call getRestaurantInfo function so it fetch api data and set data in restaurant state variable
   }, []);
@@ -18,8 +21,22 @@ const RestaurantMenu = () => {
     try {
       const response = await fetch(swiggy_menu_api_URL + resId);
       const json = await response.json();
-      setRestaurant(json?.data);
+
+      // Set restaurant data
+      const restaurantData = json?.data?.cards?.map(x => x.card)?.
+                             find(x => x && x.card['@type'] === RESTAURANT_TYPE_KEY)?.card?.info || null;
+      setRestaurant(restaurantData);
+
+      // Set menu item data
+      const menuItemsData = json?.data?.cards.find(x=> x.groupedCard)?.
+                            groupedCard?.cardGroupMap?.REGULAR?.
+                            cards?.map(x => x.card?.card)?.
+                            filter(x=> x['@type'] == MENU_ITEM_TYPE_KEY)?.
+                            map(x=> x.itemCards).flat().map(x=> x.card?.info) || [];
+      setMenuItems(menuItemsData);
     } catch (error) {
+      setMenuItems([]);
+      setRestaurant(null);
       console.log(error);
     }
   }
@@ -51,7 +68,7 @@ const RestaurantMenu = () => {
             <div className="restaurant-rating-slash">|</div>
             <div>{restaurant?.sla?.slaString}</div>
             <div className="restaurant-rating-slash">|</div>
-            <div>{restaurant?.costForTwoMsg}</div>
+            <div>{restaurant?.costForTwoMessage}</div>
           </div>
         </div>
       </div>
@@ -61,11 +78,11 @@ const RestaurantMenu = () => {
           <div className="menu-title-wrap">
             <h3 className="menu-title">Recommended</h3>
             <p className="menu-count">
-              {Object.keys(restaurant?.menu?.items).length} ITEMS
+              {menuItems.length} ITEMS
             </p>
           </div>
           <div className="menu-items-list">
-            {Object.values(restaurant?.menu?.items).map((item) => (
+            {menuItems.map((item) => (
               <div className="menu-item" key={item?.id}>
                 <div className="menu-item-details">
                   <h3 className="item-title">{item?.name}</h3>
@@ -80,10 +97,10 @@ const RestaurantMenu = () => {
                   <p className="item-desc">{item?.description}</p>
                 </div>
                 <div className="menu-img-wrapper">
-                  {item?.cloudinaryImageId && (
+                  {item?.imageId && (
                     <img
                       className="menu-item-img"
-                      src={ITEM_IMG_CDN_URL + item?.cloudinaryImageId}
+                      src={ITEM_IMG_CDN_URL + item?.imageId}
                       alt={item?.name}
                     />
                   )}
