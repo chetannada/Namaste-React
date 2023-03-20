@@ -33,7 +33,14 @@ const RestaurantMenu = () => {
                             cards?.map(x => x.card?.card)?.
                             filter(x=> x['@type'] == MENU_ITEM_TYPE_KEY)?.
                             map(x=> x.itemCards).flat().map(x=> x.card?.info) || [];
-      setMenuItems(menuItemsData);
+      
+      const uniqueMenuItems = [];
+      menuItemsData.forEach((item) => {
+        if (!uniqueMenuItems.find(x => x.id === item.id)) {
+          uniqueMenuItems.push(item);
+        }
+      })
+      setMenuItems(uniqueMenuItems);
     } catch (error) {
       setMenuItems([]);
       setRestaurant(null);
