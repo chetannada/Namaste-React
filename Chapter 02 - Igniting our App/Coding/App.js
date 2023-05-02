@@ -9,7 +9,7 @@
  * BUNDLING
  * MINIFY
  * Cleaning our Code
- * Dev abd Production Build
+ * Dev and Production Build
  * Super Fast build algorithm
  * Image Optimization
  * Caching while development
