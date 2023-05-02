@@ -67,6 +67,15 @@
         "test",
         "code"
       ]
+    },
+    {
+      "login": "mkv-mkverma",
+      "name": "Manish Kumar Verma",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16443031?v=4",
+      "profile": "https://www.linkedin.com/in/mkvmkverma/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
