@@ -76,11 +76,21 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "chandrabhanusonu",
+      "name": "Sonu Singh Rajput",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72381521?v=4",
+      "profile": "https://github.com/chandrabhanusonu",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
   "contributorsPerLine": 7,
   "repoHost": "https://github.com",
   "commitConvention": "angular",
-  "skipCi": true
+  "skipCi": true,
+  "commitType": "docs"
 }

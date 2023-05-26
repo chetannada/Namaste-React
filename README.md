@@ -132,6 +132,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="http://www.buffercode.in"><img src="https://avatars.githubusercontent.com/u/15323217?v=4?s=100" width="100px;" alt="Parveen Kumar"/><br /><sub><b>Parveen Kumar</b></sub></a><br /><a href="https://github.com/chetannada/Namaste-React/commits?author=Praveent696" title="Tests">⚠️</a> <a href="https://github.com/chetannada/Namaste-React/commits?author=Praveent696" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/mkvmkverma/"><img src="https://avatars.githubusercontent.com/u/16443031?v=4?s=100" width="100px;" alt="Manish Kumar Verma"/><br /><sub><b>Manish Kumar Verma</b></sub></a><br /><a href="https://github.com/chetannada/Namaste-React/commits?author=mkv-mkverma" title="Documentation">📖</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/chandrabhanusonu"><img src="https://avatars.githubusercontent.com/u/72381521?v=4?s=100" width="100px;" alt="Sonu Singh Rajput"/><br /><sub><b>Sonu Singh Rajput</b></sub></a><br /><a href="https://github.com/chetannada/Namaste-React/commits?author=chandrabhanusonu" title="Documentation">📖</a></td>
+    </tr>
   </tbody>
 </table>
 
