@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"; // import useParams for read `resId`
 import {
   swiggy_menu_api_URL,
@@ -7,46 +6,17 @@ import {
   MENU_ITEM_TYPE_KEY,
   RESTAURANT_TYPE_KEY,
 } from "../constants";
-import {MenuShimmer} from "./Shimmer";
+import { MenuShimmer } from "./Shimmer";
+import useResMenuData from "../Hooks/useResMenuData"; // imported custom hook useResMenuData which gives restaurant Menu data from swigy api
 
 const RestaurantMenu = () => {
   const { resId } = useParams(); // call useParams and get value of restaurant id using object destructuring
-  const [restaurant, setRestaurant] = useState(null); // call useState to store the api data in res
-  const [menuItems, setMenuItems] = useState([]);
-  useEffect(() => {
-    getRestaurantInfo(); // call getRestaurantInfo function so it fetch api data and set data in restaurant state variable
-  }, []);
-
-  async function getRestaurantInfo() {
-    try {
-      const response = await fetch(swiggy_menu_api_URL + resId);
-      const json = await response.json();
-
-      // Set restaurant data
-      const restaurantData = json?.data?.cards?.map(x => x.card)?.
-                             find(x => x && x.card['@type'] === RESTAURANT_TYPE_KEY)?.card?.info || null;
-      setRestaurant(restaurantData);
-
-      // Set menu item data
-      const menuItemsData = json?.data?.cards.find(x=> x.groupedCard)?.
-                            groupedCard?.cardGroupMap?.REGULAR?.
-                            cards?.map(x => x.card?.card)?.
-                            filter(x=> x['@type'] == MENU_ITEM_TYPE_KEY)?.
-                            map(x=> x.itemCards).flat().map(x=> x.card?.info) || [];
-      
-      const uniqueMenuItems = [];
-      menuItemsData.forEach((item) => {
-        if (!uniqueMenuItems.find(x => x.id === item.id)) {
-          uniqueMenuItems.push(item);
-        }
-      })
-      setMenuItems(uniqueMenuItems);
-    } catch (error) {
-      setMenuItems([]);
-      setRestaurant(null);
-      console.log(error);
-    }
-  }
+  const [restaurant, menuItems] = useResMenuData(
+    swiggy_menu_api_URL,
+    resId,
+    RESTAURANT_TYPE_KEY,
+    MENU_ITEM_TYPE_KEY
+  );
 
   return !restaurant ? (
     <MenuShimmer />
@@ -62,14 +32,17 @@ const RestaurantMenu = () => {
           <h2 className="restaurant-title">{restaurant?.name}</h2>
           <p className="restaurant-tags">{restaurant?.cuisines?.join(", ")}</p>
           <div className="restaurant-details">
-            <div className="restaurant-rating" style={
-            (restaurant?.avgRating) < 4
-              ? { backgroundColor: "var(--light-red)" }
-              : (restaurant?.avgRating) === "--"
-              ? { backgroundColor: "white", color: "black" }
-              : { color: "white" }
-          }>
-            <i className="fa-solid fa-star"></i>
+            <div
+              className="restaurant-rating"
+              style={
+                restaurant?.avgRating < 4
+                  ? { backgroundColor: "var(--light-red)" }
+                  : restaurant?.avgRating === "--"
+                  ? { backgroundColor: "white", color: "black" }
+                  : { color: "white" }
+              }
+            >
+              <i className="fa-solid fa-star"></i>
               <span>{restaurant?.avgRating}</span>
             </div>
             <div className="restaurant-rating-slash">|</div>
@@ -84,9 +57,7 @@ const RestaurantMenu = () => {
         <div className="menu-items-container">
           <div className="menu-title-wrap">
             <h3 className="menu-title">Recommended</h3>
-            <p className="menu-count">
-              {menuItems.length} ITEMS
-            </p>
+            <p className="menu-count">{menuItems.length} ITEMS</p>
           </div>
           <div className="menu-items-list">
             {menuItems.map((item) => (
