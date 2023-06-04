@@ -9,17 +9,21 @@ const Title = () => (
     <img
       className="logo"
       src={FoodFireLogo}
-      alt="Food Fire Logo"
-      title="Food Fire Logo"
+      alt="Food Fire"
+      title="Food Fire"
     />
   </a>
 );
 
 // Header component for header section: Logo, Nav Items
 const Header = () => {
+  const token = localStorage.getItem("token");
   // use useState for user logged in or logged out
-  const [isLoggedin, setIsLoggedin] = useState(true);
+  const [isLoggedin, setIsLoggedin] = useState(
+    token?.length === 100 ? true : false
+  );
   const navigate = useNavigate();
+
   return (
     <div className="header">
       <Title />
@@ -43,7 +47,10 @@ const Header = () => {
             {isLoggedin ? (
               <button
                 className="logout-btn"
-                onClick={() => setIsLoggedin(false)}
+                onClick={() => {
+                  localStorage.clear();
+                  setIsLoggedin(!isLoggedin);
+                }}
               >
                 Logout
               </button>

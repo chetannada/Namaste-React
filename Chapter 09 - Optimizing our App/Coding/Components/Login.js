@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Formik } from "formik"; // import Formik from formik
 import * as Yup from "yup"; // import Yup from yup
 import { useNavigate } from "react-router-dom";
@@ -15,15 +15,31 @@ const schema = Yup.object().shape({
 
 const Login = () => {
   const navigate = useNavigate();
+  const token = localStorage.getItem("token");
+
+  useEffect(() => {
+    if (token?.length === 100) {
+      navigate(-1);
+    }
+  }, []);
 
   function handleNavigate(values) {
-    // Alert the input values of the form that we filled
-    alert(values);
     // setTimeout for navigate from login page to home page
     setTimeout(() => {
+      // generate random String of 100 character
+      const genRandomStringNthChar = () => {
+        return [...Array(100)]
+          .map(() => Math.random().toString(36)[2])
+          .join("");
+      };
+      // store token in local storage
+      localStorage.setItem("token", genRandomStringNthChar());
       navigate(-1);
     }, 0);
   }
+
+  if(token?.length === 100) return null;
+
   return (
     <>
       {/* Wrapping form inside formik tag and passing our schema to validationSchema prop */}
