@@ -497,6 +497,32 @@ a {
 }
 /*Animation to Shimmer Component Card and Menu card End*/
 
+
+/* User Offline CSS Start */
+.user-offline-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.user-offline-heading {
+  color: #333333;
+  margin-top: 100px;
+}
+
+.offline-image {
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.user-offline-message {
+  color: #505050;
+  font-size: 18px;
+  margin: 20px 0px;
+}
+
+/* User Offline CSS End */
+
 /* Body CSS End*/
 
 /* Error page CSS Start */
