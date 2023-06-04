@@ -1,36 +1,18 @@
 import RestaurantCard from "./RestaurantCard";
-import { useEffect, useState } from "react"; /* This is named export */
+import { useState } from "react"; /* This is named export */
 import Shimmer from "./Shimmer"; /* This is default export */
 import { swiggy_api_URL } from "../constants";
 import { Link } from "react-router-dom";
-import { filterData } from "./Utils/Helper"; // For reusability or readability filterData function is added in Helper.js file of Utils folder
+import { filterData } from "../Utils/Helper"; // For reusability or readability filterData function is added in Helper.js file of Utils folder
+import useResData from "../Hooks/useResData"; // imported custom hook useResData which gives restaurant data from swigy api
 
 // Body Component for body section: It contain all restaurant cards
 const Body = () => {
   // useState: To create a state variable, searchText, allRestaurants and filteredRestaurants is local state variable
   const [searchText, setSearchText] = useState("");
-  const [allRestaurants, setAllRestaurants] = useState([]);
-  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
-
-  // use useEffect for one time call getRestaurants using empty dependency array
-  useEffect(() => {
-    getRestaurants(); 
-  }, []);
-
-  // async function getRestaurant to fetch Swiggy API data
-  async function getRestaurants() {
-    // handle the error using try... catch
-    try {
-      const response = await fetch(swiggy_api_URL);
-      const json = await response.json();
-      // updated state variable restaurants with Swiggy API data
-      setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-      setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  const [allRestaurants, FilterRes] = useResData(swiggy_api_URL);
+  const [filteredRestaurants, setFilteredRestaurants] = useState(null);
 
   // use searchData function and set condition if data is empty show error message
   const searchData = (searchText, restaurants) => {
@@ -49,7 +31,7 @@ const Body = () => {
     }
   };
 
-  // if allRestaurants is empty don't render restaurants cards
+  // if allRestaurants are empty don't render restaurants cards
   if (!allRestaurants) return null;
 
   return (
@@ -62,9 +44,9 @@ const Body = () => {
           value={searchText}
           // update the state variable searchText when we typing in input box
           onChange={(e) => {
-            setSearchText(e.target.value)
-          // when user will enter the data, it automatically called searchData function so it work same as when you click on Search button
-          searchData(e.target.value, allRestaurants);
+            setSearchText(e.target.value);
+            // when user will enter the data, it automatically called searchData function so it work same as when you click on Search button
+            searchData(e.target.value, allRestaurants);
           }}
         ></input>
         <button
@@ -79,24 +61,26 @@ const Body = () => {
       </div>
       {errorMessage && <div className="error-container">{errorMessage}</div>}
 
-      {/* if restaurants data is not fetched then display Shimmer UI after the fetched data display restaurants cards */}
-      {allRestaurants?.length === 0 ? (
+      {/* if restaurants data are fetched then display restaurants cards otherwise display Shimmer UI */}
+      {allRestaurants?.length === 0 && FilterRes?.length === 0 ? (
         <Shimmer />
       ) : (
         <div className="restaurant-list">
           {/* We are mapping restaurants array and passing JSON array data to RestaurantCard component as props with unique key as restaurant.data.id */}
-          {filteredRestaurants.map((restaurant) => {
-            return (
-              <Link
-                to={"/restaurant/" + restaurant.data.id}
-                key={restaurant.data.id}
-              >
-                {" "}
-                {/* if we click on any restaurant card it will redirect to that restaurant menu page */}
-                <RestaurantCard {...restaurant.data} />
-              </Link>
-            );
-          })}
+          {(filteredRestaurants === null ? FilterRes : filteredRestaurants).map(
+            (restaurant) => {
+              return (
+                <Link
+                  to={"/restaurant/" + restaurant.data.id}
+                  key={restaurant.data.id}
+                >
+                  {" "}
+                  {/* if we click on any restaurant card it will redirect to that restaurant menu page */}
+                  <RestaurantCard {...restaurant.data} />
+                </Link>
+              );
+            }
+          )}
         </div>
       )}
     </>
