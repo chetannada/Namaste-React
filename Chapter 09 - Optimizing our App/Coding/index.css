@@ -81,7 +81,13 @@ a {
   padding: 10px;
 }
 
-.nav-items > ul > li:hover {
+.nav-items > ul > li .fa-solid{
+  padding-top: 15%;
+}
+
+.nav-items > ul > li:hover,
+.nav-items > ul > li:hover .logout-btn,
+.nav-items > ul > li:hover .login-btn {
   background-color: var(--orange);
   border-radius: 5px;
   cursor: pointer;
@@ -113,9 +119,10 @@ a {
 /* search container CSS Start*/
 .search-container {
   margin: 100px auto 20px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
-  position: relative;
 }
 
 .search-container .search-input {
@@ -125,20 +132,25 @@ a {
   border-top-left-radius: 5px;
   background-color: #ffffff;
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
-  padding: 14px 15px 14px 20px;
+  padding: 8px 15px 8px 12px;
   border: 1px solid #aabcca;
   border-right: 0;
   color: var(--text-color);
   outline: none;
+  font-size: large;
+  font-weight: 500;
 }
 
+.search-container .search-input:focus{
+  border-color: var(--dark-orange);
+}
 .search-container .search-btn {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   background-color: var(--dark-orange);
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
   color: #ffffff;
-  padding: 15px 22px;
+  padding: 12px 22px;
   margin-left: -4px;
   cursor: pointer;
   border: none;
@@ -152,7 +164,7 @@ a {
 .error-container {
   text-align: center;
   font-size: large;
-  margin: 20px 0;
+  margin: 20px 10px;
 }
 /* Search error message css End*/
 
@@ -883,6 +895,10 @@ a {
 
 /* footer CSS Start*/
 .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
   width: auto;
   text-align: center;
