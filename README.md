@@ -1,5 +1,7 @@
 # ❤️ Namaste React 🙏
-### _[Namaste React Live Course](https://learn.namastedev.com/courses/namaste-react-live) from Zero to Hero 🚀 by [Akshay Saini](https://www.linkedin.com/in/akshaymarch7/)(Founder of NamasteDev). This repository for Assignment & Class Notes taken during this First Live course._
+### _[Namaste React Live Course](https://learn.namastedev.com/courses/namaste-react-live) from Zero to Hero 🚀 by [Akshay Saini](https://www.linkedin.com/in/akshaymarch7/) Founder of [NamasteDev](https://courses.namastedev.com/learn/Namaste-React). This repository for Assignment & Class Notes taken during this First Live course._
+
+## 💖 This Repository was trending on [Github](https://drive.google.com/file/d/1JsBAa-DXeGIvJ_xIaYjjZ5uc3z4XV8Tz/view) 🔥
 - I made [🚀 FoodFire App 😍](https://foodfire-app.netlify.app/) from scratch using React.js and Parcel.js, which is the part of this course.
 
 
