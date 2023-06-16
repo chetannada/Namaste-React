@@ -11,6 +11,10 @@ const heading = React.createElement(
   "h1",
   {
     id: "title",
+    style: {
+      background:"red",
+    },
+    className:"title"
   },
   "heading"
 );
