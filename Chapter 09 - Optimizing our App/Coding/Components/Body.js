@@ -4,7 +4,7 @@ import Shimmer from "./Shimmer"; /* This is default export */
 import { swiggy_api_URL } from "../constants";
 import { Link } from "react-router-dom";
 import { filterData } from "../Utils/Helper"; // For reusability or readability filterData function is added in Helper.js file of Utils folder
-import useResData from "../Hooks/useResData"; // imported custom hook useResData which gives restaurant data from swigy api
+import useResData from "../Hooks/useResData"; // imported custom hook useResData which gives All Restaurant and  Filtered Restaurant data from swigy api
 import useOnline from "../Hooks/useOnline"; // imported custom hook useOnline which checks user is online or not
 import UserOffline from "./UserOffline";
 
@@ -16,19 +16,18 @@ const Body = () => {
   const [allRestaurants, FilterRes] = useResData(swiggy_api_URL);
   const [filteredRestaurants, setFilteredRestaurants] = useState(null);
   const isOnline = useOnline();
-  
   // if user is not Online then return UserOffline component
-  if(!isOnline){
+  if (!isOnline) {
     return <UserOffline />
   }
 
   // use searchData function and set condition if data is empty show error message
   const searchData = (searchText, restaurants) => {
     if (searchText !== "") {
-      const data = filterData(searchText, restaurants);
-      setFilteredRestaurants(data);
+      const filteredData = filterData(searchText, restaurants);
+      setFilteredRestaurants(filteredData);
       setErrorMessage("");
-      if (data.length === 0) {
+      if (data?.length === 0) {
         setErrorMessage(
           `Sorry, we couldn't find any results for "${searchText}"`
         );
@@ -79,12 +78,11 @@ const Body = () => {
             (restaurant) => {
               return (
                 <Link
-                  to={"/restaurant/" + restaurant.data.id}
-                  key={restaurant.data.id}
+                  to={"/restaurant/" + restaurant?.info?.id}
+                  key={restaurant?.info?.id}
                 >
-                  {" "}
                   {/* if we click on any restaurant card it will redirect to that restaurant menu page */}
-                  <RestaurantCard {...restaurant.data} />
+                  <RestaurantCard {...restaurant?.info} />
                 </Link>
               );
             }
