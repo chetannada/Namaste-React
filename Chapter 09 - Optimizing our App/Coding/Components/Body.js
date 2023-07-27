@@ -27,7 +27,7 @@ const Body = () => {
       const filteredData = filterData(searchText, restaurants);
       setFilteredRestaurants(filteredData);
       setErrorMessage("");
-      if (data?.length === 0) {
+      if (filteredData?.length === 0) {
         setErrorMessage(
           `Sorry, we couldn't find any results for "${searchText}"`
         );
