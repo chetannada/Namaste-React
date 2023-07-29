@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 // Filter the restaurant data according input type
 function filterData(searchText, restaurants) {
-  const filterData = restaurants.filter((restaurant) =>
-    restaurant?.data?.name.toLowerCase().includes(searchText.toLowerCase())
+  const resFilterData = restaurants.filter((restaurant) =>
+    restaurant?.info?.name.toLowerCase().includes(searchText.toLowerCase())
   );
-  return filterData;
+  return resFilterData;
 }
 
 // Body Component for body section: It contain all restaurant cards
@@ -29,11 +29,15 @@ const Body = () => {
   async function getRestaurants() {
     // handle the error using try... catch
     try {
-        const response = await fetch(swiggy_api_URL);
-        const json = await response.json();
-        // updated state variable restaurants with Swiggy API data
-        setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-        setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+      const response = await fetch(swiggy_api_URL);
+      const json = await response.json();
+
+      // Initialize resData for Swiggy Restuarant data
+      const resData = json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+
+      // updated state variable restaurants with Swiggy API data
+      setAllRestaurants(resData);
+      setFilteredRestaurants(resData);
     } catch (error) {
       console.log(error);
     }
@@ -42,10 +46,10 @@ const Body = () => {
   // use searchData function and set condition if data is empty show error message
   const searchData = (searchText, restaurants) => {
     if (searchText !== "") {
-      const data = filterData(searchText, restaurants);
-      setFilteredRestaurants(data);
+      const filteredData = filterData(searchText, restaurants);
+      setFilteredRestaurants(filteredData);
       setErrorMessage("");
-      if (data.length === 0) {
+      if (filteredData?.length === 0) {
         setErrorMessage(`Sorry, we couldn't find any results for "${searchText}"`);
       }
     } else {
@@ -89,10 +93,10 @@ const Body = () => {
           {filteredRestaurants.map((restaurant) => {
             return (
               <Link
-                to={"/restaurant/" + restaurant.data.id}
-                key={restaurant.data.id}
+                to={"/restaurant/" + restaurant?.info?.id}
+                key={restaurant?.info?.id}
               >
-                <RestaurantCard {...restaurant.data} />
+                <RestaurantCard {...restaurant?.info} />
               </Link>
             );
           })}
