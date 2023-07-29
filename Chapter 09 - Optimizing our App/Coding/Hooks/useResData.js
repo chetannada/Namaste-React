@@ -21,10 +21,24 @@ const useResData = (API_URL) => {
       } else {
         const json = await response.json();
 
-        // Initialize resData for Swiggy Restuarant data
-        const resData = json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+        // initialize checkJsonData() function to check Swiggy Restaurant data
+        async function checkJsonData(jsonData) {
+          for (let i = 0; i < jsonData?.data?.cards.length; i++) {
 
-        // updated state variable restaurants with Swiggy API data
+            // initialize checkData for Swiggy Restaurant data
+            let checkData = json?.data?.cards[i]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+
+            // if checkData is not undefined then return it
+            if (checkData !== undefined) {
+              return checkData;
+            }
+          }
+        }
+
+        // call the checkJsonData() function which return Swiggy Restaurant data
+        const resData = await checkJsonData(json);
+
+        // update the state variable restaurants with Swiggy API data
         setAllRestaurants(resData);
         setFilteredRestaurants(resData);
       }
