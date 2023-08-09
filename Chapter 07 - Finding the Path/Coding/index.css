@@ -38,7 +38,6 @@ a {
   --light-blue: #0463ac;
   --dark-blue: #070062;
 }
-
 /* create global variable with :root selector End*/
 
 /* Header CSS Start*/
@@ -67,7 +66,7 @@ a {
 }
 
 /* nav items CSS start*/
-.nav-items>ul {
+.nav-items > ul {
   list-style-type: none;
   display: flex;
   margin-right: 30px;
@@ -75,18 +74,18 @@ a {
   justify-content: space-between;
 }
 
-.nav-items>ul>li {
+.nav-items > ul > li {
   padding: 10px;
 }
 
-.nav-items>ul>li:hover {
+.nav-items > ul > li:hover {
   background-color: var(--orange);
   border-radius: 5px;
   cursor: pointer;
 }
 
-.nav-items>ul>li .logout-btn,
-.nav-items>ul>li .login-btn {
+.nav-items > ul > li .logout-btn,
+.nav-items > ul > li .login-btn {
   color: var(--text-color);
   border: none;
   border-radius: 5px;
@@ -136,7 +135,6 @@ a {
   border: none;
   outline: none;
 }
-
 .search-container .search-btn:hover {
   background-color: var(--dark-green);
 }
@@ -147,7 +145,6 @@ a {
   font-size: large;
   margin: 20px 0;
 }
-
 /* Search error message css End*/
 
 /* search container CSS End*/
@@ -175,30 +172,30 @@ a {
   transform: scale(1.03);
 }
 
-.card>img {
+.card > img {
   width: 100%;
   border-radius: 10px;
 }
 
-.card>h5 {
+.card > h5 {
   font-weight: lighter;
 }
 
-.card>span {
+.card > span {
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
   text-align: center;
 }
 
-.card>span>h4 {
+.card > span > h4 {
   font-weight: bolder;
   font-size: 12px;
   padding: 0 2px 0;
   margin-top: 10px;
 }
 
-.card>span>h4:first-child {
+.card > span > h4:first-child {
   display: flex;
   align-items: center;
   background-color: var(--light-green);
@@ -208,7 +205,7 @@ a {
   margin-top: 5px;
 }
 
-.card>span>h4:first-child .fa-star {
+.card > span > h4:first-child .fa-star {
   font-size: 10px;
   padding: 2px 5px 3px 0;
 }
@@ -221,7 +218,6 @@ a {
   min-height: 80vh;
   width: auto;
 }
-
 .restaurant-summary {
   display: flex;
   height: 200px;
@@ -230,26 +226,22 @@ a {
   background-color: var(--light-black);
   color: var(--white);
 }
-
 .restaurant-img {
   width: 250px;
   height: 170px;
   border-radius: 5px;
 }
-
 .restaurant-summary-details {
   display: flex;
   flex-direction: column;
   flex-basis: 520px;
   margin: 20px;
 }
-
 .restaurant-title {
   font-size: 40px;
   max-width: 540px;
   font-weight: 300;
 }
-
 .restaurant-tags {
   white-space: nowrap;
   color: inherit;
@@ -257,7 +249,6 @@ a {
   font-size: 15px;
   max-width: 540px;
 }
-
 .restaurant-details {
   display: flex;
   margin-top: 18px;
@@ -271,7 +262,6 @@ a {
   font-size: 16px;
   max-width: 340px;
 }
-
 .restaurant-rating {
   display: flex;
   align-items: center;
@@ -290,11 +280,9 @@ a {
   margin-top: 30px;
   width: 850px;
 }
-
 .menu-title-wrap {
   padding: 20px;
 }
-
 .menu-count {
   margin-top: 14px;
   line-height: 1.3;
@@ -316,7 +304,6 @@ a {
   padding: 20px;
   border-bottom: rgba(40, 44, 63, 0.45) 0.5px solid;
 }
-
 .menu-item-details {
   display: flex;
   flex-direction: column;
@@ -327,7 +314,6 @@ a {
 .item-title {
   width: 60%;
 }
-
 .item-desc {
   margin-top: 14px;
   line-height: 1.3;
@@ -336,7 +322,6 @@ a {
   letter-spacing: -0.3px;
   font-size: 1rem;
 }
-
 .item-cost {
   margin-top: 4px;
   font-size: 1rem;
@@ -353,24 +338,20 @@ a {
   width: 200px;
   overflow: hidden;
 }
-
 .menu-item-img {
   height: 100px;
   width: 100px;
   border-radius: 5px;
 }
-
 .add-btn {
   background-color: var(--orange);
   color: var(--text-color);
-  cursor: pointer;
-  border-color: var(--orange);
-  border-radius: 5px;
-  outline: none;
-  margin-top: 10px;
   padding: 8px 25px;
-  font-weight: bold;
-  border: 1px solid var(--dark-orange);
+  cursor: pointer;
+  outline: none;
+  border-color: var(--dark-orange);
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
 /* Restaurant Menu End Start */
@@ -382,7 +363,6 @@ a {
   gap: 25px;
   justify-content: center;
 }
-
 .shimmer-card {
   flex-basis: 250px;
   padding: 10px;
@@ -390,27 +370,22 @@ a {
   border-color: #d3d5df;
   box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
 }
-
 .shimmer-title {
   width: 60%;
   margin-top: 10px;
 }
-
 .shimmer-tags {
   width: 80%;
   margin-top: 4px;
 }
-
 .shimmer-details {
   width: 100%;
   margin-top: 18px;
 }
-
 .shimmer-container .shimmer-img {
   height: 144px;
   width: 230px;
 }
-
 /*Shimmer Card CSS End*/
 
 /* Shimmer Menu Card CSS Start */
@@ -429,7 +404,6 @@ a {
   border-color: #d3d5df;
   box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
 }
-
 .shimmer-item-details {
   width: 438px;
 }
@@ -442,7 +416,6 @@ a {
   width: 118px;
   height: 150px;
 }
-
 .shimmer-img-wrapper .shimmer-img {
   width: 118px;
   height: 96px;
@@ -468,7 +441,6 @@ a {
   width: 20%;
   margin-top: 4px;
 }
-
 /* Shimmer Menu Card CSS End */
 
 /*Animation to Shimmer Component Card and Menu card Start*/
@@ -476,28 +448,23 @@ a {
   height: 15px;
   background: #777;
 }
-
 .stroke-color {
   background: #777;
 }
-
 .animate {
   animation: shimmer 3s;
   animation-iteration-count: infinite;
   background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
   background-size: 1000px 100%;
 }
-
 @keyframes shimmer {
   from {
     background-position: -1000px 0;
   }
-
   to {
     background-position: 1000px 0;
   }
 }
-
 /*Animation to Shimmer Component Card and Menu card End*/
 
 /* Body CSS End*/
@@ -509,7 +476,6 @@ a {
   height: 100vh;
   width: auto;
 }
-
 .error-page .error-data {
   padding: 10px 0px;
 }
@@ -517,7 +483,6 @@ a {
 .error-page .error-back-home {
   padding: 20px;
 }
-
 .error-page .error-back-home a {
   text-decoration: none;
   background-color: var(--orange);
@@ -542,36 +507,29 @@ a {
   align-items: center;
   height: 72vh;
 }
-
 .about-container .about-left {
   padding-left: 10px;
 }
-
 .about-container .about-left h1 {
   font-size: 70px;
 }
-
 .about-container .about-left h1 span {
   background-color: var(--orange);
   padding: 0 10px;
   border-radius: 15px;
   color: var(--white);
 }
-
 .about-container .about-left h4 {
   font-size: 25px;
   padding-top: 10px;
   font-style: italic;
 }
-
 .about-container .about-left h4 span {
   color: var(--dark-orange);
 }
-
 .about-container .about-right {
   padding-left: 20px;
 }
-
 .about-container .about-right img {
   width: 500px;
   padding-right: 70px;
@@ -705,7 +663,6 @@ a {
   font-size: 13px;
   color: red;
 }
-
 /* Login page CSS End */
 
 /* footer CSS Start*/
@@ -719,17 +676,17 @@ a {
   box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
 }
 
-.footer>i {
+.footer > i {
   padding: 0 5px 0;
   font-size: smaller;
 }
 
-.footer>a {
+.footer > a {
   font-weight: 700;
   color: var(--dark-blue);
 }
 
-.footer>a:hover {
+.footer > a:hover {
   color: var(--x-dark-orange);
 }
 
@@ -737,11 +694,11 @@ a {
   color: darkred;
 }
 
-.footer>strong {
+.footer > strong {
   padding-left: 5px;
 }
 
-.footer>strong>span {
+.footer > strong > span {
   color: var(--x-dark-orange);
 }
 
@@ -753,35 +710,28 @@ a {
   .about-container .about-left h1 {
     font-size: 50px;
   }
-
   .about-container .about-left h4 {
     font-size: 20px;
   }
-
   .about-container .about-right img {
     padding-top: 30px;
     width: 400px;
   }
 }
-
 @media only screen and (max-width: 880px) {
   .about-container .about-left h1 {
     font-size: 40px;
   }
-
   .about-container .about-left h4 {
     font-size: 15px;
   }
-
   .about-container .about-right img {
     padding-top: 30px;
     width: 350px;
   }
-
   .contact-container {
     overflow-y: hidden;
   }
-
   .error-page img {
     height: auto;
     width: 80%;
@@ -798,75 +748,58 @@ a {
   .header {
     height: 60px;
   }
-
   .header .logo {
     width: 80px;
   }
-
-  .nav-items>ul>li {
+  .nav-items > ul > li {
     font-size: small;
   }
-
-  .nav-items>ul>li .logout-btn,
-  .nav-items>ul>li .login-btn {
+  .nav-items > ul > li .logout-btn,
+  .nav-items > ul > li .login-btn {
     font-size: xx-small;
   }
-
   .search-container {
     margin: 80px auto 0px;
   }
-
   .restaurant-menu {
     margin-top: 60px;
   }
-
   .restaurant-summary {
     height: 230px;
   }
-
   .about-container {
     height: auto;
   }
-
   .login-container {
     width: 310px;
   }
-
   .login-form {
     max-width: 310px;
   }
 }
-
 @media only screen and (max-width: 350px) {
   .header {
     height: 50px;
   }
-
   .header .logo {
     width: 70px;
   }
-
-  .nav-items>ul>li {
+  .nav-items > ul > li {
     font-size: x-small;
   }
-
-  .nav-items>ul>li .logout-btn,
-  .nav-items>ul>li .login-btn {
+  .nav-items > ul > li .logout-btn,
+  .nav-items > ul > li .login-btn {
     padding: 5px;
   }
-
   .search-container {
     margin: 70px auto 0px;
   }
-
   .restaurant-menu {
     margin-top: 50px;
   }
-
   .login-container {
     width: 280px;
   }
-
   .login-form {
     max-width: 280px;
   }
