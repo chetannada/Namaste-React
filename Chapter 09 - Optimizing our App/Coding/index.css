@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", "Lato", Calibri, sans-serif;
+  font-family: "PT Sans", Calibri, sans-serif;
   overflow-x: hidden;
 }
 
@@ -20,12 +20,14 @@ a {
 
 /* create global variable with :root selector Start*/
 :root {
-  --header-bg-color: rgb(1, 163, 144);
-  --footer-bg-color: rgb(1, 163, 144);
+  --header-bg-color: rgb(255, 255, 255);
+  --footer-bg-color: rgb(255, 255, 255);
   --body-bg-color: #e3e3e3;
   --input-bg: #f2f2f2;
   --input-bg-focus: #dbdbdb;
   --text-color: #000;
+  --light-text-color: #545454;
+  --light-text-title: #353535;
   --light-green: #00ad1d;
   --dark-green: #016034;
   --orange: #d97919;
@@ -34,6 +36,7 @@ a {
   --x-dark-orange: rgb(157, 42, 1);
   --light-red: rgb(236, 56, 56);
   --white: #fff;
+  --light-white-text: #eaeaea;
   --light-black: rgb(23, 23, 23);
   --light-blue: #0463ac;
   --dark-blue: #070062;
@@ -50,8 +53,8 @@ a {
   height: 80px;
   background-color: var(--header-bg-color);
   border-radius: 5px;
-  box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
-  color: var(--text-color);
+  box-shadow: -2px 7px 5px -6px rgba(0,0,0,0.61);
+  color: var(--light-text-color);
   font-weight: bold;
   position: fixed;
   top: 0;
@@ -78,21 +81,33 @@ a {
   padding: 10px;
 }
 
-.nav-items > ul > li:hover {
+.nav-items > ul > li .fa-solid{
+  padding-top: 15%;
+}
+
+.nav-items > ul > li:hover,
+.nav-items > ul > li:hover .logout-btn,
+.nav-items > ul > li:hover .login-btn {
   background-color: var(--orange);
   border-radius: 5px;
   cursor: pointer;
+  color: var(--white);
 }
 
 .nav-items > ul > li .logout-btn,
 .nav-items > ul > li .login-btn {
-  color: var(--text-color);
+  color: var(--light-text-color);
   border: none;
   border-radius: 5px;
   background-color: Transparent;
   font-size: inherit;
   font-weight: 700;
   cursor: pointer;
+}
+
+.nav-items > ul > li .logout-btn:hover,
+.nav-items > ul > li .login-btn:hover{
+  color: var(--white);
 }
 
 /* nav items CSS End*/
@@ -104,9 +119,10 @@ a {
 /* search container CSS Start*/
 .search-container {
   margin: 100px auto 20px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
-  position: relative;
 }
 
 .search-container .search-input {
@@ -116,20 +132,25 @@ a {
   border-top-left-radius: 5px;
   background-color: #ffffff;
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
-  padding: 14px 15px 14px 20px;
+  padding: 8px 15px 8px 12px;
   border: 1px solid #aabcca;
   border-right: 0;
   color: var(--text-color);
   outline: none;
+  font-size: large;
+  font-weight: 500;
 }
 
+.search-container .search-input:focus{
+  border-color: var(--dark-orange);
+}
 .search-container .search-btn {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   background-color: var(--dark-orange);
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
   color: #ffffff;
-  padding: 15px 22px;
+  padding: 12px 22px;
   margin-left: -4px;
   cursor: pointer;
   border: none;
@@ -143,7 +164,7 @@ a {
 .error-container {
   text-align: center;
   font-size: large;
-  margin: 20px 0;
+  margin: 20px 10px;
 }
 /* Search error message css End*/
 
@@ -162,7 +183,7 @@ a {
 .card {
   width: 240px;
   border-radius: 5px;
-  box-shadow: -1px 5px 10px 5px rgba(42, 42, 42, 0.2);
+  box-shadow: -1px 5px 10px 5px rgba(112, 112, 112, 0.2);
   padding: 10px;
   margin: 20px;
   cursor: pointer;
@@ -172,6 +193,9 @@ a {
   transform: scale(1.03);
 }
 
+.card h3{
+  color: var(--light-text-title)
+}
 .card > img {
   width: 100%;
   border-radius: 10px;
@@ -190,9 +214,10 @@ a {
 
 .card > span > h4 {
   font-weight: bolder;
-  font-size: 12px;
+  font-size: 14px;
   padding: 0 2px 0;
   margin-top: 10px;
+  color: var(--light-text-title)
 }
 
 .card > span > h4:first-child {
@@ -224,7 +249,8 @@ a {
   justify-content: center;
   align-items: center;
   background-color: var(--light-black);
-  color: var(--white);
+  color: var(--light-white-text);
+  overflow-y: hidden;
 }
 .restaurant-img {
   width: 250px;
@@ -283,11 +309,13 @@ a {
 .menu-title-wrap {
   padding: 20px;
 }
+.menu-title-wrap .menu-title{
+  color: var(--light-text-color);
+}
 .menu-count {
-  margin-top: 14px;
+  margin-top: 10px;
   line-height: 1.3;
   color: rgba(40, 44, 63, 0.45);
-  letter-spacing: -0.3px;
   font-size: 1rem;
 }
 
@@ -300,7 +328,6 @@ a {
 .menu-item {
   display: flex;
   justify-content: space-between;
-  max-height: 250px;
   padding: 20px;
   border-bottom: rgba(40, 44, 63, 0.45) 0.5px solid;
 }
@@ -309,16 +336,18 @@ a {
   flex-direction: column;
   align-self: flex-start;
   overflow: hidden;
+  height: auto;
 }
 
 .item-title {
-  width: 60%;
+  width: auto;
+  color: var(--light-text-color);
 }
 .item-desc {
   margin-top: 14px;
   line-height: 1.3;
   color: rgba(40, 44, 63, 0.45);
-  width: 60%;
+  width: inherit;
   letter-spacing: -0.3px;
   font-size: 1rem;
 }
@@ -327,7 +356,7 @@ a {
   font-size: 1rem;
   font-weight: 400;
   color: #3e4152;
-  width: 40%;
+  width: inherit;
 }
 
 .menu-img-wrapper {
@@ -335,8 +364,9 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  width: 200px;
+  width: 300px;
   overflow: hidden;
+  height: auto;
 }
 .menu-item-img {
   height: 100px;
@@ -467,6 +497,32 @@ a {
 }
 /*Animation to Shimmer Component Card and Menu card End*/
 
+
+/* User Offline CSS Start */
+.user-offline-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.user-offline-heading {
+  color: #333333;
+  margin-top: 100px;
+}
+
+.offline-image {
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.user-offline-message {
+  color: #505050;
+  font-size: 18px;
+  margin: 20px 0px;
+}
+
+/* User Offline CSS End */
+
 /* Body CSS End*/
 
 /* Error page CSS Start */
@@ -505,7 +561,7 @@ a {
 
 .about-profile-button {
   background-color: var(--orange);
-  color: var(--light-black);
+  color: var(--light-white-text);
   padding: 10px 15px;
   border-radius: 5px;
   border: none;
@@ -533,17 +589,19 @@ a {
 }
 .about-container .about-left h1 {
   font-size: 70px;
+  color: var(--light-text-color);
 }
 .about-container .about-left h1 span {
   background-color: var(--orange);
   padding: 0 10px;
   border-radius: 15px;
-  color: var(--white);
+  color: var(--light-white-text);
 }
 .about-container .about-left h4 {
   font-size: 25px;
   padding-top: 10px;
   font-style: italic;
+  color: var(--light-text-color);
 }
 .about-container .about-left h4 span {
   color: var(--dark-orange);
@@ -747,6 +805,9 @@ a {
   font-size: x-large;
 }
 
+.contact-container .contact-right h1{
+  color: var(--light-text-title);
+}
 .contact-container .contact-right form {
   display: flex;
   flex-direction: column;
@@ -860,13 +921,17 @@ a {
 
 /* footer CSS Start*/
 .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
   width: auto;
   text-align: center;
   background-color: var(--footer-bg-color);
   padding: 20px 10px 20px;
   border-radius: 5px;
-  box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.71);
 }
 
 .footer > i {
@@ -940,6 +1005,9 @@ a {
   .repo-container {
     width: 80%;
   }
+  .restaurant-summary{
+    padding-left: 20px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -960,7 +1028,7 @@ a {
   }
   .nav-items > ul > li .logout-btn,
   .nav-items > ul > li .login-btn {
-    font-size: xx-small;
+    font-size: small;
   }
   .search-container {
     margin: 80px auto 0px;
@@ -970,6 +1038,23 @@ a {
   }
   .restaurant-summary {
     height: 230px;
+    overflow-y: hidden;
+  }
+  .restaurant-details{
+    flex-wrap: wrap;
+    justify-content:flex-start;
+  }
+
+  .restaurant-rating-slash{
+    padding: 0px 20px;
+  }
+  .menu-item{
+    flex-wrap: wrap;
+  }
+  .menu-img-wrapper{
+    padding-top: 20px;
+    align-items: flex-start;
+    justify-content: center;
   }
   .about-container {
     height: auto;
@@ -993,7 +1078,8 @@ a {
   }
   .nav-items > ul > li .logout-btn,
   .nav-items > ul > li .login-btn {
-    padding: 5px;
+    /* padding: 5px; */
+    font-size: x-small;
   }
   .search-container {
     margin: 70px auto 0px;
