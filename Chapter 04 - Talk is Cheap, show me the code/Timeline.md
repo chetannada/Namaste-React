@@ -1,6 +1,7 @@
 ## Episode 4 – Talk is cheap, show me the code
 
-**Detailed Mention of Topics and its Timestamps**
+**Detailed Mention of Topics and its Timestamps according to Namaste React Web Series**
+
 ```sh
 00:14:00 – Mock design, Various sections of a web page and its coding 
 00:23:00 – CSS coding

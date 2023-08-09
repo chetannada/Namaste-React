@@ -1,6 +1,7 @@
 ## Episode 5 - Let’s get Hooked
 
-**Detailed Mention of Topics and its Timestamps**
+**Detailed Mention of Topics and its Timestamps according to Namaste React Web Series**
+
 ```sh
 00:01:43 – React advantages discussed
 00:03:51 – Create src folder

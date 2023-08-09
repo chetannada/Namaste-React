@@ -1,6 +1,7 @@
 ## Episode 07 – Finding the Path
 
-**Detailed Mention of Topics and its Timestamps**
+**Detailed Mention of Topics and its Timestamps according to Namaste React Web Series**
+
 ```sh
 00:03:00 – useEffect hook explanation, Dependency Array
 00:15:40 – React Router 

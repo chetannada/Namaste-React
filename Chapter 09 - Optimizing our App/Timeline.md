@@ -1,6 +1,7 @@
 ## Episode 9 – Optimizing our App
 
-**Detailed Mention of Topics and its Timestamps**
+**Detailed Mention of Topics and its Timestamps according to Namaste React Web Series**
+
 ```sh
 00:02:00 – Custom Hooks, Single Responsibility Principle
 00:04:25 – Modularity

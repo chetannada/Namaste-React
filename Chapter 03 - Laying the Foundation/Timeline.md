@@ -1,6 +1,7 @@
 ## Episode 3 - Laying the Foundation 
 
-**Detailed Mention of Topics and its Timestamps**
+**Detailed Mention of Topics and its Timestamps according to Namaste React Web Series**
+
 ```sh
 00:01:04 – starting the project by using terminal
 00:03:00 – create a npm script for starting the project in dev world

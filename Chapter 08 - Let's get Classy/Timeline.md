@@ -1,6 +1,7 @@
 ## Episode 8 - Let's get Classy!
 
-**Detailed Mention of Topics and its Timestamps**
+**Detailed Mention of Topics and its Timestamps according to Namaste React Web Series**
+
 ```sh
 00:09:30 – Class based component example
 00:16:00 – Props, Props in Function based component, Destructure

@@ -1,6 +1,7 @@
 ## Episode 01 - Inception
 
-**Detailed Mention of Topics and its Timestamps**
+**Detailed Mention of Topics and its Timestamps according to Namaste React Web Series**
+
 ```sh
 00:05:25 - Visual Code Setup
 00:10:00 - Hello World Program by using plain HTML

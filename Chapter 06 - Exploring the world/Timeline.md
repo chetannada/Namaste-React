@@ -1,6 +1,7 @@
 ## Episode 06 – Exploring the World
 
-**Detailed Mention of Topics and its Timestamps**
+**Detailed Mention of Topics and its Timestamps according to Namaste React Web Series**
+
 ```sh
 00:02:00 – Monolith Architecture
 00:05:00 – Microservices

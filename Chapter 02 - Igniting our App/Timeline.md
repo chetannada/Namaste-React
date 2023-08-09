@@ -1,6 +1,7 @@
 ## Episode 2- Igniting our App 
 
-**Detailed Mention of Topics and its Timestamps**
+**Detailed Mention of Topics and its Timestamps according to Namaste React Web Series**
+
 ```sh
 00:00:00 – Creating Github Repository and pushing code 
 00:03:00 – Git commands (branch, commit, push origin)
