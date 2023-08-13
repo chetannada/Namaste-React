@@ -114,6 +114,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "ORCUSio",
+      "name": "ORCUSio",
+      "avatar_url": "https://avatars.githubusercontent.com/u/94834734?v=4",
+      "profile": "https://github.com/ORCUSio",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
