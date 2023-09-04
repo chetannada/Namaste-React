@@ -1,0 +1,15 @@
+Question - what is bundlers
+answer - vite,parcel,webpack 
+
+Question - full form of npm
+Answer - (--------it changes every time------) 😂 (not the nodejs package manager see documentation )
+there is no official name of npm 
+
+Question -what is caret(^) and tilde(~) in package.json
+answer- 
+for example - in package.json there is dependencies 
+"parcel":^2.8.2 -> it auto changes if any new update came only minor changes(2.8."2")
+"parcel":~2.8.2 -> it auto changes if any new update came only major changes("2".8.2)
+"parcel":2.8.2 -> project wants only this dependencies 
+
+points - node_modules is database of npm 

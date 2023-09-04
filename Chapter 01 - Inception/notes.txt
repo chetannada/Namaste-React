@@ -1,0 +1,15 @@
+Question - can we Have multiple roots in react
+Answer - 
+
+Question - why we insert CSS in head only
+Answer - 
+
+Question - what is development and production mode 
+Answer - production mode is more optimized compared than development
+ 
+POINT--> WE can add React in our Exiting Project also and our exiting project may be any HTML page 
+ suppose we have HTML page and we want to make a search bar or form in reactjs so it is possible 
+ just make search bar or form  as a root 
+
+ POINT -> if there is already written in html file in (h1 tag and id=root) then react render will overwrite that id element with react element
+
