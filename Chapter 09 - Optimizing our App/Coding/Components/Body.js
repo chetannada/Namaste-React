@@ -16,6 +16,7 @@ const Body = () => {
   const [allRestaurants, FilterRes] = useResData(swiggy_api_URL);
   const [filteredRestaurants, setFilteredRestaurants] = useState(null);
   const isOnline = useOnline();
+
   // if user is not Online then return UserOffline component
   if (!isOnline) {
     return <UserOffline />
@@ -42,7 +43,7 @@ const Body = () => {
   if (!allRestaurants) return null;
 
   return (
-    <>
+    <div className="body-container">
       <div className="search-container">
         <input
           type="text"
@@ -55,7 +56,7 @@ const Body = () => {
             // when user will enter the data, it automatically called searchData function so it work same as when you click on Search button
             searchData(e.target.value, allRestaurants);
           }}
-        ></input>
+        />
         <button
           className="search-btn"
           onClick={() => {
@@ -89,7 +90,7 @@ const Body = () => {
           )}
         </div>
       )}
-    </>
+    </div>
   );
 };
 
