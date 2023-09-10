@@ -2,43 +2,53 @@ import React, { useEffect } from "react";
 import { Formik } from "formik"; // import Formik from formik
 import * as Yup from "yup"; // import Yup from yup
 import { useNavigate } from "react-router-dom";
+import useLocalStorage from "../Hooks/useLocalStorage";
 
-// create a schema for validation
+// create a schema for Email and Password validation
 const schema = Yup.object().shape({
   email: Yup.string()
-    .required("Email is a required field")
-    .email("Invalid email format"),
+    .required("Email is a required")
+    .email("Enter Valid Email"),
   password: Yup.string()
-    .required("Password is a required field")
-    .min(8, "Password must be at least 8 characters"),
+    .required("Password is a required")
+    .min(8, "Password must be 8 characters long"),
 });
 
 const Login = () => {
   const navigate = useNavigate();
-  const token = localStorage.getItem("token");
+  // call custom hook useLocalStorage for getting localStorage value of user
+  const [getLocalStorage, setLocalStorage] = useLocalStorage("user");
 
   useEffect(() => {
-    if (token?.length === 100) {
+    // if length of token is equal to 100 then navigate to previous page
+    if (getLocalStorage?.token?.length === 100) {
       navigate(-1);
     }
   }, []);
 
   function handleNavigate(values) {
-    // setTimeout for navigate from login page to home page
-    setTimeout(() => {
-      // generate random String of 100 character
-      const genRandomStringNthChar = () => {
-        return [...Array(100)]
-          .map(() => Math.random().toString(36)[2])
-          .join("");
-      };
-      // store token in local storage
-      localStorage.setItem("token", genRandomStringNthChar());
-      navigate(-1);
-    }, 0);
+    let index = values?.email.indexOf('@');
+    let name = values?.email.slice(0, index);
+
+    // generate 100 character random string
+    const genRandomStringNthChar = () => {
+      return [...Array(100)]
+        .map(() => Math.random().toString(36)[2])
+        .join("");
+    };
+
+    // store userName and token in localStorage
+    setLocalStorage({
+      ...getLocalStorage,
+      "userName": name,
+      "token": genRandomStringNthChar()
+    })
+    // navigate to previous page
+    navigate(-1);
   }
 
-  if(token?.length === 100) return null;
+  // if length of token is equal to 100 then return null
+  if (getLocalStorage?.token?.length === 100) return null;
 
   return (
     <>
@@ -47,8 +57,8 @@ const Login = () => {
         validationSchema={schema}
         initialValues={{ email: "", password: "" }}
         onSubmit={(values) => {
-          // call handleNavigate and pass input filed data
-          handleNavigate(JSON.stringify(values));
+          // invoke handleNavigate function and pass input filed data
+          handleNavigate(values);
         }}
       >
         {({
