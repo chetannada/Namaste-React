@@ -123,6 +123,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "subham-prasad",
+      "name": "subham-prasad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68709992?v=4",
+      "profile": "http://subhamprasad.in",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
