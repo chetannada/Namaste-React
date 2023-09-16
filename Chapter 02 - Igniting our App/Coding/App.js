@@ -18,7 +18,7 @@
  * HTTPS on dev [Example - npx parcel index.html --https]
  * Port Number [Example - If port number using in localhost then it will change in port number in another project running on localhost]
  * Consistent Hashing Algorithm
- * Zero Config
+ * Zero Config 
  * Tree shaking
  *
  *

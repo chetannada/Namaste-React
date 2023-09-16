@@ -12,4 +12,33 @@ for example - in package.json there is dependencies
 "parcel":~2.8.2 -> it auto changes if any new update came only major changes("2".8.2)
 "parcel":2.8.2 -> project wants only this dependencies 
 
-points - node_modules is database of npm 
+Question - JavaScript is librabry and react is also is also a library  then what is te difference between them
+answer - javascript is set of function which we know 
+
+Question - Why we use npm 
+answer - because it powered by lot of packages , For example - bundle ,optimize our app
+
+Question- What is the difference between package.json and package-lock.json?
+Answer - in package.json if any module contain ~/^ then if any new updatadtion come then package-lock.json have that information which current updated version is using.
+For example- if in package.json --> "parcel" : "^2.8.2" and new update comes // //2.8.9 then package-lock.json contains the updated information in this case //2.8.9 (it locks the current version)   
+
+Question- what is transitive dependency 
+Answer - when we have production buliding app , we need lot of tings bundling,minification,image optamization,cacing and many more . and we can't do this alone  then we need dependency then those dependency also depend upon some other dependencies  
+
+Question - what is use of browserlist
+Answer - 
+
+Question - how many types of script 
+Answer - 
+points -
+1. node_modules is database of npm 
+2. npm create-react-app  -> it uses webpack as a bundler
+3. package manager --> npm,yarn 
+4. npm init -y --> -y it skips te information which it ask when we create it 
+5. npm - manages all the packages
+6. package-lock.json helps to generate a node_modules on server because it contains all the information of packages(package-lock.json)
+7. any thing which is auto generated we put inside in .gitignore
+8. parcel/bundler is doing many things
+9. 
+10.
+11.
