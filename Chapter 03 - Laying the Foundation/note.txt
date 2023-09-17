@@ -1,0 +1,40 @@
+Question - what is polyfill
+Answer - current version of javascript is converted to older version code of javascript .babel is example,babel is library
+
+Question - "browserslist": [
+    "last 10 versions"
+  ]
+Answer - means my website will work perfectlly on last 10 version of broswer 
+
+Question -
+Answer - 
+Question -
+Answer - 
+Question -
+Answer - 
+Question -
+Answer - 
+Question -
+Answer - 
+
+Points - 
+1. (npm run == npx) then  (npm start == npm )
+2. parcel/webpack does not remove console.log in build, we have to include "babel-plugin-transform-remove-console" pacakge in our project
+4. --save == -D 
+5. The diffing Algorthim (React reconciliation) 
+6. JSX is HTML like code inside Javascript (not HTML inside Javascrpt )
+7.
+
+//
+in .babelrc  (babel-plugin-transform-remove-console)
+we include this in our project  
+{
+  "plugins": [ ["transform-remove-console", { "exclude": [ "error", "warn"] }] ]
+}
+this means we have remove console.lof from react app and exclude the console.log which have the error/warn in building process (hosting)
+//
+
+//
+<title/> -- component composition
+<title> <title/> -- composite component (component inside composite)
+//

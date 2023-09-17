@@ -42,6 +42,7 @@ import ReactDOM from "react-dom/client";
  * 
  * 
  */
+// createElement as ce
 // const heading = ce(
 //   "div",
 //   {
@@ -72,37 +73,59 @@ import ReactDOM from "react-dom/client";
 // )
 
 // create header element using JSX
-// JSX => React.createElement => Object => HTML (DOM) (babel does all the conversion)
+// JSX produces React.createElement by use of babel
+// babel produces React.createElement from JSX 
+// JSX => React.createElement produces an Object => Object is converted in to HTML  => HTML (DOM) (React converted to HTML and put it into in our DOM )(babel does all the conversion)
+
+// JSX is HTML like code inside Javascript (not HTML inside Javascrpt )
+// (looks link HTML not HTML )
+// babel is compiler of next generation javascript (jsx)
+
+// advantages of JSX 
+// 1. Readability
+// 2. less code
+// 3. no repetition
+// 4. maintainability
+// 5. developer friendly
+
 const heading = (
   <h1 id="h1" key="h1">
     This is JSX
   </h1>
 );
 
-// React Component 
-// Functional component - new way of writing component 
+// React Component
+// Functional component - new way of writing component
 // Class component - old way of writing component
 
 // Title component is functional component
+// name of component starts wit capital letter - it's not mandatory 
+
 const Title = () => {
-  return (
-    <h1 id="title" key="title">Namaste React</h1>
-  )
-}
+   (
+    <h1 id="title" key="title">
+      Namaste React
+    </h1>
+  );
+};
+
 // Header component is functional component
-const HeaderComponent = function (){
+const HeaderComponent = function () {
   return (
     <div>
-      <Title/>
-      {/* we can also use <Title()> */}
+      <Title /> {/* we can also use <Title()> only calling this function */} {/* in case of function */}
+      {heading}  {/* only this if it is a variable */}
       {/* we can also use <Title></Title> */}
-      {console.log(10)}
-    <h1>Namaste React Functional component</h1>
-    <h2>This is h2 tag</h2>
+      {console.log("any JS CODE")}
+      {1+2}
+      <h1>Namaste React Functional component</h1>
+      <h2>This is h2 tag</h2>
     </div>
-  )
-}
+  );
+};
 // create root using createRoot
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // passing react element inside root
-root.render(<HeaderComponent/>);
+root.render(<HeaderComponent />); // when we render functional component
+
+root.render(heading); // when we render our react element 
