@@ -1,0 +1,9 @@
+why cdn in images
+rafc in reactjs
+react router dom is not develop by facebook but develop by remix
+client side routing and server side routing in client routing all the component is alrady present when any route changes it does not make network call componentis already there but in server side routing we make network call for each route in website to backend
+Hooks are just normal function 
+import useParmas from react router dom to apply dynamic routing in website
+ 
+ optional channing is bug to remove this we do early render
+ default export in image in side another folder in react
