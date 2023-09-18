@@ -2,6 +2,9 @@ There are two ways to re render the project
 1. props changes
 2. state changes
 
+const [count]=useState(0);
+setCount() function is not mandatory in useEffect 
+
 Difference Between render and mount
 
 Read about optional channing
