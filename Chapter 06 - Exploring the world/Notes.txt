@@ -1,0 +1,55 @@
+There are two ways to re render the project 
+1. props changes
+2. state changes
+
+Difference Between render and mount
+
+Read about optional channing
+
+first render then useEffect 
+early render
+shimmer effect
+avoid rendering component 
+{only for statement and expression} in jsx/js reactjs 
+coding challenge
+// 
+function Timer() {
+  const [count, setCount] = useState(0);
+  console.log("ok");
+  useEffect(() => {
+    console.log("effect");
+    return () => {
+      console.log("last from effect");
+    };
+  }, [count]);
+  console.log("ok1");
+  const handleButtonClick = () => {
+    // setCount(count+1);
+    setCount((k) => k + 1);
+    setCount((k) => k + 1);
+  };
+  console.log("ok2");
+  return (
+    <>
+      <h1>I have rendered {count} times!</h1>
+      <button onClick={handleButtonClick}>Click me</button>
+      {console.log("last")}
+    </>
+  );
+}
+//
+OUTPUT
+in first render 
+ok
+ok1
+ok2
+last
+effect
+in first click on the button
+ok 
+ok1 
+ok2 
+last 
+last from effect 
+effect 
+//
