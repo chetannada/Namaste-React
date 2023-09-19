@@ -23,7 +23,7 @@ Points -
 4. --save == -D 
 5. The diffing Algorthim (React reconciliation) 
 6. JSX is HTML like code inside Javascript (not HTML inside Javascrpt )
-7.
+7. JSX to HTML (Babel)
 
 //
 in .babelrc  (babel-plugin-transform-remove-console)

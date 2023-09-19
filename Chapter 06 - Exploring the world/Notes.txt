@@ -4,6 +4,11 @@ There are two ways to re render the project
 
 const [count]=useState(0);
 setCount() function is not mandatory in useEffect 
+if we want change directly count variable (Like - count++,count=3 etc) then it will not change that value in return function ,it will change like simple variable
+to change the initial value of  count setcount count has only access 
+Only when we call the setcount only then we reconclination algorithm will work and changes to DOM.
+Beacuse React track it React knows when to trigger reconcilation process (means reconcilation process starts only when we change te state variable by the setcount function)
+ // WE DO NOT MUTATE STATE DIRECTLY 
 
 Difference Between render and mount
 

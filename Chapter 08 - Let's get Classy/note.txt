@@ -1,0 +1,2 @@
+in class based component
+first constructor then render then componentDidMount 

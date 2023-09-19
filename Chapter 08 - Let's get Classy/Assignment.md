@@ -9,7 +9,7 @@
 - Why do we use `componentDidMount`?
 - Why do we use `componentWillUnmount`? Show with `example`.
 - (Research) Why do we use `super(props)` in `constructor`?
-- (Research) Why `can't we have` the `callback function` of `useEffect async`?
+- (Research) Why `can't we have` the `callback function` of `useEffect async` but in componentdidmount make async?
 
 
 ## Coding Assignment:
