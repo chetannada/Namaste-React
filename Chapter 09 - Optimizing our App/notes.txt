@@ -1,0 +1,17 @@
+1.create component with capital letter
+and 
+create hooks with small letter (useState)
+
+2.{
+chunking
+code spiliting
+dynamic bundling
+lazy loading
+on demand import
+}
+when you are trying to lazy load react try to suspend it 
+upon on demand loading --> upon render --> suspend loading 
+we use lazy,suspense(await) to Handle laze loading
+use fallback 
+
+3.never,ever dynamically load your component inside another component 
