@@ -7,3 +7,11 @@ difference between state(local variable) and props (argumnet )
 
 ways to manages the data layer
  
+ prop drilling 
+
+ accordian  
+ 
+ lifiting the state up
+
+question - whether any context come inside another context or not ??
+multiple context exist or not ??

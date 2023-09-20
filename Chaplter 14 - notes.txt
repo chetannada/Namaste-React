@@ -1,0 +1,18 @@
+Why we use Usecontext - to avoid prop drilling and to avoid passing props to all the components
+
+Usecontext,redux,mobx are used for state,data management
+
+difference between redux and redux toolkit
+
+each store has multiple slices
+slices has small store inside store
+our componenet can not directly access the store
+
+when we click on the button we need to dispatch an action
+action will call a function(reducer)  and function will modify our cart (slice of redux store)
+we can not directly modify the cart
+function is known as reducer 
+
+if we click on the +button it dispatch an action which is called the reducer which will modify the Slice of the store
+(calling a function which will modify the slice of the store)
+
