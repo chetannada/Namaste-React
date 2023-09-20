@@ -16,3 +16,49 @@ function is known as reducer
 if we click on the +button it dispatch an action which is called the reducer which will modify the Slice of the store
 (calling a function which will modify the slice of the store)
 
+SELECTOR - is the hook in redux (useselector) -- also known as subscribe to store
+
++ -> dispatch(action) -> reducer -> updates -> store(slice) -> selector -> is used to read data in frontend(refelect in frontend)
+
+Read About - RTK from website
+readAbout - RTK query
+
+redux dev tools chrome extension 
+
+(RTK) react toolkit --> createslice,configureStore
+react-redux --> selector,dispatch,provider 
+
+Steps to create redux store
+
+1. Create store
+   - configureStore({}) - RTK
+
+2. Provide my store to app
+   -<Provider store = {store}  import from react-redux 
+
+3. Slice 
+  - RTK - createSlice({
+    name:"",
+    initialState:[],
+    reducers:{
+        addItem:(state,action)=> {state=action.payload},
+        removeItems:(state,action)=>{}
+    }
+  })
+  
+  export default {addItem,removeItems} = cardSlice.action;
+  export const cardSlice.reducer;
+  
+4. put that Slice into store
+   -configureStore({
+    reducer:{
+        cart: cartSlice,
+        user: userSlice
+    }
+    })
+
+5. now how to subscribe (by the use of useselector in react-redux )
+   -- cartItems=useselector(store => store.cart.items)
+   use selector is used to subscribe to the store (tell the interviewr that what you are suscribing in your component ) 
+6. now use in cart cartItems.length
+
