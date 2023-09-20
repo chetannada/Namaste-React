@@ -1,0 +1,14 @@
+CSS - Base UI for react UI framwork
+uber has its own UI , it is mainatain by uber team 
+
+scss and saas 
+sequence(ways) to used CSS
+1. CSS
+2. scss
+3. inline CSS 
+4. Library  - material UI , chakra UI , base UI , ANT design
+5. STYLE COMPONENT
+6. react bootstrap
+7. tailwind
+
+pros and cons of each CSS types

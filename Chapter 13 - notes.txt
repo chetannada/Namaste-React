@@ -1,0 +1,9 @@
+UI layer - Data Layer - in SPA(single page layer) - frontend
+JSX - babel - javascript (big)object - virtual DOM - reconcilation
+
+Comapare new virtual DOM and prious virtual DOM  then what is the differrence is then it change in to the autual virtual DOM
+ 
+difference between state(local variable) and props (argumnet )
+
+ways to manages the data layer
+ 
