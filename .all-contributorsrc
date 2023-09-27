@@ -132,6 +132,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "sameerkali",
+      "name": "Sameer Faridi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76611058?v=4",
+      "profile": "https://sameer69.netlify.app",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "repoType": "github",
