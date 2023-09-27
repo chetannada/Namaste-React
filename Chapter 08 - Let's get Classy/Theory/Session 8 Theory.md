@@ -34,7 +34,7 @@ const router = createBrowserRouter([
             element: <Child />,
             children: [ // nested routing for subchild
                {
-                  path: "/child",
+                  path: "child",      // Don't use '/' because then react-router-dom will understand it it's the direct path
                   element: <SubChild />,
                }
             ],

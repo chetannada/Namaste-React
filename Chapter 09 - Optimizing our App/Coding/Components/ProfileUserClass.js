@@ -6,7 +6,7 @@ class ProfileUserClass extends Component {
     super(props);
     // console.log("ProfileUserClass child constructor");
   }
-  
+
   componentDidMount() {
     // console.log("ProfileUserClass child componentDidMount");
   }
@@ -17,18 +17,20 @@ class ProfileUserClass extends Component {
     // console.log("ProfileUserClass child componentWillUnmount");
   }
   render() {
-    const { name, avatar_url, bio } = this.props.data; // accessing full json data as props from parent class `ProfileClass`
+    const { name, html_url, avatar_url, bio } = this.props.data; // accessing full json data as props from parent class `ProfileClass`
     // console.log("ProfileUserClass child render");
     return (
       <div className="profile-user-card">
+        <a href={html_url} target="_blank" rel='noopener noreferrer'>
           <img
             className="profile-user-img"
             src={avatar_url}
             alt={name}
             title={name}
           />
-          <p className="profile-user-bio">{bio}</p>
-          <SocialProfileClass />
+        </a>
+        <p className="profile-user-bio">{bio}</p>
+        <SocialProfileClass />
       </div>
     );
   }
