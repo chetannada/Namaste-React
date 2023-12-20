@@ -13,7 +13,12 @@ const useResData = (API_URL) => {
   async function getRestaurants() {
     // handle the error using try... catch
     try {
-      const response = await fetch(API_URL);
+      const response = await fetch(API_URL,{
+        mode:"no-cors",
+        headers: {
+          'Access-Control-Allow-Origin':'*'
+        }
+      });
       // if response is not ok then throw new Error
       if (!response.ok) {
         const err = response.status;
