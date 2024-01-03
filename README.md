@@ -151,6 +151,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/shanmukhipriya99"><img src="https://avatars.githubusercontent.com/u/37501487?v=4?s=100" width="100px;" alt="Shanmukhi Priya"/><br /><sub><b>Shanmukhi Priya</b></sub></a><br /><a href="https://github.com/chetannada/Namaste-React/commits?author=shanmukhipriya99" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/prathmesh-cpu"><img src="https://avatars.githubusercontent.com/u/56761941?v=4?s=100" width="100px;" alt="Prathamesh Dhavale"/><br /><sub><b>Prathamesh Dhavale</b></sub></a><br /><a href="https://github.com/chetannada/Namaste-React/commits?author=prathmesh-cpu" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
