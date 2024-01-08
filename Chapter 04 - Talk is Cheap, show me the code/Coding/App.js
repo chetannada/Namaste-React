@@ -1888,7 +1888,7 @@ const RestaurantCard = ({
       <h4>{cuisines.join(", ")}</h4>
       <h4>{area}</h4>
       <span>
-      <h4><i class="fa-solid fa-star"></i>{avgRating}</h4>
+        <h4><i class="fa-solid fa-star"></i>{avgRating}</h4>
         <h4>{lastMileTravelString}</h4>
         <h4>{costForTwoString}</h4>
       </span>
@@ -1910,6 +1910,7 @@ const Body = () => {
 
 // Footer component for footer section
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <div className="footer">
       Created By
@@ -1917,7 +1918,8 @@ const Footer = () => {
       <a href="https://www.linkedin.com/in/chetannada/" target="_blank">
         Chetan Nada
       </a>
-      <i class="fa-solid fa-copyright"></i>2023
+      <i class="fa-solid fa-copyright"></i>
+      {year}
       <strong>
         Food<span>Fire</span>
       </strong>
