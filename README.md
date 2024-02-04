@@ -8,6 +8,9 @@
 
 Note: To Fix the `CORS` Issue in [FoodFire App](https://foodfire-app.netlify.app/), I have created [FoodFire Server](https://github.com/chetannada/FoodFire-Server) a GitHub Repository, which gives own server URL. For Instance: `https://foodfire.onrender.com`
 
+# 🎨 Contents
+This repository contains a `Collection of Assignments & Class Notes`, which help you understand the concepts of React.js.
+
 ## 📚 [_Chapter 01 - Inception_](./Chapter%2001%20-%20Inception/) (Date: 24-12-2022)
 
 - 📘 [_Assignment_](./Chapter%2001%20-%20Inception/Assignment.md)
