@@ -6,6 +6,8 @@
 
 - I made [🚀 FoodFire App 😍](https://foodfire-app.netlify.app/) from scratch using React.js and Parcel.js, which is the part of this course.
 
+Note: To Fix the `CORS` Issue in [FoodFire App](https://foodfire-app.netlify.app/), I have created [FoodFire Server](https://github.com/chetannada/FoodFire-Server) a GitHub Repository, which gives own server URL. For Instance: `https://foodfire.onrender.com`
+
 ## 📚 [_Chapter 01 - Inception_](./Chapter%2001%20-%20Inception/) (Date: 24-12-2022)
 
 - 📘 [_Assignment_](./Chapter%2001%20-%20Inception/Assignment.md)
@@ -172,4 +174,3 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chetannada/)
 [![twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/chetannada)
 [![discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/916005177838956555)
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://chetannada.netlify.app/)
