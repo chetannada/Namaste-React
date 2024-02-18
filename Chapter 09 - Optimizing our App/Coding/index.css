@@ -204,6 +204,7 @@ a {
   padding: 10px;
   margin: 20px;
   cursor: pointer;
+  min-height: 310px;
 }
 
 .card:hover {
@@ -808,7 +809,7 @@ a {
   color: var(--dark-orange);
 }
 
-.profile-repo .profile-repo-items h3 a{
+.profile-repo .profile-repo-items h3 a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1089,7 +1090,7 @@ a {
     width: 330px;
   }
 
-  .profile-repo .profile-repo-items h3 a{
+  .profile-repo .profile-repo-items h3 a {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -1255,8 +1256,8 @@ a {
   .contact-container .contact-left img {
     width: 200px;
   }
-  
-  .profile-repo .profile-repo-items h3 a{
+
+  .profile-repo .profile-repo-items h3 a {
     margin: 0px 5px;
   }
 }
@@ -1341,7 +1342,7 @@ a {
     margin: 20px 15px 0px;
   }
 
-  .profile-repo .profile-repo-items h3 a{
+  .profile-repo .profile-repo-items h3 a {
     font-size: small;
   }
 }
