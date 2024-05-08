@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"; // import useParams for read `resId`
 import {
-  swiggy_menu_api_URL,
+  FOODFIRE_MENU_API_URL,
   IMG_CDN_URL,
   ITEM_IMG_CDN_URL,
   MENU_ITEM_TYPE_KEY,
@@ -19,7 +19,7 @@ const RestaurantMenu = () => {
 
   async function getRestaurantInfo() {
     try {
-      const response = await fetch(swiggy_menu_api_URL + resId);
+      const response = await fetch(FOODFIRE_MENU_API_URL + resId);
       const json = await response.json();
 
       // Set restaurant data

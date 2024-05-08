@@ -1,7 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react"; /* This is named export */
 import Shimmer from "./Shimmer"; /* This is default export */
-import { swiggy_api_URL } from "../constants";
+import { FOODFIRE_API_URL } from "../constants";
 
 // Filter the restaurant data according input type
 function filterData(searchText, restaurants) {
@@ -28,7 +28,7 @@ const Body = () => {
   async function getRestaurants() {
     // handle the error using try... catch
     try {
-      const response = await fetch(swiggy_api_URL);
+      const response = await fetch(FOODFIRE_API_URL);
       const json = await response.json();
 
       // initialize checkJsonData() function to check Swiggy Restaurant data

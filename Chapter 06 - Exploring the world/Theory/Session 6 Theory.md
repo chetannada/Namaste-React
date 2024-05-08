@@ -101,7 +101,7 @@ for example:
 // async function getRestaurant to fetch Swiggy API data
   async function getRestaurants() {
     const data = await fetch(
-      "Swiggy_API_URL"
+      "FOODFIRE_API_URL"
     );
     const json = await data.json();
     // we get the Swiggy API data in json format
