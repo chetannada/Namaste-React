@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const useResMenuData = (
-  swiggy_menu_api_URL,
+  FOODFIRE_MENU_API_URL,
   resId,
   RESTAURANT_TYPE_KEY,
   MENU_ITEM_TYPE_KEY
@@ -15,7 +15,7 @@ const useResMenuData = (
 
   async function getRestaurantInfo() {
     try {
-      const response = await fetch(swiggy_menu_api_URL + resId);
+      const response = await fetch(FOODFIRE_MENU_API_URL + resId);
       if (!response.ok) {
         const err = response.status;
         throw new Error(err);

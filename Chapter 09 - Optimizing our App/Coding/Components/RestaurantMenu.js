@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"; // import useParams for read `resId`
 import {
-  swiggy_menu_api_URL,
+  FOODFIRE_MENU_API_URL,
   IMG_CDN_URL,
   ITEM_IMG_CDN_URL,
   MENU_ITEM_TYPE_KEY,
@@ -14,7 +14,7 @@ import UserOffline from "./UserOffline";
 const RestaurantMenu = () => {
   const { resId } = useParams(); // call useParams and get value of restaurant id using object destructuring
   const [restaurant, menuItems] = useResMenuData(
-    swiggy_menu_api_URL,
+    FOODFIRE_MENU_API_URL,
     resId,
     RESTAURANT_TYPE_KEY,
     MENU_ITEM_TYPE_KEY

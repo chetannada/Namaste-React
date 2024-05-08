@@ -1,7 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import { useState } from "react"; /* This is named export */
 import Shimmer from "./Shimmer"; /* This is default export */
-import { swiggy_api_URL } from "../constants";
+import { FOODFIRE_API_URL } from "../constants";
 import { Link } from "react-router-dom";
 import { filterData } from "../Utils/Helper"; // For reusability or readability filterData function is added in Helper.js file of Utils folder
 import useResData from "../Hooks/useResData"; // imported custom hook useResData which gives All Restaurant and  Filtered Restaurant data from swigy api
@@ -13,13 +13,13 @@ const Body = () => {
   // useState: To create a state variable, searchText, allRestaurants and filteredRestaurants is local state variable
   const [searchText, setSearchText] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const [allRestaurants, FilterRes] = useResData(swiggy_api_URL);
+  const [allRestaurants, FilterRes] = useResData(FOODFIRE_API_URL);
   const [filteredRestaurants, setFilteredRestaurants] = useState(null);
   const isOnline = useOnline();
 
   // if user is not Online then return UserOffline component
   if (!isOnline) {
-    return <UserOffline />
+    return <UserOffline />;
   }
 
   // use searchData function and set condition if data is empty show error message
