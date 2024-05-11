@@ -1,5 +1,5 @@
-import React from 'react';
-import offline from "../Images/offline.png";
+import React from "react";
+import offline from "../../../public/Images/offline.png";
 
 const UserOffline = () => {
   return (
