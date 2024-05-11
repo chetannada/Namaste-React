@@ -129,7 +129,7 @@ a {
 
 /* search container CSS Start*/
 .search-container {
-  margin: 100px auto 20px;
+  margin: 110px auto 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -609,13 +609,13 @@ a {
 }
 
 .about-profile-container {
-  margin: 100px auto 0px;
+  margin: 120px auto 0px;
   text-align: center;
 }
 
 .about-profile-button {
   background-color: var(--orange);
-  color: var(--light-white-text);
+  color: var(--white);
   padding: 10px 15px;
   border-radius: 5px;
   border: none;
@@ -1038,7 +1038,7 @@ a {
 }
 
 .footer > i {
-  padding: 0 5px 0;
+  padding: 3px 5px 0;
   font-size: smaller;
 }
 
