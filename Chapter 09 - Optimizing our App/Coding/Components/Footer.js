@@ -13,10 +13,16 @@ const Footer = () => {
         Chetan Nada
       </a>
       <i className="fa-solid fa-copyright"></i>
-        {year}
+      {year}
+      <a
+        href="https://github.com/chetannada/Namaste-React"
+        target="_blank"
+        title="Food Fire Github Repository"
+      >
         <strong>
           Food<span>Fire</span>
         </strong>
+      </a>
     </div>
   );
 };
