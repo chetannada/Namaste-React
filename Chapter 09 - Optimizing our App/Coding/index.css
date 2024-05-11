@@ -591,8 +591,8 @@ a {
 
 .error-page .error-back-home a {
   text-decoration: none;
-  background-color: var(--orange);
-  color: var(--light-black);
+  background-color: var(--dark-orange);
+  color: var(--white);
   padding: 10px 15px;
   border-radius: 5px;
 }
