@@ -1,4 +1,4 @@
-import { shimmer_card_unit, shimmer_menu_card_unit } from "../constants";
+import { shimmer_card_unit, shimmer_menu_card_unit } from "../../../public/Common/constants";
 
 // Shimmer card to display with animation
 const CardShimmer = () => {

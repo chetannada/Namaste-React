@@ -6,7 +6,7 @@ import {
   ITEM_IMG_CDN_URL,
   MENU_ITEM_TYPE_KEY,
   RESTAURANT_TYPE_KEY,
-} from "../constants";
+} from "../../../public/Common/constants";
 import {MenuShimmer} from "./Shimmer";
 
 const RestaurantMenu = () => {

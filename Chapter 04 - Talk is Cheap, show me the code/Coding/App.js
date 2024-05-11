@@ -4,6 +4,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import foodFireLogo from "../../public/Images/foodFireLogo.png";
+import { IMG_CDN_URL } from "../../public/Common/constants";
 
 /* My Food App structure will look like this, 
             1) Header
@@ -1880,12 +1881,7 @@ const RestaurantCard = ({
 }) => {
   return (
     <div className="card">
-      <img
-        src={
-          "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
-          cloudinaryImageId
-        }
-      />
+      <img src={IMG_CDN_URL + cloudinaryImageId} />
       <h2>{name}</h2>
       <h4>{cuisines.join(", ")}</h4>
       <h4>{area}</h4>

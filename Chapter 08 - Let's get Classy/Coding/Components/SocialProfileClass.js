@@ -5,7 +5,7 @@ import {
   Email_Link,
   Linkedin_Link,
   Twitter_Link,
-} from "../constants";
+} from "../../../public/Common/constants";
 
 class SocialProfileClass extends Component {
   constructor(props) {
