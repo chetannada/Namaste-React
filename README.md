@@ -92,7 +92,7 @@ This repository contains a `Collection of Assignments & Class Notes`, which help
 ## 📚 [_Chapter 09 - Optimizing our App_](./Chapter%2009%20-%20Optimizing%20our%20App/) (Date: 22-01-2023)
 
 - 📘 [_Assignment_](./Chapter%2009%20-%20Optimizing%20our%20App/Assignment.md)
-- 📖 _Theory Assignment Solution_
+- 📖 [_Theory Assignment Solution_](./Chapter%2009%20-%20Optimizing%20our%20App/Theory/Session%209%20Theory.md)
 - 💻 [_Coding Assignment Solution_](./Chapter%2009%20-%20Optimizing%20our%20App/Coding/)
 - 📟📝 _Digital and Handwritten Notes_
   - 📟 [_Digital Notes of Live Class_](https://bit.ly/Namaste-React-Digital-Chapter09) `Credit` - [Arpan Kesh](https://www.linkedin.com/in/arpan-kesh-687740194/)
