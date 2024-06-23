@@ -413,7 +413,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  width: 300px;
+  width: 450px;
   overflow: hidden;
   height: auto;
 }
@@ -1171,6 +1171,7 @@ a {
     padding-top: 20px;
     align-items: flex-start;
     justify-content: center;
+    width: 300px;
   }
 }
 
