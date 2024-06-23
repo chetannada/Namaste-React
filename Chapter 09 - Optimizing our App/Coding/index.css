@@ -443,6 +443,7 @@ a {
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .shimmer-card {
@@ -460,17 +461,24 @@ a {
 
 .shimmer-tags {
   width: 80%;
-  margin-top: 4px;
+  margin-top: 10px;
 }
 
 .shimmer-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 20;
+  margin-top: 20px;
+}
+
+.shimmer-details-rating {
   width: 100%;
-  margin-top: 18px;
 }
 
 .shimmer-container .shimmer-img {
   height: 144px;
   width: 230px;
+  border-radius: 5px;
 }
 /*Shimmer Card CSS End*/
 

@@ -9,8 +9,13 @@ const CardShimmer = () => {
     <div className="shimmer-card">
       <div className="shimmer-img stroke animate"></div>
       <div className="shimmer-title stroke animate"></div>
-      <div className="shimmer-tags stroke animate "></div>
-      <div className="shimmer-details stroke animate "></div>
+      <div className="shimmer-tags stroke animate"></div>
+      <div className="shimmer-details">
+      <div className="shimmer-details-rating stroke animate"></div>
+      <div className="shimmer-details-rating stroke animate"></div>
+      <div className="shimmer-details-rating stroke animate"></div>
+      </div>
+      
     </div>
   );
 };
