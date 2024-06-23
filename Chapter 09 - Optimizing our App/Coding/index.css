@@ -270,14 +270,13 @@ a {
 /* Restaurant Menu CSS Start */
 .restaurant-menu {
   margin-top: 80px;
-  min-height: 80vh;
   width: auto;
 }
 
 .restaurant-summary {
   display: flex;
-  height: 200px;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   background-color: var(--light-black);
   color: var(--light-white-text);
@@ -286,15 +285,15 @@ a {
 
 .restaurant-img {
   width: 250px;
-  height: 170px;
   border-radius: 5px;
+  margin: 20px;
 }
 
 .restaurant-summary-details {
   display: flex;
   flex-direction: column;
-  flex-basis: 520px;
-  margin: 20px;
+  justify-content: flex-start;
+  margin-right: 20px;
 }
 
 .restaurant-title {
@@ -314,24 +313,29 @@ a {
 .restaurant-details {
   display: flex;
   margin-top: 18px;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   font-size: 12px;
   font-weight: 600;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   color: inherit;
   font-weight: 600;
   font-size: 16px;
-  max-width: 340px;
 }
 
 .restaurant-rating {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 5px 8px;
-  gap: 5px;
+  gap: 8px;
   background-color: var(--dark-green);
   border-radius: 5px;
+}
+
+.restaurant-rating-slash {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .restaurant-menu-content {
@@ -1136,6 +1140,17 @@ a {
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .restaurant-summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .restaurant-img {
+    margin-left: 0px;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .header {
     height: 70px;
@@ -1172,6 +1187,10 @@ a {
 
   .contact-container .contact-right form textarea {
     min-width: 60vw;
+  }
+
+  .restaurant-menu {
+    margin-top: 60px;
   }
 }
 
@@ -1216,22 +1235,9 @@ a {
     margin: 80px auto 0px;
   }
 
-  .restaurant-menu {
-    margin-top: 60px;
-  }
-
-  .restaurant-summary {
-    height: 230px;
-    overflow-y: hidden;
-  }
-
-  .restaurant-details {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
   .restaurant-rating-slash {
-    padding: 0px 20px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .menu-item {
