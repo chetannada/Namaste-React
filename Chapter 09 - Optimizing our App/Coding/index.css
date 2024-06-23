@@ -341,11 +341,12 @@ a {
 .restaurant-menu-content {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .menu-items-container {
   margin-top: 30px;
-  width: 850px;
+  max-width: 850px;
 }
 
 .menu-title-wrap {
@@ -371,6 +372,7 @@ a {
 
 .menu-item {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 20px;
   border-bottom: rgba(40, 44, 63, 0.45) 0.5px solid;
@@ -379,7 +381,7 @@ a {
 .menu-item-details {
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
+  justify-content: flex-start;
   overflow: hidden;
   height: auto;
 }
@@ -393,7 +395,7 @@ a {
   margin-top: 14px;
   line-height: 1.3;
   color: rgba(40, 44, 63, 0.45);
-  width: inherit;
+  width: auto;
   letter-spacing: -0.3px;
   font-size: 1rem;
 }
@@ -431,9 +433,9 @@ a {
   border-color: var(--dark-orange);
   margin-top: 10px;
   border-radius: 5px;
+  font-size: large;
 }
-
-/* Restaurant Menu End Start */
+/* Restaurant Menu End */
 
 /*Shimmer Card CSS Start*/
 .shimmer-container {
@@ -473,7 +475,6 @@ a {
 /*Shimmer Card CSS End*/
 
 /* Shimmer Menu Card CSS Start */
-
 .restaurant-summary .shimmer-img {
   height: 144px;
   width: 230px;
@@ -1134,20 +1135,34 @@ a {
     justify-content: center;
     align-items: center;
   }
-
-  .restaurant-summary {
-    padding-left: 20px;
-  }
 }
 
 @media only screen and (max-width: 750px) {
   .restaurant-summary {
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px 20px;
   }
 
   .restaurant-img {
     margin-left: 0px;
+  }
+
+  .restaurant-menu {
+    margin-top: 70px;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .menu-img-wrapper {
+    padding-top: 20px;
+    align-items: flex-start;
+    justify-content: center;
   }
 }
 
@@ -1235,19 +1250,13 @@ a {
     margin: 80px auto 0px;
   }
 
+  .restaurant-menu {
+    margin-top: 50px;
+  }
+
   .restaurant-rating-slash {
     margin-left: 5px;
     margin-right: 5px;
-  }
-
-  .menu-item {
-    flex-wrap: wrap;
-  }
-
-  .menu-img-wrapper {
-    padding-top: 20px;
-    align-items: flex-start;
-    justify-content: center;
   }
 
   .about-container .about-left h1 {
@@ -1326,7 +1335,7 @@ a {
   }
 
   .restaurant-menu {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   .login-container {
