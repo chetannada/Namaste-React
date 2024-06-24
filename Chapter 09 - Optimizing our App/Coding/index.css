@@ -493,9 +493,11 @@ a {
 
 .shimmer-menu-card {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
   width: 848px;
   padding: 10px;
+  margin-left: 10px;
   margin-bottom: 10px;
   border-color: #d3d5df;
   box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
@@ -510,19 +512,19 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  width: 118px;
-  height: 150px;
 }
 
 .shimmer-img-wrapper .shimmer-img {
-  width: 118px;
+  width: 110px;
   height: 96px;
+  border-radius: 5px;
 }
 
 .shimmer-img-wrapper .shimmer-btn {
-  width: 94px;
+  width: 110px;
   height: 34px;
   margin-top: 10px;
+  border-radius: 5px;
 }
 
 .shimmer-menu-title {
@@ -535,19 +537,29 @@ a {
   margin-bottom: 20px;
 }
 
-.shimmer-w60 {
-  width: 60%;
+.shimmer-menu-content {
+  width: 25%;
   margin-top: 10px;
 }
 
-.shimmer-w40 {
-  width: 40%;
+.shimmer-menu-count {
+  width: 15%;
+  margin-top: 15px;
+}
+
+.shimmer-w50 {
+  width: 50%;
   margin-top: 10px;
 }
 
 .shimmer-w20 {
   width: 20%;
-  margin-top: 4px;
+  margin-top: 20px;
+}
+
+.shimmer-w70 {
+  width: 70%;
+  margin-top: 20px;
 }
 /* Shimmer Menu Card CSS End */
 
@@ -1137,9 +1149,13 @@ a {
   .shimmer-width {
     width: 100%;
   }
-  
+
   .shimmer-menu-title {
     width: 450px;
+  }
+
+  .shimmer-menu-card {
+    width: 820px;
   }
 }
 
@@ -1163,6 +1179,10 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+
+  .shimmer-menu-card {
+    width: 700px;
   }
 }
 
@@ -1193,6 +1213,17 @@ a {
     align-items: flex-start;
     justify-content: center;
     width: 300px;
+  }
+
+  .shimmer-menu-card {
+    flex-direction: column;
+  }
+
+  .shimmer-img-wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 25px;
+    margin-bottom: 10px;
   }
 }
 

@@ -38,8 +38,8 @@ export const MenuShimmer = () => {
       <div className="restaurant-menu-content">
         <div className="menu-items-container">
           <div className="menu-title-wrap ">
-            <h3 className="shimmer-w40 stroke animate"></h3>
-            <p className="shimmer-w20 stroke animate"></p>
+            <h3 className="shimmer-menu-content stroke animate"></h3>
+            <p className="shimmer-menu-count stroke animate"></p>
           </div>
           <div className="menu-items-list">
             {Array(shimmer_menu_card_unit)
@@ -47,9 +47,9 @@ export const MenuShimmer = () => {
               .map((element, index) => (
                 <div className="shimmer-menu-card" key={index.toString() + 1}>
                   <div className="shimmer-item-details">
-                    <h3 className="shimmer-w40  stroke animate"></h3>
+                    <h3 className="shimmer-w50  stroke animate"></h3>
                     <p className="shimmer-w20  stroke animate"> </p>
-                    <p className="shimmer-w60  stroke animate"></p>
+                    <p className="shimmer-w70  stroke animate"></p>
                   </div>
                   <div className="shimmer-img-wrapper">
                     <img className="shimmer-img stroke animate" />

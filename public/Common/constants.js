@@ -14,7 +14,7 @@ export const FOODFIRE_MENU_API_URL = `${process.env.REACT_FOODFIRE_APP_BASE_URL}
 export const shimmer_card_unit = 20;
 
 // shimmer Menu card unit
-export const shimmer_menu_card_unit = 4;
+export const shimmer_menu_card_unit = 10;
 
 // Github - username
 export const Github_UserName = "ChetanNada";
