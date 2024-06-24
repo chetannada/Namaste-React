@@ -10,13 +10,12 @@ A: It is a tool used for package management and the default package manager for 
 ```
 npm init
 ```
-`npm init -y` can be used to skip the setup step, `npm` takes care of it and creates the `package.json` json file automatically , but without configurations.
+`npm init -y` can be used to skip the setup step, `npm` takes care of it and creates the `package.json` json file automatically, but without configurations.
 
 
 ## Q: What is `Parcel/Webpack`? Why do we need it?
-A: `Parcel/Webpack` is type of a web application bundler used for development and productions purposes or power our application with different type functionalities and features.
-It offers blazing fast performance utilizing multicore processing, and requires zero configuration. Parcel can take any type of file as an entry point, but an HTML or JavaScript file is a good place to start.
-Parcel/Webpack are type of bundlers that we use to power our application with different type functionalities and features.
+A: `Parcel/Webpack` is a type of web application bundler used for development and production purposes or to power our application with different types of functionalities and features.
+It offers blazing-fast performance utilizing multicore processing and requires zero configuration. Parcel can take any type of file as an entry point, but an HTML or JavaScript file is a good place to start.
 
 ### Parcel Features:
 * HMR (Hot Module Replacement) - parcel keeps track of file changes via file watcher algorithm and renders the changes in the files
@@ -28,7 +27,7 @@ Parcel/Webpack are type of bundlers that we use to power our application with di
 * Image optimization
 * Caching while development
 * Compresses
-* Compatible with older version of browser
+* Compatible with older versions of browser
 * HTTPS in dev
 * Port Number
 * Consistent hashing algorithm
@@ -58,11 +57,11 @@ It stores information about your project when parcel builds it, so that when it 
 
 
 ## Q: What is `npx`?
-A: `npx` is a tool that is used to execute the packages. It comes with the npm, when you installed npm above 5.2.0 version then automatically npx will installed. It is an npm package runner that can execute any package that you want from the npm registry without even installing that package.
+A: `npx` is a tool that is used to execute the packages. It comes with the npm. When you install npm above the 5.2.0 version, then automatically, npx will installed. It is an npm package runner that can execute any package that you want from the npm registry without even installing that package.
 
 
-## Q: What is difference between `dependencies` vs `devDependencies`?
-A: `Dependencies` should contain library and framework in which your app is built on, needs to function effectively. such as Vue, React, Angular, Express, JQuery and etc. 
+## Q: What is the difference between `dependencies` vs `devDependencies`?
+A: `Dependencies` should contain the library and framework on which your app is built on, needs to function effectively, such as Vue, React, Angular, Express, JQuery and etc. 
 `DevDependencies` should contain modules/packages a developer needs during development.
 such as, `parcel, webpack, vite, mocha`.
 `These packages` are `necessary only while you are developing your project`, not necessary on production.
@@ -77,7 +76,7 @@ npm install --save
 
 
 ## Q: What is `Tree Shaking`?
-A: `Tree shaking` is process of removing the unwanted code that we do not use while developing the application.
+A: `Tree shaking` is the process of removing the unwanted code that we do not use while developing the application.
 In computing, tree shaking is a dead code elimination technique that is applied when optimizing code.
 
 
@@ -136,7 +135,7 @@ A: `package.json`:
 * It allows future devs & automated systems to download the same dependencies as the project.
 * it also allows to go back to the past version of the dependencies without actual
 ‘committing the node_modules folder.
-* It records the same version of the installed packages which allows to reinstall them.
+* It records the same version of the installed packages which allows reinstalling them.
 Future installs will be capable of building identical description tree.
 
 **~** or **^** in `package.json` file :
@@ -160,7 +159,7 @@ For example  in `package.json` file:
 A: `package-lock.json` file contains the information about the dependencies and their versions used in the project. Deleting it would cause dependencies issues in the production environment. So don't modify it, It's being handled automatically by NPM.
 
 ## Q: What is `node_modules` ? Is it a good idea to push that on git?
-A: `node_modules` folder like a cache for the external modules that your project depends upon. When you npm install them, they are downloaded from the web and copied into the node_modules folder and Nodejs is trained to look for them there when you import them (without a specific path).
+A: `node_modules` folder is like a cache for the external modules that your project depends upon. When you npm install them, they are downloaded from the web and copied into the node_modules folder and Nodejs is trained to look for them there when you import them (without a specific path).
 `Don't push node_modules`in github because it contains lots of files(more than 100 MB), it will cost you memory space.
 
 
@@ -170,3 +169,6 @@ A: The `/dist` folder contains the minimized version of the source code. The cod
 
 ## Q: What is `browserslist`?
 A: `Browserslist` is a tool that allows specifying which browsers should be supported in your frontend app by specifying "queries" in a config file. It's used by frameworks/libraries such as React, Angular and Vue, but it's not limited to them.
+
+## Q: What is `transitive dependency`?
+A: When we install modules in our project folder, we get the node_modules folder, which contains the dependencies of the modules initially installed. Now, the dependencies in the node_modules folder may have their own dependencies (also present in the node_modules folder), and so on. This is known as `transitive dependencies`.
