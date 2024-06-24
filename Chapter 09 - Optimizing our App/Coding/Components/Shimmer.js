@@ -11,24 +11,27 @@ const CardShimmer = () => {
       <div className="shimmer-title stroke animate"></div>
       <div className="shimmer-tags stroke animate"></div>
       <div className="shimmer-details">
-      <div className="shimmer-details-rating stroke animate"></div>
-      <div className="shimmer-details-rating stroke animate"></div>
-      <div className="shimmer-details-rating stroke animate"></div>
+        <div className="shimmer-details-rating stroke animate"></div>
+        <div className="shimmer-details-rating stroke animate"></div>
+        <div className="shimmer-details-rating stroke animate"></div>
       </div>
-      
     </div>
   );
 };
 
 export const MenuShimmer = () => {
   return (
-    <div className="restaurant-menu">
+    <div className="restaurant-menu shimmer-width">
       <div className="restaurant-summary stroke-color animate">
         <img className="shimmer-img stroke animate" />
         <div className="restaurant-summary-details">
-          <h2 className="shimmer-w40  stroke animate"></h2>
-          <p className="shimmer-w20 stroke animate"></p>
-          <div className="shimmer-w60  stroke animate"></div>
+          <h2 className="shimmer-menu-title  stroke animate"></h2>
+          <p className="shimmer-items stroke animate"></p>
+          <div className="shimmer-details">
+            <div className="shimmer-details-rating stroke animate"></div>
+            <div className="shimmer-details-rating stroke animate"></div>
+            <div className="shimmer-details-rating stroke animate"></div>
+          </div>
         </div>
       </div>
 

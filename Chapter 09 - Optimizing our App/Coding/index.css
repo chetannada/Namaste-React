@@ -483,9 +483,12 @@ a {
 /*Shimmer Card CSS End*/
 
 /* Shimmer Menu Card CSS Start */
+
 .restaurant-summary .shimmer-img {
-  height: 144px;
-  width: 230px;
+  height: 150px;
+  width: 250px;
+  margin: 20px;
+  border-radius: 5px;
 }
 
 .shimmer-menu-card {
@@ -520,6 +523,16 @@ a {
   width: 94px;
   height: 34px;
   margin-top: 10px;
+}
+
+.shimmer-menu-title {
+  width: 550px;
+  margin-bottom: 40px;
+}
+
+.shimmer-items {
+  width: 150px;
+  margin-bottom: 20px;
 }
 
 .shimmer-w60 {
@@ -1120,6 +1133,14 @@ a {
     align-items: center;
     font-size: medium;
   }
+
+  .shimmer-width {
+    width: 100%;
+  }
+  
+  .shimmer-menu-title {
+    width: 450px;
+  }
 }
 
 @media only screen and (max-width: 880px) {
@@ -1225,6 +1246,10 @@ a {
 
   .search-container .search-input {
     width: 13rem;
+  }
+
+  .shimmer-menu-title {
+    width: 300px;
   }
 }
 
@@ -1353,6 +1378,10 @@ a {
 
   .login-form {
     max-width: 280px;
+  }
+
+  .shimmer-menu-title {
+    width: 200px;
   }
 }
 
