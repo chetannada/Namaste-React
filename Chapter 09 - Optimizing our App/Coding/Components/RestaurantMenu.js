@@ -1,27 +1,30 @@
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"; // import useParams for read `resId`
 import {
-  swiggy_menu_api_URL,
+  FOODFIRE_MENU_API_URL,
   IMG_CDN_URL,
   ITEM_IMG_CDN_URL,
-} from "../constants";
-import {MenuShimmer} from "./Shimmer";
+  MENU_ITEM_TYPE_KEY,
+  RESTAURANT_TYPE_KEY,
+} from "../../../public/Common/constants";
+import { MenuShimmer } from "./Shimmer";
+import useResMenuData from "../Hooks/useResMenuData"; // imported custom hook useResMenuData which gives restaurant Menu data from swigy api
+import useOnline from "../Hooks/useOnline"; // imported custom hook useOnline which checks user is online or not
+import UserOffline from "./UserOffline";
 
 const RestaurantMenu = () => {
   const { resId } = useParams(); // call useParams and get value of restaurant id using object destructuring
-  const [restaurant, setRestaurant] = useState(null); // call useState to store the api data in res
-  useEffect(() => {
-    getRestaurantInfo(); // call getRestaurantInfo function so it fetch api data and set data in restaurant state variable
-  }, []);
+  const [restaurant, menuItems] = useResMenuData(
+    FOODFIRE_MENU_API_URL,
+    resId,
+    RESTAURANT_TYPE_KEY,
+    MENU_ITEM_TYPE_KEY
+  );
 
-  async function getRestaurantInfo() {
-    try {
-      const response = await fetch(swiggy_menu_api_URL + resId);
-      const json = await response.json();
-      setRestaurant(json?.data);
-    } catch (error) {
-      console.log(error);
-    }
+  const isOnline = useOnline();
+
+  // if user is not Online then return UserOffline component
+  if (!isOnline) {
+    return <UserOffline />;
   }
 
   return !restaurant ? (
@@ -38,20 +41,23 @@ const RestaurantMenu = () => {
           <h2 className="restaurant-title">{restaurant?.name}</h2>
           <p className="restaurant-tags">{restaurant?.cuisines?.join(", ")}</p>
           <div className="restaurant-details">
-            <div className="restaurant-rating" style={
-            (restaurant?.avgRating) < 4
-              ? { backgroundColor: "var(--light-red)" }
-              : (restaurant?.avgRating) === "--"
-              ? { backgroundColor: "white", color: "black" }
-              : { color: "white" }
-          }>
-            <i className="fa-solid fa-star"></i>
+            <div
+              className="restaurant-rating"
+              style={
+                restaurant?.avgRating < 4
+                  ? { backgroundColor: "var(--light-red)" }
+                  : restaurant?.avgRating === "--"
+                  ? { backgroundColor: "white", color: "black" }
+                  : { color: "white" }
+              }
+            >
+              <i className="fa-solid fa-star"></i>
               <span>{restaurant?.avgRating}</span>
             </div>
             <div className="restaurant-rating-slash">|</div>
             <div>{restaurant?.sla?.slaString}</div>
             <div className="restaurant-rating-slash">|</div>
-            <div>{restaurant?.costForTwoMsg}</div>
+            <div>{restaurant?.costForTwoMessage}</div>
           </div>
         </div>
       </div>
@@ -60,12 +66,10 @@ const RestaurantMenu = () => {
         <div className="menu-items-container">
           <div className="menu-title-wrap">
             <h3 className="menu-title">Recommended</h3>
-            <p className="menu-count">
-              {Object.keys(restaurant?.menu?.items).length} ITEMS
-            </p>
+            <p className="menu-count">{menuItems.length} ITEMS</p>
           </div>
           <div className="menu-items-list">
-            {Object.values(restaurant?.menu?.items).map((item) => (
+            {menuItems.map((item) => (
               <div className="menu-item" key={item?.id}>
                 <div className="menu-item-details">
                   <h3 className="item-title">{item?.name}</h3>
@@ -80,10 +84,10 @@ const RestaurantMenu = () => {
                   <p className="item-desc">{item?.description}</p>
                 </div>
                 <div className="menu-img-wrapper">
-                  {item?.cloudinaryImageId && (
+                  {item?.imageId && (
                     <img
                       className="menu-item-img"
-                      src={ITEM_IMG_CDN_URL + item?.cloudinaryImageId}
+                      src={ITEM_IMG_CDN_URL + item?.imageId}
                       alt={item?.name}
                     />
                   )}

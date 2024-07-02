@@ -50,6 +50,3 @@ Thumbs.db
 
 # parcel files
 .parcel-cache
-
-# Netlify 404 Error file
-_redirects

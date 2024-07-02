@@ -1,9 +1,9 @@
-import FoodFireLogo from "../Images/Food Fire Logo.png";
+import foodFireLogo from "../../../public/Images/foodFireLogo.png";
 
 // Title component for display logo
 const Title = () => (
   <a href="/">
-    <img className="logo" src={FoodFireLogo} alt="Food Fire Logo" />
+    <img className="logo" src={foodFireLogo} alt="Food Fire Logo" />
   </a>
 );
 

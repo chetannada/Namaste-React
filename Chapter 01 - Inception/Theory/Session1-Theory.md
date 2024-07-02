@@ -55,3 +55,20 @@ A: `Async` - The async attribute is a `boolean attribute`. The script is downloa
 ```sh
 <script src="demo_defer.js" defer></script>
 ```
+
+Unless you're supporting ancient legacy systems, always add `type="module"` to all your script tags:
+```sh
+<script type="module" src="main.js"></script> and place the tag inside <head>
+```
+```sh
+ <script defer nomodule> can be used as a legacy fallback.
+```
+
+
+As the name suggests, it allows you to import `modules`, which makes it easier to organize your code.
+Enable `strict mode` by default. This makes your code run faster, and reports more runtime errors instead of silently ignoring them.
+Execute your code only after the DOM has `initialized`, which makes DOM manipulation easier. Thanks to this, you won't need to listen to load/readystatechange/DOMContentLoaded events.
+Prevent top level variables from implicitly polluting the global namespace.
+Allow you to use top-level await in supported engines.
+Load and parse your code `asynchronously`, which improves load performance.
+

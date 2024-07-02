@@ -1,4 +1,4 @@
-import { shimmer_card_unit, shimmer_menu_card_unit } from "../constants";
+import { shimmer_card_unit, shimmer_menu_card_unit } from "../../../public/Common/constants";
 
 // Shimmer card to display with animation
 const CardShimmer = () => {
@@ -33,7 +33,7 @@ export const MenuShimmer = () => {
           </div>
           <div className="menu-items-list">
             { Array(shimmer_menu_card_unit).fill("").map( (element, index)  => 
-            <div className="shimmer-menu-card" key={index}>
+            <div className="shimmer-menu-card" key={index.toString() + 1}>
               <div className="shimmer-item-details">
                 <h3 className="shimmer-w40  stroke animate"></h3>
                 <p className="shimmer-w20  stroke animate"> </p>
@@ -57,7 +57,7 @@ const Shimmer = () => {
     <div className="shimmer-container">
       {/* create a new Array instance using Array() constructor and map through every element of array */}
       {Array(shimmer_card_unit).fill("").map((element, index) => {
-        return <CardShimmer key={index} />;
+        return <CardShimmer key={index.toString() + 1} />;
       })}
     </div>
   );

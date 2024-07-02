@@ -36,9 +36,11 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"; 
 const AppLayout = () => {
   return (
     <React.Fragment>
-      <Header />
-      <Outlet />
-      <Footer />
+      <div className="app">
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
     </React.Fragment>
   );
 };
@@ -58,10 +60,13 @@ const appRouter = createBrowserRouter([
       {
         path: "about",
         element: <About />,
-        children: [{ // nested routing
-          path: "profile",
-          element: <Profile />,
-        }]
+        children: [
+          {
+            // nested routing
+            path: "profile",
+            element: <Profile />,
+          },
+        ],
       },
       {
         path: "contact",
