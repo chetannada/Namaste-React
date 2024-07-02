@@ -172,3 +172,7 @@ A: The `/dist` folder contains the minimized version of the source code. The cod
 
 ## Q: What is `browserslist`?
 A: `Browserslist` is a tool that allows specifying which browsers should be supported in your frontend app by specifying "queries" in a config file. It's used by frameworks/libraries such as React, Angular and Vue, but it's not limited to them.
+
+
+## Q: What is `Load Balancing`?
+A: `Load balancing` is the method of distributing network traffic equally across a pool of resources that support an application. Modern applications must process millions of users simultaneously and return the correct text, videos, images, and other data to each user in a fast and reliable manner.
