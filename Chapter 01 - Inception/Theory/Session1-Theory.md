@@ -3,6 +3,7 @@
 
 ## Q: What is `Emmet`?
 A: `Emmet` is the essential toolkit for web-developers. It allows you to `type shortcuts` that are then expanded into full pieces of code for writing `HTML and CSS`, based on an abbreviation structure most developers already use that expands into full-fledged HTML markup and CSS rules.
+Examples: div>ul>li , div+p+bq, ul>li*5 > (div>dl>(dt+dd)*3)+footer>p : checkout full guide here: https://docs.emmet.io/abbreviations/syntax/
 
 
 ## Q: Difference between a `Library and Framework`?
@@ -20,6 +21,8 @@ A: `React` is named React because of its ability to `react to changes in data`.
 React is called React because it was designed to be a declarative, efficient, and flexible JavaScript library for building user interfaces.
 The name `React` was chosen because the library was designed to allow developers to "react" to changes in state and data within an application, and to update the user interface in a declarative and efficient manner.
 `React` is a `JavaScript-based UI development library`. `Facebook` and an `open-source developer community` run it.
+ `React` was developed by `Jordan Walker` a software engineer at meta
+ `React` was first used in facebooks newsfeed and it was released on 29 may 2013 but made availed fro public in june 2013.
 
 
 ## Q: What is `crossorigin in script tag`?
