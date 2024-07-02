@@ -1,28 +1,52 @@
-import { useState } from "react";
-import FoodFireLogo from "../Images/Food Fire Logo.png";
+import foodFireLogo from "../../../public/Images/foodFireLogo.png";
 import { Link } from "react-router-dom"; // imported Link for client side routing
 import { useNavigate } from "react-router-dom";
+import useOnline from "../Hooks/useOnline";
+import useAuth from "../Hooks/useAuth";
+import useLocalStorage from "../Hooks/useLocalStorage";
+import { useEffect } from "react";
 
 // Title component for display logo
 const Title = () => (
-  <a href="/">
+  <Link to="/">
     <img
       className="logo"
-      src={FoodFireLogo}
-      alt="Food Fire Logo"
-      title="Food Fire Logo"
+      src={foodFireLogo}
+      alt="Food Fire"
+      title="Food Fire"
     />
-  </a>
+  </Link>
 );
 
 // Header component for header section: Logo, Nav Items
 const Header = () => {
-  // use useState for user logged in or logged out
-  const [isLoggedin, setIsLoggedin] = useState(true);
   const navigate = useNavigate();
+
+  // call custom hook useLocalStorage for getting localStorage value of user
+  const [getLocalStorage, , clearLocalStorage] = useLocalStorage("user");
+
+  // call custom hook useAuth for user is loggedin or not
+  const [isLoggedin, setIsLoggedin] = useAuth();
+
+  useEffect(() => {
+    // if value of getLocalStorage is equal to null setIsLoggedin to false
+    if (getLocalStorage === null) {
+      setIsLoggedin(false);
+    }
+  }, [getLocalStorage]);
+
+  // call custom hook useOnline if user is online or not
+  const isOnline = useOnline();
+
   return (
     <div className="header">
       <Title />
+
+      {/* if user is logged in then display userName */}
+      {isLoggedin && (
+        <div className="user-name">Hi {getLocalStorage?.userName}!</div>
+      )}
+
       <div className="nav-items">
         <ul>
           <li>
@@ -43,13 +67,28 @@ const Header = () => {
             {isLoggedin ? (
               <button
                 className="logout-btn"
-                onClick={() => setIsLoggedin(false)}
+                onClick={() => {
+                  clearLocalStorage();
+                  setIsLoggedin(false);
+                }}
               >
                 Logout
+                <span
+                  className={isOnline ? "login-btn-green" : "login-btn-red"}
+                >
+                  {" "}
+                  ●
+                </span>
               </button>
             ) : (
               <button className="login-btn" onClick={() => navigate("/login")}>
                 Login
+                <span
+                  className={isOnline ? "login-btn-green" : "login-btn-red"}
+                >
+                  {" "}
+                  ●
+                </span>
               </button>
             )}
           </li>

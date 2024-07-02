@@ -4,7 +4,7 @@ import {
   Github_UserName,
   Github_Repository_Name,
   options,
-} from "../constants";
+} from "../../../public/Common/constants";
 import { BiGitRepoForked, BiStar } from "react-icons/bi";
 import { FiUsers } from "react-icons/fi";
 

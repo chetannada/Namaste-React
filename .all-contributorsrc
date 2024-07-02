@@ -57,11 +57,151 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Praveent696",
+      "name": "Parveen Kumar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15323217?v=4",
+      "profile": "http://www.buffercode.in",
+      "contributions": [
+        "test",
+        "code"
+      ]
+    },
+    {
+      "login": "mkv-mkverma",
+      "name": "Manish Kumar Verma",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16443031?v=4",
+      "profile": "https://www.linkedin.com/in/mkvmkverma/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "chandrabhanusonu",
+      "name": "Sonu Singh Rajput",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72381521?v=4",
+      "profile": "https://github.com/chandrabhanusonu",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "priyansh70",
+      "name": "Priyansh Patel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93965871?v=4",
+      "profile": "https://github.com/priyansh70",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "Zack-Dx",
+      "name": "THEALAN",
+      "avatar_url": "https://avatars.githubusercontent.com/u/105835098?v=4",
+      "profile": "https://github.com/Zack-Dx",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Ravi02205",
+      "name": "Ravi Panchal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81222901?v=4",
+      "profile": "https://github.com/Ravi02205",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "ORCUSio",
+      "name": "ORCUSio",
+      "avatar_url": "https://avatars.githubusercontent.com/u/94834734?v=4",
+      "profile": "https://github.com/ORCUSio",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "subham-prasad",
+      "name": "subham-prasad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68709992?v=4",
+      "profile": "http://subhamprasad.in",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "sameerkali",
+      "name": "Sameer Faridi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76611058?v=4",
+      "profile": "https://sameer69.netlify.app",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "shanmukhipriya99",
+      "name": "Shanmukhi Priya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37501487?v=4",
+      "profile": "https://github.com/shanmukhipriya99",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "prathmesh-cpu",
+      "name": "Prathamesh Dhavale",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56761941?v=4",
+      "profile": "https://github.com/prathmesh-cpu",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "vivekanand-vr",
+      "name": "Vivekanand Vernekar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/116813193?v=4",
+      "profile": "https://vivekanand-vr.netlify.app",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "akshadjaiswal",
+      "name": "Akshad Jaiswal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/111684658?v=4",
+      "profile": "https://bio.link/akshad_jaiswal",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "timmy471",
+      "name": "Ayantunji Timilehin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39725296?v=4",
+      "profile": "https://ayantunjitimilehin.com/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Bharat2044",
+      "name": "Bharat Kumar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/104676718?v=4",
+      "profile": "https://github.com/Bharat2044",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
   "repoType": "github",
   "contributorsPerLine": 7,
   "repoHost": "https://github.com",
   "commitConvention": "angular",
-  "skipCi": true
+  "skipCi": true,
+  "commitType": "docs"
 }

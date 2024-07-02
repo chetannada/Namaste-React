@@ -1,4 +1,4 @@
-import { IMG_CDN_URL } from "../constants";
+import { IMG_CDN_URL } from "../../../public/Common/constants";
 
 // Restaurant card component: Image, name, cuisine
 const RestaurantCard = ({

@@ -1,22 +1,22 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import food from "../Images/burger-image.png";
+import burgerImage from "../../../public/Images/burgerImage.png";
 
 const About = () => {
   const [show, setShow] = useState(false);
   return (
-    <div>
+    <div className="about-container-main">
       <div className="about-profile-container">
         {/* used ternary condition to Show my profile and Hide my Profile and using nested routing */}
         {show ? (
           <>
-          <Link to={"/about"}>
-            <button
-              className="about-profile-button"
-              onClick={() => setShow(false)}
-            >
-              Hide My Profile
-            </button>
+            <Link to={"/about"}>
+              <button
+                className="about-profile-button"
+                onClick={() => setShow(false)}
+              >
+                Hide My Profile
+              </button>
             </Link>
             <Outlet />
           </>
@@ -34,7 +34,7 @@ const About = () => {
       <div className="about-container">
         <div className="about-left">
           <h1>
-            Welcome to <br /> The world of <br />{" "}
+            Welcome to <br /> The world of <br />
             <span>Tasty & Fresh Food</span>
           </h1>
           <h4>
@@ -43,7 +43,7 @@ const About = () => {
           </h4>
         </div>
         <div className="about-right">
-          <img src={food} alt="Food Image" />
+          <img src={burgerImage} alt="Food Image" />
         </div>
       </div>
     </div>

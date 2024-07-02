@@ -3,7 +3,8 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import FoodFireLogo from "../Images/Food Fire Logo.png";
+import foodFireLogo from "../../public/Images/foodFireLogo.png";
+import { IMG_CDN_URL } from "../../public/Common/constants";
 
 /* My Food App structure will look like this, 
             1) Header
@@ -26,7 +27,7 @@ import FoodFireLogo from "../Images/Food Fire Logo.png";
 // Title component for display logo
 const Title = () => (
   <a href="/">
-    <img className="logo" src={FoodFireLogo} alt="Food Fire Logo" />
+    <img className="logo" src={foodFireLogo} alt="Food Fire Logo" />
   </a>
 );
 
@@ -40,7 +41,9 @@ const Header = () => {
           <li>Home</li>
           <li>About</li>
           <li>Contact</li>
-          <li><i class="fa-solid fa-cart-shopping"></i></li>
+          <li>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </li>
         </ul>
       </div>
     </div>
@@ -1878,17 +1881,15 @@ const RestaurantCard = ({
 }) => {
   return (
     <div className="card">
-      <img
-        src={
-          "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
-          cloudinaryImageId
-        }
-      />
+      <img src={IMG_CDN_URL + cloudinaryImageId} />
       <h2>{name}</h2>
       <h4>{cuisines.join(", ")}</h4>
       <h4>{area}</h4>
       <span>
-      <h4><i class="fa-solid fa-star"></i>{avgRating}</h4>
+        <h4>
+          <i class="fa-solid fa-star"></i>
+          {avgRating}
+        </h4>
         <h4>{lastMileTravelString}</h4>
         <h4>{costForTwoString}</h4>
       </span>
@@ -1910,6 +1911,7 @@ const Body = () => {
 
 // Footer component for footer section
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <div className="footer">
       Created By
@@ -1917,7 +1919,8 @@ const Footer = () => {
       <a href="https://www.linkedin.com/in/chetannada/" target="_blank">
         Chetan Nada
       </a>
-      <i class="fa-solid fa-copyright"></i>2023
+      <i class="fa-solid fa-copyright"></i>
+      {year}
       <strong>
         Food<span>Fire</span>
       </strong>

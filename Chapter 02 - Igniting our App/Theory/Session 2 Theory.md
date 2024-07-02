@@ -138,7 +138,7 @@ A: `package.json`:
 * it also allows to go back to the past version of the dependencies without actual
 ‘committing the node_modules folder.
 * It records the same version of the installed packages which allows to reinstall them.
-Future installs wll be capable of building identical description tree.
+Future installs will be capable of building identical description tree.
 
 **~** or **^** in `package.json` file :
 These are used with the versions of the package installed.
