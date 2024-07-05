@@ -60,3 +60,21 @@ A component is written inside the `{<  />}` expression.
     <ThirdChildComponent />
 </TitleComponent>
 ```
+
+## Q: What are `React Components`?
+A: Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+   Components come in two types, Class components and Function components, in this tutorial we will concentrate on Function components.
+
+### Example
+`Create a Function component called Car`
+function Car() {
+  return <h2>Hi, I am a Car!</h2>;
+}
+
+### Example
+`Create a Class component called Car`
+class Car extends React.Component {
+  render() {
+    return <h2>Hi, I am a Car!</h2>;
+  }
+}
