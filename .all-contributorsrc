@@ -196,6 +196,16 @@
         "code",
         "review"
       ]
+    },
+    {
+      "login": "harsh432004",
+      "name": "Harsh  Vaidya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107319669?v=4",
+      "profile": "https://harshvaidya.netlify.app/",
+      "contributions": [
+        "code",
+        "research"
+      ]
     }
   ],
   "repoType": "github",
