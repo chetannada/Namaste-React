@@ -7,12 +7,17 @@ import useLocalStorage from "../Hooks/useLocalStorage";
 // create a schema for Email and Password validation
 const schema = Yup.object().shape({
   email: Yup.string()
-    .required("Email is a required")
-    .email("Enter Valid Email"),
+    .required("Email is required")
+    .email("Enter a valid email"),
   password: Yup.string()
-    .required("Password is a required")
-    .min(8, "Password must be 8 characters long"),
+    .required("Password is required")
+    .min(8, "Password must be at least 8 characters long")
+    .matches(
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/,
+      "Password must contain at least one uppercase, one lowercase, one number, and one special character"
+    ), 
 });
+
 
 const Login = () => {
   const navigate = useNavigate();
