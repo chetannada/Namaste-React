@@ -6,9 +6,23 @@ A: `Emmet` is the essential toolkit for web-developers. It allows you to `type s
 
 
 ## Q: Difference between a `Library and Framework`?
-A: A `library` is a collection of packages that perform specific operations whereas a `framework` contains the basic flow and architecture of an application. The major difference between them is the complexity. Libraries contain a number of methods that a developer can just call whenever they write code. React js is library and Angular is Framework.
-The `framework` provides the flow of a software application and tells the developer what it needs and calls the code provided by the developer as required. If a `library` is used, the application calls the code from the library.
+A: `React (Library):`
 
+`Collection of Tools:` React is a JavaScript library for building user interfaces, especially for single-page applications.
+
+`Your Control:` With React, you decide how to structure your application. You call the functions and methods provided by React to create components, manage state, and handle events.
+
+`Example:` Using React is like having a set of tools (like hammers and nails) to build parts of your house (user interface) as you see fit. You are free to design the structure and layout.
+
+`Next.js (Framework):`
+
+`Structure and Tools:` Next.js is a framework built on top of React that provides a structured way to develop web applications. It includes additional features like server-side rendering, static site generation, and routing out of the box.
+
+`Framework's Control:` With Next.js, the framework provides a defined structure for your application. It handles routing and rendering, and you plug your React components into this structure. The framework controls the flow and dictates certain conventions you need to follow.
+
+`Example:` Using Next.js is like having a pre-designed house plan (framework) where the main structure is already determined (routing, rendering). You still build the rooms and decorate (using React components), but within the guidelines set by Next.js.
+
+React gives you the flexibility to design your application as you wish, while Next.js offers a structured approach with additional features to streamline development.
 
 ## Q: What is `CDN`? Why do we use it?
 A: A `content delivery network (CDN)` refers to a geographically distributed group of servers that work together to provide fast delivery of Internet content.
