@@ -1,0 +1,9 @@
+# Node artifact files
+node_modules/
+dist/
+
+# parcel files
+.parcel-cache
+
+# Netlify 404 Error file
+_redirects
