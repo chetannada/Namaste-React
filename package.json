@@ -1,10 +1,10 @@
 {
   "name": "namaste-react",
-  "version": "1.0.0",
-  "description": "This is a live Course",
+  "version": "1.1.0",
+  "description": "Namaste React live Course",
   "scripts": {
-    "start": "parcel public/index.html",
-    "build": "parcel build public/index.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
