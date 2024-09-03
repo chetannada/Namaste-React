@@ -9,7 +9,15 @@
 Note: To Fix the `CORS` Issue in [FoodFire App](https://foodfire-app.netlify.app/), I have created [FoodFire Server](https://github.com/chetannada/FoodFire-Server) a GitHub Repository, which gives own server URL. For Instance: `https://foodfire.onrender.com`
 
 # 🎨 Contents
+
 This repository contains a `Collection of Assignments & Class Notes`, which help you understand the concepts of React.js.
+
+### 🌱 Structure of this Project
+
+- index.html - _Root html file of the Project_
+- index.css - _css file of Individual Chapter Project_
+- App.js - _js file of Individual Chapter Project_
+- .env.example - _environment variables for this project to run in development environment (create a new .env file and copy all values from .env.example and fill with the actual values)_
 
 ## 📚 [_Chapter 01 - Inception_](./Chapter%2001%20-%20Inception/) (Date: 24-12-2022)
 
