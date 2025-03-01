@@ -30,7 +30,8 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"; 
                 - Links
                 - Copyrights
        
-*/
+*/ 
+//ok
 
 // AppLayout component to render: Header, Outlet(it contain children component like body, About, Restaurant Menu etc) and Footer Component
 const AppLayout = () => {
