@@ -17,7 +17,7 @@ This repository contains a `Collection of Assignments & Class Notes`, which help
 - index.html - _Root html file of the Project_
 - index.css - _css file of Individual Chapter Project_
 - App.js - _js file of Individual Chapter Project_
-- .env.example - _environment variables for this project to run in development environment (create a new .env file and copy all values from .env.example and fill with the actual values)_
+- .env - _environment variables for this project to run in development environment_
 
 ## 📚 [_Chapter 01 - Inception_](./Chapter%2001%20-%20Inception/) (Date: 24-12-2022)
 
