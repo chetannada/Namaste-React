@@ -443,7 +443,7 @@ a {
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px 20px 0px;
 }
 
 .shimmer-card {
