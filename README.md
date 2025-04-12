@@ -181,9 +181,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
 
-### 🌟 Many many Thanks to all the `Stargazers` who has supported this project with stars 🌟
+### 💖 Many many Thanks to all the `Stargazers` who has supported this project with stars 🌟
 
-[![Thanks to all stargazers](https://git-lister.onrender.com/api/stars/chetannada/Namaste-React?limit=15)](https://github.com/chetannada/Namaste-React/stargazers)
+[![Stargazers repo roster for @chetannada/Namaste-React](https://reporoster.com/stars/chetannada/Namaste-React)](https://github.com/chetannada/Namaste-React/stargazers)
+
+### 💖 Many many Thanks to all the `Forkers` who has supported this project with forks 🍴
+
+[![Forkers repo roster for @chetannada/Namaste-React](https://reporoster.com/forks/chetannada/Namaste-React)](https://github.com/chetannada/Namaste-React/network/members)
 
 ## 🔗 Let's Connect
 
