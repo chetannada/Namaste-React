@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "Namaste React live Course",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel index.html --port 3000",
     "build": "parcel build index.html",
     "test": "jest"
   },
