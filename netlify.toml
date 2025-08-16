@@ -2,6 +2,7 @@
   command = "CI='' npm run build"
   publish = "dist"
   base ="/"
+  image = "noble"
 
 [[redirects]]
   from = "/*"
